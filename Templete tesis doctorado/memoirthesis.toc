@@ -1,0 +1,14 @@
+\babel@toc {english}{}
+\babel@toc {english}{}
+\contentsline {chapter}{Resumen}{i}{chapter*.1}%
+\contentsline {chapter}{Abstract}{iii}{chapter*.2}%
+\contentsline {paragraph}{}{v}{section*.4}%
+\contentsline {chapter}{Contents}{vii}{section*.5}%
+\contentsline {chapter}{List of Figures}{ix}{section*.6}%
+\contentsline {chapter}{List of Tables}{xi}{section*.7}%
+\contentsline {chapter}{\chapternumberline {1}Introducci\'on}{1}{chapter.1}%
+\contentsline {chapter}{\chapternumberline {2}Preliminaries}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Graphs and Laplacian Matrix}{3}{section.2.1}%
+\contentsline {chapter}{\chapternumberline {3}Conclusiones y trabajo a futuro}{7}{chapter.3}%
+\contentsline {appendix}{\chapternumberline {A}Analisis}{9}{appendix.A}%
+\contentsline {chapter}{Bibliography}{11}{appendix*.8}%

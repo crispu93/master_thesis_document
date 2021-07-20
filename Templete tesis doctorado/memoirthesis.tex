@@ -1,0 +1,207 @@
+
+\RequirePackage[l2tabu]{nag}		
+\documentclass[a4paper,11pt,openbib]{memoir}
+\usepackage{datetime}
+\usepackage{ifpdf}
+\ifpdf
+\fi
+\newsubfloat{figure}
+\newsubfloat{table}
+\settrimmedsize{297mm}{210mm}{*}
+\setlength{\trimtop}{0pt} 
+\setlength{\trimedge}{\stockwidth} 
+\addtolength{\trimedge}{-\paperwidth} 
+\settypeblocksize{634pt}{448.13pt}{*} 
+\setulmargins{4cm}{*}{*} 
+\setlrmargins{*}{*}{1.5} 
+\setmarginnotes{17pt}{51pt}{\onelineskip} 
+\setheadfoot{\onelineskip}{2\onelineskip} 
+\setheaderspaces{*}{2\onelineskip}{*} 
+\checkandfixthelayout
+\frenchspacing
+\usepackage{fouriernc}
+\usepackage[T1]{fontenc}
+%
+\OnehalfSpacing 
+\setsecnumdepth{subsection} 
+\maxsecnumdepth{subsubsection}
+\usepackage{calc,soul,fourier}
+\makeatletter 
+\newlength\dlf@normtxtw 
+\setlength\dlf@normtxtw{\textwidth} 
+\newsavebox{\feline@chapter} 
+\newcommand\feline@chapter@marker[1][4cm]{%
+	\sbox\feline@chapter{% 
+		\resizebox{!}{#1}{\fboxsep=1pt%
+			\colorbox{purple}{\color{white}\thechapter}% 
+		}}%
+		\rotatebox{90}{% 
+			\resizebox{%
+				\heightof{\usebox{\feline@chapter}}+\depthof{\usebox{\feline@chapter}}}% 
+			{!}{\scshape\so\@chapapp}}\quad%
+		\raisebox{\depthof{\usebox{\feline@chapter}}}{\usebox{\feline@chapter}}%
+} 
+\newcommand\feline@chm[1][4cm]{%
+	\sbox\feline@chapter{\feline@chapter@marker[#1]}% 
+	\makebox[0pt][c]{% aka \rlap
+		\makebox[1cm][r]{\usebox\feline@chapter}%
+	}}
+\makechapterstyle{daleifmodif}{
+	\renewcommand\chapnamefont{\normalfont\Large\scshape\raggedleft\so} 
+	\renewcommand\chaptitlefont{\normalfont\Large\bfseries\scshape} 
+	\renewcommand\chapternamenum{} \renewcommand\printchaptername{} 
+	\renewcommand\printchapternum{\null\hfill\feline@chm[2.5cm]\par} 
+	\renewcommand\afterchapternum{\par\vskip\midchapskip} 
+	\renewcommand\printchaptertitle[1]{\color{purple}\chaptitlefont\raggedleft ##1\par}
+} 
+\makeatother 
+\chapterstyle{daleifmodif}
+\makepagestyle{myvf} 
+\makeoddfoot{myvf}{}{\thepage}{} 
+\makeevenfoot{myvf}{}{\thepage}{} 
+\makeheadrule{myvf}{\textwidth}{\normalrulethickness} 
+\makeevenhead{myvf}{\small\textsc{\leftmark}}{}{} 
+\makeoddhead{myvf}{}{}{\small\textsc{\rightmark}}
+\pagestyle{myvf}
+\newcommand{\clearemptydoublepage}{\newpage{\thispagestyle{empty}\cleardoublepage}}
+\makeindex
+\usepackage{import}
+\usepackage{lipsum}					
+\usepackage{amsfonts} 					
+\usepackage[centertags]{amsmath}			
+\usepackage{stmaryrd}					
+\usepackage{amssymb}					
+\usepackage{amsthm}					
+\usepackage{newlfont}					
+\usepackage{layouts}					
+\usepackage{graphicx}					
+\usepackage{longtable,rotating}			 	
+\usepackage{colortbl}					
+\usepackage{wasysym}					
+\usepackage{mathrsfs}					
+\usepackage{float}						
+\usepackage{verbatim}					
+\usepackage{upgreek }					
+\usepackage{latexsym}					
+\usepackage[square,numbers,
+		     sort&compress]{natbib}		 
+\usepackage{url}						
+\usepackage{etex}						
+\usepackage{fixltx2e}					
+\usepackage[english]{babel}
+\selectlanguage{english}
+%%\renewcommand{\spanishtablename}{Tabla}
+\usepackage{color}                    				
+\usepackage[colorlinks=true,
+		     allcolors=black]{hyperref}              
+\usepackage{memhfixc}					
+\usepackage{enumerate}					
+\usepackage{footnote}					
+\usepackage{microtype}					
+\usepackage{rotfloat}					
+\usepackage{alltt}						
+\usepackage[version=0.96]{pgf}			
+\usepackage{tikz}						
+\usetikzlibrary{arrows,shapes,snakes,
+		       automata,backgrounds,
+		       petri,topaths}				
+\widowpenalty=1000
+\clubpenalty=1000
+%
+\newcommand{\mycaption}[2][\@empty]{
+	\captionnamefont{\scshape} 
+	\changecaptionwidth
+	\captionwidth{0.9\linewidth}
+	\captiondelim{.\:} 
+	\indentcaption{0.75cm}
+	\captionstyle[\centering]{}
+	\setlength{\belowcaptionskip}{10pt}
+	\ifx \@empty#1 \caption{#2}\else \caption[#1]{#2}
+}
+\newcommand{\mysubcaption}[2][\@empty]{
+	\subcaptionsize{\small}
+	\hangsubcaption
+	\subcaptionlabelfont{\rmfamily}
+	\sidecapstyle{\raggedright}
+	\setlength{\belowcaptionskip}{10pt}
+	\ifx \@empty#1 \subcaption{#2}\else \subcaption[#1]{#2}
+}
+\usepackage{lettrine}
+\newcommand{\initial}[1]{%
+	\lettrine[lines=3,lhang=0.33,nindent=0em]{
+		\color{purple}
+     		{\textsc{#1}}}{}}
+%
+\hyphenation{res-pec-tively}
+\hyphenation{mono-ti-ca-lly}
+\hyphenation{hypo-the-sis}
+\hyphenation{para-me-ters}
+\hyphenation{sol-va-bi-li-ty}
+%
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{definition}{Definition}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+\renewcommand\qedsymbol{$\blacksquare$}
+%
+\newcommand{\R}{\mathbb{R}}
+
+%
+\begin{document}
+%\addtocontents{toc}{\hfill \textbf{P\'ag.} \par}
+%\renewcommand{\tablename}{Tabla}
+%\renewcommand{\figurename}{Figura}
+%\renewcommand{\chaptername}{Cap\'itulo}
+%\renewcommand{\appendixname}{Ap\'endice}
+%\renewcommand{\bibname}{Referencias}
+% 
+\frontmatter
+\pagenumbering{roman}
+%
+\input{frontmatter/resumen}
+\clearemptydoublepage
+%
+\input{frontmatter/abstract}
+\clearemptydoublepage
+%
+\input{frontmatter/acknowledgements}
+\clearemptydoublepage
+
+%
+%\renewcommand{\contentsname}{\'Indice}
+\maxtocdepth{subsection}
+\tableofcontents
+\clearemptydoublepage
+%
+%\renewcommand{\listfigurename}{Lista de Figuras}
+\listoffigures
+%\addtocontents{lof}{\par\nobreak\textbf{{\scshape Figura} \hfill P\'ag.}\par\nobreak}
+\clearemptydoublepage
+%
+%\renewcommand{\listtablename}{Lista de Tablas}
+\listoftables
+%\addtocontents{lot}{\par\nobreak\textbf{{\scshape Tabla} \hfill P\'ag.}\par\nobreak}
+\clearemptydoublepage
+%
+%Capítulos de la tesis
+\mainmatter
+%
+\import{chapters/chapter01/}{chap01.tex}
+\clearemptydoublepage
+%
+\import{chapters/chapter02/}{chap02.tex}
+\clearemptydoublepage
+%
+\import{chapters/conclusiones/}{conclusiones.tex}
+\clearemptydoublepage
+%
+\appendix
+\import{chapters/appendices/}{app0A.tex}
+\clearemptydoublepage
+%
+\backmatter
+\include{bibliografia}
+\clearemptydoublepage
+
+\end{document}

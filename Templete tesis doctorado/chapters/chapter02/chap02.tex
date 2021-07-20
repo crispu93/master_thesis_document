@@ -1,0 +1,152 @@
+%
+% File: chap02.tex
+%
+\let\textcircled=\pgftextcircled
+\chapter{Preliminaries}
+\label{Chapter2}
+
+\begin{definition}
+orthogonal complement
+\end{definition}
+
+\begin{theorem}
+	For every $n\times n$ symmetric real matrix, the eigenvalues are real and the eigenvectors can be chosen real and orthonormal.
+\end{theorem}
+
+\begin{theorem}[Courant-Fisher Formula]
+Let $A$ be an $n\times n$ real symmetric matrix with eigenvalues $\lambda_1 \leq \lambda_2 \leq \cdots \leq \lambda_n$ and corresponding eigenvectors $v_1, v_2,..., v_n$. Then 
+\begin{align*}
+	\lambda_1 &= \min_{\left \Vert x\right\Vert = 1} x^TAx = \min_{ x \neq 0} \frac{x^TAx}{x^Tx}, \\
+	\lambda_2 &= \min_{\substack{\left \Vert x\right\Vert = 1 \\ x\perp v_1}} x^TAx = \min_{ x \neq 0} \frac{x^TAx}{x^Tx}, \\
+	\lambda_n &= \lambda_{\text{max}} = \max_{\substack{\left \Vert x\right\Vert = 1 \\ x\perp v_1}} x^TAx = \max_{\substack{ x \neq 0 \\ x\perp v_1}} \frac{x^TAx}{x^Tx}.
+\end{align*}
+In general, for $1\leq k \leq n$, let $S_k$ denote the span of $v_1, v_2,..., v_k$ (with $S_0=\{0\}$). Then 
+\begin{displaymath}
+	\lambda_k = \min_{\substack{\left \Vert x\right\Vert = 1 \\ x\in S_{k-1}^\perp}} x^TAx = \min_{\substack{x \neq 0 \\ x\in S_{k-1}^\perp}} \frac{x^TAx}{x^Tx}.
+\end{displaymath}
+\end{theorem}
+\begin{proof}
+	Let $A=Q\Lambda Q^T$ be the eigenvalue decomposition of $A$, where $Q$ is an orthogonal matrix whose columns are eigenvectors of $A$, and $\Lambda$ is a diagonal matrix whose entries are the eigenvalues of $A$.
+\end{proof}
+
+\section{Graphs and Laplacian Matrix}
+For the rest of the chapter, let $G=(V,E)$ be an undirected graph, where $V=\{v_1, v_2, ... , v_n\}$ is the non-empty set of nodes (or vertices) and $E$ is the set of edges, composed by pairs of the form $(v_i, v_j)$, where $v_i, v_j \in V$. Let $w:E\rightarrow R_{\geq0}$ be a weight function and define $w_{ij}=w(v_i,v_j)$, for $1\leq i,j\leq n$, with $w_{ij} = 0$ if there is not an edge connecting the nodes $v_i$ and $v_j$.
+
+	The \textit{weighted adjacency matrix} of the graph is the matrix defined by $W=[w_{ij}]_{n\times n}$
+	
+	The \textit{degree of a vertex} $v_i\in V$ is defined as 
+	\begin{displaymath}
+		d_i = \sum_{j=1}^n w_{ij}.
+	\end{displaymath}
+	
+	The \textit{degree matrix} $D$ is defined as the diagonal matrix with the degrees $d_1, d_2, ..., d_n$ on the diagonal.
+	
+	The unnormalized graph \textit{Laplacian matrix} $L$ is defined as 
+	\begin{displaymath}
+		L = D - W
+	\end{displaymath}
+	
+	The normalized Laplacian matrix $L_{sym}$ is defined as
+	\begin{displaymath}
+		L_{sym} = D^{-\frac{1}{2}}LD^{-\frac{1}{2}}
+	\end{displaymath}
+	
+\begin{proposition}[Some properties of $L$]
+	The matrix $L$, as defined above, satisfies the following properties:
+	\begin{enumerate}
+		\item For every vector $x=(x_1,x_2, ..., x_n)\in \R$ we have 
+		\begin{displaymath}
+			x^TLx = \frac{1}{2}\sum_{i=1}^n\sum_{j=1}^n w_{ij}\left(x_i-x_j\right)^2
+		\end{displaymath}
+		\item $L$ is symmetric and positive semi-definite
+		\item $L$ has $n$ non-negative, real-valued, eigenvalues $\lambda_1 \leq \lambda_2 \leq \cdots \leq \lambda_n$
+		\item The smallest eigenvalue $L$ is $0$, the corresponding eigenvector is the constant one vector $\mathbb 1$.
+	\end{enumerate}
+\end{proposition}
+\begin{proof}
+	Here is your proof
+\end{proof}
+
+%\begin{definition}
+%	For a collection of vertices $A\subset V$, we define the \textbf{edge boundary} of $A$ as
+%	\begin{displaymath}
+%		\partial(A)=\left\lbrace (u,v)\in E \mid  u\in A, v\in \overline{A} \right\rbrace
+%	\end{displaymath}
+%\end{definition}
+
+\begin{definition}
+	Given a graph $G = (V, E)$, a \textit{partition } of $G$ is a collection of $k$ subsets $P_1, P_2, ..., P_k\subset V$ such that:
+	\begin{enumerate}
+		\item $P_i \cap P_j = \emptyset$ for $i\neq j$, where $i,j\in \{1,2,...,k\}$
+		\item $\cup_{i=1}^k P_k = V$
+	\end{enumerate}	 
+\end{definition}
+
+	For two collections of vertices $A, B\subset V$ consider the following quantities related to the edges of 
+	\begin{displaymath}
+		W(A,B) := \sum_{v_i\in A}\sum_{v_j \in B}w_{ij}
+	\end{displaymath}
+	and
+	\begin{displaymath}
+		\textsc{Vol}(A) :=  \sum_{v_i \in A} d_i 
+	\end{displaymath}
+
+In order to measure the quality of the partition we introduce the following 
+we want to agroupe by similarity so its natural to 
+Cut value of that partition
+\begin{displaymath}
+	\textsc{Cut}(P_1, P_2, ..., P_k) := \frac{1}{2} \sum_{i=1}^k W(P_i, \overline{P_i})
+\end{displaymath}
+solve the mincut problem
+
+The next consider two different ways of measuring the size of the partitions
+\begin{align*}
+	\textsc{RatioCut}(P_1, P_2, ..., P_k) &:= \frac{1}{2} \sum_{i=1}^k \frac{W(P_i, \overline{P_i})}{\left| P_i \right|} \\
+	&= \sum_{i=1}^k \frac{\textsc{Cut}(P_i, \overline{P_i})}{\left| P_i \right|}
+\end{align*}
+
+\begin{align*}
+	\textsc{NormCut}(P_1, P_2, ..., P_k) & := \frac{1}{2} \sum_{i=1}^k \frac{W(P_i, \overline{P_i})}{\textsc{Vol}(P_i)}\\
+	&= \sum_{i=1}^k \frac{\textsc{Cut}(P_i, \overline{P_i})}{\textsc{Vol}(P_i)}
+\end{align*}
+
+\textbf{The spectral method}
+\begin{enumerate}
+	\item Let $v$ denote the second smallest eigenvector of $\mathcal{L}$. Sort the vertices $i$ of $G$ in increasing order of $v_i$. Let the resulting ordering be $v_1 \leq v_2 \leq \cdots v_n$
+	\item For each $i$, consider the cut induced by $\{1,2,..., i\}$ and its complement. Calculate its conductance.
+	\item Among these $n-1$ cuts, choose the one with minimum conductance.
+\end{enumerate}
+
+\textbf{Cheeger's inequality}
+
+For a graph $G=(V,E)$ the \textit{conductance} or \textit{Cheeger ratio} of a set $S\subset V$ is the ratio of the fraction of edges in the cut $(S,\overline{S})$ o the volume of $S$,
+\begin{displaymath}
+	\phi(S) = \frac{E(S,\overline{S})}{\textsc{Vol}(S)}
+\end{displaymath}
+
+The \textit{conductance} or \textit{Cheeger constant} of a graph $G$ is denoted by 
+\begin{displaymath}
+	\phi(G) = \min_S \phi(S)
+\end{displaymath}
+
+\begin{theorem}
+	In a graph $G$, the Cheeger constant $\phi(G)$ and the spectral gap $\lambda_G$ are related as follows:
+	\begin{displaymath}
+		2\phi(G)\geq \lambda_G \geq \frac{\alpha_G^2}{2} \geq \frac{\phi(G)^2}{2} 
+	\end{displaymath}
+	where $\alpha_G^2$ is the minimum Cheeger ratio of subsets $S_i$ consisting of vertices with the largest $i$ values in the eigenvector associated with $lambda_G$ , over all $i\in[n]$
+\end{theorem}
+
+\textbf{Generalization to many partitions}
+\begin{enumerate}
+	\item Perform eigenvalue decomposition to find the eigenvectors of $L_{sym}$.
+	\item Select the $k$ largest eigenvectors $e_1, e_2, ..., e_k$ of $L_{sym}$ associated to the largest eigenvalues $\lambda_1, \lambda_2, ..., \lambda_k$
+	\item Form the matrix $Y$ from the matrix $X=[e_1, e_2,..., e_k]$ given by 
+	\begin{displaymath}
+		Y_{ij} = \frac{X_{ij}}{\left(\sum_j X_{ij}^2\right)^\frac{1}{2}}
+	\end{displaymath}
+	\item Treating each row of $Y$ as a point in $\mathbb R^k$, cluster them into $k$ clusters using $K-means$
+	\item Finally, assign the original vertex to cluster $j$ if and only if row $i$ of the matrix was assigned to cluster $j$
+\end{enumerate}
+
+
