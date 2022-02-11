@@ -2,9 +2,28 @@
 % File: chap02.tex
 %
 \let\textcircled=\pgftextcircled
-\chapter{Preliminaries}
+\chapter{Theory and conceptual framework}
 \label{Chapter2}
 
+\section{Preliminaries}
+Description of concepts
+\subsection{The graph partitioning problem}
+
+\subsection{Spectral partitioning and Normalized Cut}
+
+\section{Literature review}
+
+\subsection{Graph Convolutional Neural Networks and GraphSAGE}
+
+\subsection{Generalizable Approximate Graph Partitioning (GAP) Framework}
+
+\subsection{PinSAGE and Markov Chain Negative Sampling (MCNS)}
+
+	
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{comment}
 \begin{definition}
 orthogonal complement
 \end{definition}
@@ -82,6 +101,11 @@ For the rest of the chapter, let $G=(V,E)$ be an undirected graph, where $V=\{v_
 	\end{enumerate}	 
 \end{definition}
 
+	For a collection $S\subset V$ of vertices, we define the \textit{edge boundary} $\partial(S)$ to consist of all edges in $E$ with exactly one endpoint in $S$, that is,
+	\begin{displaymath}
+		\partial(S) := \left\{ \left\{u, v\right\}  \in E \mid u \notin S \text{ and } v\in S \right\}
+	\end{displaymath}
+
 	For two collections of vertices $A, B\subset V$ consider the following quantities related to the edges of 
 	\begin{displaymath}
 		W(A,B) := \sum_{v_i\in A}\sum_{v_j \in B}w_{ij}
@@ -148,5 +172,5 @@ The \textit{conductance} or \textit{Cheeger constant} of a graph $G$ is denoted 
 	\item Treating each row of $Y$ as a point in $\mathbb R^k$, cluster them into $k$ clusters using $K-means$
 	\item Finally, assign the original vertex to cluster $j$ if and only if row $i$ of the matrix was assigned to cluster $j$
 \end{enumerate}
-
+\end{comment}
 

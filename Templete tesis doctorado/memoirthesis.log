@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  25 JUN 2021 15:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  18 JAN 2022 15:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -32,8 +32,8 @@ Package: iftex 2020/03/06 v1.0d TeX engine tests
 \trimtop=\skip52
 \trimedge=\skip53
 
-(/usr/local/texlive/2020/texmf-dist/tex/latex/memoir/mem11.clo
-File: mem11.clo 2008/01/30 v0.3 memoir class 11pt size option
+(/usr/local/texlive/2020/texmf-dist/tex/latex/memoir/mem12.clo
+File: mem12.clo 2010/10/19 v0.4b memoir class 12pt size option
 )
 \binding=\skip54
 \spinemargin=\skip55
@@ -437,19 +437,19 @@ Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
 Stock height and width: 845.04684pt by 597.50787pt
 Top and edge trims: 0pt and 0pt
 Page height and width: 845.04684pt by 597.50787pt
-Text height and width: 636.60028pt by 448pt
+Text height and width: 635.5pt by 448pt
 Spine and edge margins: 59.73816pt and 89.63971pt
-Upper and lower margins: 113.81102pt and 94.63554pt
-Headheight and headsep: 13.6pt and 27.20001pt
-Footskip: 27.20001pt
+Upper and lower margins: 113.81102pt and 95.73582pt
+Headheight and headsep: 14.5pt and 29pt
+Footskip: 29pt
 Columnsep and columnseprule: 10pt and 0pt
 Marginparsep and marginparwidth: 17pt and 51pt
-Sidecapsep and sidecapwidth: 7pt and 101pt
-Sidebarhsep and sidebarwidth: 7pt and 101pt
-Sidebarvsep and sidebartopsep: 13.6pt and 0pt
-Sidebarheight: 594.32022pt
-Sidefoothsep and sidefootwidth: 7pt and 101pt
-Sidefootvsep and sidefootheight: 13.6pt and 594.32022pt
+Sidecapsep and sidecapwidth: 7pt and 92pt
+Sidebarhsep and sidebarwidth: 7pt and 92pt
+Sidebarvsep and sidebartopsep: 14.5pt and 0pt
+Sidebarheight: 590.14995pt
+Sidefoothsep and sidefootwidth: 7pt and 92pt
+Sidefootvsep and sidefootheight: 14.5pt and 590.14995pt
 ******************************************************
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/fouriernc/fouriernc.sty
@@ -630,7 +630,7 @@ LaTeX Font Info:    Trying to load font information for T1+fnc on input line 11
 File: t1fnc.fd 2005/12/13 scaled font definitions for T1/fnc.
 )
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 10.18341pt on input line 112.
+(Font)              scaled to size 11.15991pt on input line 112.
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
@@ -1765,11 +1765,11 @@ Package nag Info: Command \topcaption not defined, skipping amendment on input
 line 151.
  (./frontmatter/resumen.tex
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 13.39188pt on input line 3.
+(Font)              scaled to size 16.07027pt on input line 3.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 13.39188pt on input line 3.
+(Font)              scaled to size 16.07027pt on input line 3.
 LaTeX Font Info:    Font shape `T1/fnc/b/sc' will be
-(Font)              scaled to size 13.39188pt on input line 3.
+(Font)              scaled to size 16.07027pt on input line 3.
  [1
 
 
@@ -1780,16 +1780,16 @@ LaTeX Font Info:    Font shape `T1/fnc/b/sc' will be
 ]
 (./frontmatter/abstract.tex
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 10.18341pt on input line 7.
+(Font)              scaled to size 11.15991pt on input line 7.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 36.3328pt on input line 7.
+(Font)              scaled to size 39.66019pt on input line 7.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 53.44473pt on input line 7.
+(Font)              scaled to size 58.33925pt on input line 7.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 53.44473pt on input line 7.
-Package lettrine.sty Info: Targeted height = 39.06784pt
+(Font)              scaled to size 58.33925pt on input line 7.
+Package lettrine.sty Info: Targeted height = 42.6457pt
 (lettrine.sty)             (for loversize=0, accent excluded),
-(lettrine.sty)             Lettrine height = 39.76254pt ( \color {purple} {\tex
+(lettrine.sty)             Lettrine height = 43.40402pt ( \color {purple} {\tex
 tsc {A}});
 (lettrine.sty)             reported on input line 7.
  [3
@@ -1799,7 +1799,7 @@ tsc {A}});
 
 ] (./frontmatter/acknowledgements.tex
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 10.18341pt on input line 7.
+(Font)              scaled to size 11.15991pt on input line 7.
 
 [5
 
@@ -1808,15 +1808,15 @@ LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 
 ] (./memoirthesis.toc
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 7.71893pt on input line 3.
+(Font)              scaled to size 8.36993pt on input line 3.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 5.57996pt on input line 3.
+(Font)              scaled to size 6.50995pt on input line 3.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 3.
+(Font)              scaled to size 11.03998pt on input line 3.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 3.
+(Font)              scaled to size 8.27998pt on input line 3.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 3.
+(Font)              scaled to size 6.43999pt on input line 3.
 LaTeX Font Info:    Trying to load font information for FML+fncm on input line 
 3.
 
@@ -1824,11 +1824,11 @@ LaTeX Font Info:    Trying to load font information for FML+fncm on input line
 File: fmlfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncm.
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 3.
+(Font)              scaled to size 11.03998pt on input line 3.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 3.
+(Font)              scaled to size 8.27998pt on input line 3.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 3.
+(Font)              scaled to size 6.43999pt on input line 3.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -1869,53 +1869,62 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/microtype/mt-eur.cfg
 File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
-)) [7]
-[8
+) [7])
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 10.18341pt on input line 175.
+LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
+(Font)              scaled to size 10.18341pt on input line 175.
 
-] (./memoirthesis.lof) [9] [10
+[8] (./memoirthesis.lof) [9
+
+] [10
 
 ] (./memoirthesis.lot) [11] [12
 
 ]
-(./chapters/chapter01/chap01.tex) [1
+(./chapters/chapter01/chap01.tex
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 13.39188pt on input line 15.
+LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
+(Font)              scaled to size 13.39188pt on input line 15.
+) [1
 
 
 ] [2
 
-] (./chapters/chapter02/chap02.tex
-LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 10.18341pt on input line 8.
-LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 7.71893pt on input line 22.
-LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 5.57996pt on input line 22.
-
+] (./chapters/chapter02/chap02.tex)
 [3
 
-]
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 9.29993pt on input line 99.
-LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 9.29993pt on input line 99.
- [4] [5]) [6] (./chapters/conclusiones/conclusiones.tex [7
+] [4
 
+] (./chapters/chapter03/chap03.tex) [5
 
-]) [8
-
+] [6
 
 ]
-(./chapters/appendices/app0A.tex) [9
+(./chapters/chapter04/chap04.tex) [7
 
-] [10
+] [8
+
+]
+(./chapters/conclusiones/conclusions.tex [9
+
+]) [10
+
+
+]
+(./chapters/appendices/app0A.tex) [11
+
+] [12
 
 ]
 \openout2 = `bibliografia.aux'.
 
- (./bibliografia.tex) [11
+ (./bibliografia.tex) [13
 
 
 
-] [12
+] [14
 
 
 ]
@@ -1929,37 +1938,29 @@ No complaints by nag.
 \tf@lot=\write9
 \openout9 = `memoirthesis.lot'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 207.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 207.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 213.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 213.
 (./memoirthesis.aux (./bibliografia.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 207.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 207.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 213.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 213.
 Package rerunfilecheck Info: File `memoirthesis.out' has not changed.
-(rerunfilecheck)             Checksum: BBABA10BC4358FDA4C6D9509E619E783;564.
+(rerunfilecheck)             Checksum: 4B33E5BA32602263A1E15679D5C99A3A;1996.
  ) 
 Here is how much of TeX's memory you used:
- 30326 strings out of 480608
- 571158 string characters out of 5903631
- 1023607 words of memory out of 5000000
- 45315 multiletter control sequences out of 15000+600000
- 606576 words of font info for 166 fonts, out of 8000000 for 9000
+ 30278 strings out of 480608
+ 570960 string characters out of 5903631
+ 1021878 words of memory out of 5000000
+ 45328 multiletter control sequences out of 15000+600000
+ 581702 words of font info for 107 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
- 52i,14n,80p,1012b,496s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,12n,80p,1012b,468s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2020/texmf-dist/fonts/type1/public/fourier/fourier-bb.pfb></usr/local/te
-xlive/2020/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb></usr/local/te
-xlive/2020/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/local/te
-xlive/2020/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/local/tex
-live/2020/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/te
-xlive/2020/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/tex
-live/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local
-/texlive/2020/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/local/texliv
-e/2020/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/local/texlive/2020/
-texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on memoirthesis.pdf (24 pages, 93085 bytes).
+exlive/2020/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/local/texlive/
+2020/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb>
+Output written on memoirthesis.pdf (26 pages, 48845 bytes).
 PDF statistics:
- 246 PDF objects out of 1000 (max. 8388607)
- 207 compressed objects within 3 object streams
- 59 named destinations out of 1000 (max. 500000)
- 27237 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 298 PDF objects out of 1000 (max. 8388607)
+ 265 compressed objects within 3 object streams
+ 60 named destinations out of 1000 (max. 500000)
+ 23805 words of extra memory for PDF output out of 24883 (max. 10000000)
 
