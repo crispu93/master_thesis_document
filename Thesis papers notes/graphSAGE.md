@@ -62,3 +62,7 @@ $$\textrm{AGGREGATE}_k^{pool} = \max{\left\{ \sigma\left(\mathbf W_{pool}\mathbf
 ## Conclusions
 - Limitations of GraphSAGE
 - Takes a lot of time tu run on big graphs
+
+
+Recent advancements in graph neural networks have led to 
+state-of-the art performance on the graph partitioning problem.
