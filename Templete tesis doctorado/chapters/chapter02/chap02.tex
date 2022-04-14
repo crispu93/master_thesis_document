@@ -30,47 +30,60 @@ In general, for $1\leq k \leq n$, let $S_k$ denote the span of $v_1, v_2,..., v_
 	\lambda_k = \min_{\substack{\left \Vert x\right\Vert = 1 \\ x\in S_{k-1}^\perp}} x^TAx = \min_{\substack{x \neq 0 \\ x\in S_{k-1}^\perp}} \frac{x^TAx}{x^Tx}.
 \end{displaymath}
 \end{theorem}
-\begin{proof}
-	Let $A=Q\Lambda Q^T$ be the eigenvalue decomposition of $A$, where $Q$ is an orthogonal matrix whose columns are eigenvectors of $A$, and $\Lambda$ is a diagonal matrix whose entries are the eigenvalues of $A$.
-\end{proof}
+%\begin{proof}
+%	Let $A=Q\Lambda Q^T$ be the eigenvalue decomposition of $A$, where $Q$ is an orthogonal matrix whose columns are %eigenvectors of $A$, and $\Lambda$ is a diagonal matrix whose entries are the eigenvalues of $A$.
+%\end{proof}
 
-\section{Graphs and Laplacian Matrix}
-For the rest of the chapter, let $G=(V,E)$ be an undirected graph, where $V=\{v_1, v_2, ... , v_n\}$ is the non-empty set of nodes (or vertices) and $E$ is the set of edges, composed by pairs of the form $(v_i, v_j)$, where $v_i, v_j \in V$. Let $w:E\rightarrow R_{\geq0}$ be a weight function and define $w_{ij}=w(v_i,v_j)$, for $1\leq i,j\leq n$, with $w_{ij} = 0$ if there is not an edge connecting the nodes $v_i$ and $v_j$.
+\section{Graphs and Laplacian Matrices}
+For the rest of the chapter, let $G=(V,E)$ be a graph, where $V=\left\{v_1, v_2, ... , v_n\right\}$ is the non-empty set of nodes (or vertices) and $E$ is the set of edges, composed by pairs of the form $(v_i, v_j)$, where $v_i, v_j \in V$.
 
-	The \textit{weighted adjacency matrix} of the graph is the matrix defined by $W=[w_{ij}]_{n\times n}$
-	
-	The \textit{degree of a vertex} $v_i\in V$ is defined as 
+It is assumed that all graphs are undirected, meaning that if $(v_i, v_j)\in E$, then $(v_j, v_i)\in E$, for every $v_i,v_j \in V$. For that reason, the edge $(v_i, v_j)$ will be represented as the unordered set $\left\{ v_i, v_j\right\}$.
+
+    A convenient way to represent a graph is through an \textit{adjacency matrix} $A\in\mathbb{R}^{\left|V\right|\times\left|V\right|}$. Giving a specific order to the graph nodes, one can represent the edges as binary entries in this matrix:
+    \begin{displaymath}
+        A[v_i, v_j] = 
+        \begin{cases}
+            1 & \text{if } \left\{ v_i, v_j\right\}\in E \\
+            0 & \text{otherwise}
+        \end{cases}
+    \end{displaymath}
+    
+    Let $\EuScript{N}(v_i)$ denote the neighborhood of node $v_i$, i.e., the set of the adjacent nodes to it. The quantity that represents the number of nodes in $\EuScript{N}(v_i)$ is called the \textit{degree of the vertex} $v_i$. This is one of the most obvious and informative feature for the structure of the graph and is denoted by
 	\begin{displaymath}
-		d_i = \sum_{j=1}^n w_{ij}.
+		d_i = \sum_{j=1}^n A[v_j, v_i].
 	\end{displaymath}
 	
-	The \textit{degree matrix} $D$ is defined as the diagonal matrix with the degrees $d_1, d_2, ..., d_n$ on the diagonal.
+	Finally, we can summarize that graph's information in the \textit{degree matrix} $D$ which is defined as the diagonal matrix with the degrees $d_1, d_2, ..., d_n$ on the diagonal.
 	
+\subsection{The Unnormalized Laplacian}
 	The unnormalized graph \textit{Laplacian matrix} $L$ is defined as 
 	\begin{displaymath}
-		L = D - W
+		L = D - A
 	\end{displaymath}
 	
-	The normalized Laplacian matrix $L_{sym}$ is defined as
+	\begin{proposition}[Some properties of $L$]
+	    The matrix $L$, as defined above, satisfies the following properties:
+	    \begin{enumerate}
+	    	\item For every vector $x=(x_1,x_2, ..., x_n)\in \R$ we have 
+	    	\begin{displaymath}
+	    		%x^TLx = \frac{1}{2}\sum_{i=1}^n\sum_{j=1}^n w_{ij}\left(x_i-x_j\right)^2
+	    		x^TLx = \frac{1}{2}\sum_{i=1}^n\sum_{j=1}^n \left(x_i-x_j\right)^2
+	    	\end{displaymath}
+	    	\item $L$ is symmetric and positive semi-definite
+	    	\item $L$ has $n$ non-negative, real-valued, eigenvalues $\lambda_1 \leq \lambda_2 \leq \cdots \leq \lambda_n$
+		    \item The smallest eigenvalue of $L$ is $0$, the corresponding eigenvector is the constant one vector $\mathbb 1$.
+	    \end{enumerate}
+    \end{proposition}
+ 
+\subsection{Normalized Laplacians}
+	The \textit{symmetric normalized Laplacian} matrix $L_{sym}$ is defined as
 	\begin{displaymath}
 		L_{sym} = D^{-\frac{1}{2}}LD^{-\frac{1}{2}}
 	\end{displaymath}
-	
-\begin{proposition}[Some properties of $L$]
-	The matrix $L$, as defined above, satisfies the following properties:
-	\begin{enumerate}
-		\item For every vector $x=(x_1,x_2, ..., x_n)\in \R$ we have 
-		\begin{displaymath}
-			x^TLx = \frac{1}{2}\sum_{i=1}^n\sum_{j=1}^n w_{ij}\left(x_i-x_j\right)^2
-		\end{displaymath}
-		\item $L$ is symmetric and positive semi-definite
-		\item $L$ has $n$ non-negative, real-valued, eigenvalues $\lambda_1 \leq \lambda_2 \leq \cdots \leq \lambda_n$
-		\item The smallest eigenvalue $L$ is $0$, the corresponding eigenvector is the constant one vector $\mathbb 1$.
-	\end{enumerate}
-\end{proposition}
-\begin{proof}
-	Here is your proof
-\end{proof}
+	while the \textit{random walk Laplacian} is defined as 
+	\begin{displaymath}
+		L_{rw} = D^{-1}L
+	\end{displaymath}
 
 %\begin{definition}
 %	For a collection of vertices $A\subset V$, we define the \textbf{edge boundary} of $A$ as
@@ -79,44 +92,50 @@ For the rest of the chapter, let $G=(V,E)$ be an undirected graph, where $V=\{v_
 %	\end{displaymath}
 %\end{definition}
 
+\subsection{The graph partitioning problem}
+In order to introduce the graph partitioning problem in its different settings, the mathematical definition of the concepts involved are presented below.
 \begin{definition}
-	Given a graph $G = (V, E)$, a \textit{partition } of $G$ is a collection of $k$ subsets $P_1, P_2, ..., P_k\subset V$ such that:
+	Given a graph $G = (V, E)$, a \textit{partition} of $G$ is a collection of $k$ subsets $P_1, P_2, ..., P_k\subset V$ such that:
 	\begin{enumerate}
 		\item $P_i \cap P_j = \emptyset$ for $i\neq j$, where $i,j\in \{1,2,...,k\}$
 		\item $\cup_{i=1}^k P_k = V$
 	\end{enumerate}	 
 \end{definition}
-
+    A partition of a graph can be seen as simply removing edges from the original graph in such way the obtained partitions are subgraphs. There are many ways a graph can be partitioned into subgraphs and the way it gets done depends completely on the application of interest. However, independently of the problem to solve, the objective relies on minimizing the connections between the partitions in the original graph. The following concepts provides a useful notation to turn the problem into an optimization one.
+    
 	For a collection $S\subset V$ of vertices, we define the \textit{edge boundary} $\partial(S)$ to consist of all edges in $E$ with exactly one endpoint in $S$, that is,
 	\begin{displaymath}
 		\partial(S) := \left\{ \left\{u, v\right\}  \in E \mid u \notin S \text{ and } v\in S \right\}
 	\end{displaymath}
+	
+	Now the problem turns into finding a partition $P_1, P_2, ..., P_k$ such that minimizes the \textit{cut value} of the partition, usually called just \textit{cut}, which is defined as
+	\begin{equation}
+	    \label{mincut}
+	    \textsc{Cut}(P_1, P_2, ..., P_k) := \frac{1}{2} \sum_{i=1}^k \partial(P_i)
+	\end{equation}
+	
+	The notion of cut allows to measure the quality of any partition, nevertheless solving the min cut problem ...
 
-	For two collections of vertices $A, B\subset V$ consider the following quantities related to the edges of 
+	For a collection of vertices $S\subset V$ consider the following quantities related to the edges of 
+	
 	\begin{displaymath}
-		W(A,B) := \sum_{v_i\in A}\sum_{v_j \in B}w_{ij}
-	\end{displaymath}
-	and
-	\begin{displaymath}
-		\textsc{Vol}(A) :=  \sum_{v_i \in A} d_i 
+		\textsc{Vol}(S) :=  \sum_{v_i \in S} d_i 
 	\end{displaymath}
 
-In order to measure the quality of the partition we introduce the following 
+ 
 we want to agroupe by similarity so its natural to 
 Cut value of that partition
-\begin{displaymath}
-	\textsc{Cut}(P_1, P_2, ..., P_k) := \frac{1}{2} \sum_{i=1}^k W(P_i, \overline{P_i})
-\end{displaymath}
+
 solve the mincut problem
 
 The next consider two different ways of measuring the size of the partitions
 \begin{align*}
-	\textsc{RatioCut}(P_1, P_2, ..., P_k) &:= \frac{1}{2} \sum_{i=1}^k \frac{W(P_i, \overline{P_i})}{\left| P_i \right|} \\
+	\textsc{RatioCut}(P_1, P_2, ..., P_k) &:= \frac{1}{2} \sum_{i=1}^k \frac{\partial\left(P_i\right)}{\left| P_i \right|} \\
 	&= \sum_{i=1}^k \frac{\textsc{Cut}(P_i, \overline{P_i})}{\left| P_i \right|}
 \end{align*}
 
 \begin{align*}
-	\textsc{NormCut}(P_1, P_2, ..., P_k) & := \frac{1}{2} \sum_{i=1}^k \frac{W(P_i, \overline{P_i})}{\textsc{Vol}(P_i)}\\
+	\textsc{NormCut}(P_1, P_2, ..., P_k) & := \frac{1}{2} \sum_{i=1}^k \frac{\partial\left(P_i\right)}{\textsc{Vol}(P_i)}\\
 	&= \sum_{i=1}^k \frac{\textsc{Cut}(P_i, \overline{P_i})}{\textsc{Vol}(P_i)}
 \end{align*}
 
@@ -159,7 +178,10 @@ The \textit{conductance} or \textit{Cheeger constant} of a graph $G$ is denoted 
 	\item Finally, assign the original vertex to cluster $j$ if and only if row $i$ of the matrix was assigned to cluster $j$
 \end{enumerate}
 
-\subsection{The graph partitioning problem}
+\cite{hamilton}
+\cite{gatti}
+\cite{gap}
+
 
 \subsection{Spectral partitioning and Normalized Cut}
 

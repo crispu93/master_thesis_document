@@ -18,9 +18,11 @@
 \contentsline {section}{\numberline {1.7}Project organization}{1}{section.1.7}%
 \contentsline {chapter}{\chapternumberline {2}Theory and conceptual framework}{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Preliminaries}{3}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Graphs and Laplacian Matrix}{4}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}The graph partitioning problem}{7}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Spectral partitioning and Normalized Cut}{7}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.2}Graphs and Laplacian Matrices}{4}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}The Unnormalized Laplacian}{4}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Normalized Laplacians}{5}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}The graph partitioning problem}{5}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Spectral partitioning and Normalized Cut}{7}{subsection.2.2.4}%
 \contentsline {section}{\numberline {2.3}Literature review}{7}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Graph Convolutional Neural Networks and GraphSAGE}{7}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Generalizable Approximate Graph Partitioning (GAP) Framework}{7}{subsection.2.3.2}%

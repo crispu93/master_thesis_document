@@ -20,7 +20,6 @@
 \checkandfixthelayout
 \frenchspacing
 \usepackage{fouriernc}
-\usepackage[T1]{fontenc}
 %
 \OnehalfSpacing 
 \setsecnumdepth{subsection} 
@@ -65,10 +64,11 @@
 \pagestyle{myvf}
 \newcommand{\clearemptydoublepage}{\newpage{\thispagestyle{empty}\cleardoublepage}}
 \makeindex
+\usepackage{euscript}
 \usepackage{import}
 \usepackage{lipsum}					
 \usepackage{amsfonts} 					
-\usepackage[centertags]{amsmath}			
+\usepackage{amsmath}			
 \usepackage{stmaryrd}					
 \usepackage{amssymb}					
 \usepackage{amsthm}					
@@ -207,7 +207,9 @@
 \clearemptydoublepage
 %
 \backmatter
-\include{bibliografia}
+%\include{bibliografia}
+\bibliographystyle{plain}
+\bibliography{references}
 \clearemptydoublepage
 
 \end{document}

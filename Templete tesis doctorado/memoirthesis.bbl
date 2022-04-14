@@ -1,0 +1,19 @@
+\begin{thebibliography}{1}
+
+\bibitem{gatti}
+Alice Gatti, Zhixiong Hu, Tess Smidt, Esmond~G. Ng, and Pieter Ghysels.
+\newblock {\em Deep Learning and Spectral Embedding for Graph Partitioning},
+  pages 25--36.
+
+\bibitem{hamilton}
+William~L. Hamilton.
+\newblock Graph representation learning.
+\newblock {\em Synthesis Lectures on Artificial Intelligence and Machine
+  Learning}, 14(3):1--159.
+
+\bibitem{gap}
+Azade Nazi, Will Hang, Anna Goldie, Sujith Ravi, and Azalia Mirhoseini.
+\newblock Gap: Generalizable approximate graph partitioning framework.
+\newblock {\em ArXiv}, abs/1903.00614, 2019.
+
+\end{thebibliography}
