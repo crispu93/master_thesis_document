@@ -3,29 +3,28 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: memoirthesis.aux
 The style file: plain.bst
 Database file #1: references.bib
-Warning--empty publisher in gatti
-Warning--empty year in gatti
-Warning--empty year in hamilton
+Warning--empty publisher in gap2
+Warning--empty year in gap2
 You've used 3 entries,
             2118 wiz_defined-function locations,
-            515 strings with 4558 characters,
-and the built_in function-call counts, 1108 in all, are:
-= -- 97
-> -- 63
+            516 strings with 4595 characters,
+and the built_in function-call counts, 1191 in all, are:
+= -- 105
+> -- 74
 < -- 1
-+ -- 25
-- -- 22
-* -- 87
-:= -- 190
++ -- 30
+- -- 26
+* -- 95
+:= -- 205
 add.period$ -- 8
 call.type$ -- 3
-change.case$ -- 19
+change.case$ -- 21
 chr.to.int$ -- 0
-cite$ -- 6
+cite$ -- 5
 duplicate$ -- 41
-empty$ -- 78
-format.name$ -- 22
-if$ -- 226
+empty$ -- 79
+format.name$ -- 26
+if$ -- 242
 int.to.chr$ -- 0
 int.to.str$ -- 3
 missing$ -- 4
@@ -33,18 +32,18 @@ newline$ -- 17
 num.names$ -- 6
 pop$ -- 26
 preamble$ -- 1
-purify$ -- 17
+purify$ -- 19
 quote$ -- 0
-skip$ -- 28
+skip$ -- 29
 stack$ -- 0
-substring$ -- 50
+substring$ -- 57
 swap$ -- 10
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 10
-warning$ -- 3
+warning$ -- 2
 while$ -- 9
 width$ -- 4
-write$ -- 31
-(There were 3 warnings)
+write$ -- 32
+(There were 2 warnings)

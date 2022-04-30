@@ -22,11 +22,14 @@
 \contentsline {subsection}{\numberline {2.2.1}The Unnormalized Laplacian}{4}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Normalized Laplacians}{5}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.2.3}The graph partitioning problem}{5}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Spectral partitioning and Normalized Cut}{7}{subsection.2.2.4}%
-\contentsline {section}{\numberline {2.3}Literature review}{7}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Graph Convolutional Neural Networks and GraphSAGE}{7}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.2.4}Spectral partitioning and Normalized Cut}{6}{subsection.2.2.4}%
+\contentsline {section}{\numberline {2.3}Literature review}{6}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Graph Convolutional Neural Networks and GraphSAGE}{6}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Generalizable Approximate Graph Partitioning (GAP) Framework}{7}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}PinSAGE and Markov Chain Negative Sampling (MCNS)}{7}{subsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.2.1}Expected Normalized Cut Loss Function}{7}{subsubsection.2.3.2.1}%
+\contentsline {subsubsection}{\numberline {2.3.2.2}Embedding Module}{8}{subsubsection.2.3.2.2}%
+\contentsline {subsubsection}{\numberline {2.3.2.3}Partitioning Module}{8}{subsubsection.2.3.2.3}%
+\contentsline {subsection}{\numberline {2.3.3}PinSAGE and Markov Chain Negative Sampling (MCNS)}{8}{subsection.2.3.3}%
 \contentsline {chapter}{\chapternumberline {3}Proposed solution (Graph Partitioning for Large Graphs)}{9}{chapter.3}%
 \contentsline {chapter}{\chapternumberline {4}Experimental Results}{11}{chapter.4}%
 \contentsline {chapter}{\chapternumberline {5}Conclusion}{13}{chapter.5}%

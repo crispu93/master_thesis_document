@@ -27,3 +27,52 @@
   year={2019},
   volume={abs/1903.00614}
 }
+
+@article{metis,
+  title={A Fast and Highly Quality Multilevel Scheme for Partitioning Irregular Graphs},
+  author={George Karypis and Vipin Kumar},
+  journal={SIAM Journal on Scientific Computing},
+  year={1999},
+  volume={20},
+  number={1},
+  pages={359—392}
+}
+
+@inproceedings{graphsage,
+    author = {Hamilton, William L. and Ying, Rex and Leskovec, Jure},
+    title = {Inductive Representation Learning on Large Graphs},
+    year = {2017},
+    isbn = {9781510860964},
+    publisher = {Curran Associates Inc.},
+    address = {Red Hook, NY, USA},
+    abstract = {Low-dimensional embeddings of nodes in large graphs have proved extremely useful in a variety of prediction tasks, from content recommendation to identifying protein functions. However, most existing approaches require that all nodes in the graph are present during training of the embeddings; these previous approaches are inherently transductive and do not naturally generalize to unseen nodes. Here we present GraphSAGE, a general inductive framework that leverages node feature information (e.g., text attributes) to efficiently generate node embeddings for previously unseen data. Instead of training individual embeddings for each node, we learn a function that generates embeddings by sampling and aggregating features from a node's local neighborhood. Our algorithm outperforms strong baselines on three inductive node-classification benchmarks: we classify the category of unseen nodes in evolving information graphs based on citation and Reddit post data, and we show that our algorithm generalizes to completely unseen graphs using a multi-graph dataset of protein-protein interactions.},
+    booktitle = {Proceedings of the 31st International Conference on Neural Information Processing Systems},
+    pages = {1025–1035},
+    numpages = {11},
+    location = {Long Beach, California, USA},
+    series = {NIPS'17}
+    }
+
+@article{archive,
+author = {Soper, Alan and Walshaw, Chris and Cross, Mark},
+year = {2004},
+month = {06},
+pages = {225-241},
+title = {A Combined Evolutionary Search and Multilevel Optimisation Approach to Graph-Partitioning},
+volume = {29},
+journal = {Journal of Global Optimization},
+doi = {10.1023/B:JOGO.0000042115.44455.f3}
+}
+
+@inbook{gap2,
+author = {Alice Gatti and Zhixiong Hu and Tess Smidt and Esmond G. Ng and Pieter Ghysels},
+title = {Deep Learning and Spectral Embedding for Graph Partitioning},
+booktitle = {Proceedings of the 2022 SIAM Conference on Parallel Processing for Scientific Computing (PP)},
+chapter = {},
+pages = {25-36},
+doi = {10.1137/1.9781611977141.3},
+URL = {https://epubs.siam.org/doi/abs/10.1137/1.9781611977141.3},
+eprint = {https://epubs.siam.org/doi/pdf/10.1137/1.9781611977141.3},
+    abstract = { Abstract We present a graph bisection and partitioning algorithm based on graph neural networks. For each node in the graph, the network outputs probabilities for each of the partitions. The graph neural network consists of two modules: an embedding phase and a partitioning phase. The embedding phase is trained first by minimizing a loss function inspired by spectral graph theory. The partitioning module is trained through a loss function that corresponds to the expected value of the normalized cut. Both parts of the neural network rely on SAGE convolutional layers and graph coarsening using heavy edge matching. The multilevel structure of the neural network is inspired by the multigrid algorithm. Our approach generalizes very well to bigger graphs and has partition quality comparable to METIS, Scotch and spectral partitioning, with shorter runtime compared to METIS and spectral partitioning. }
+}
+

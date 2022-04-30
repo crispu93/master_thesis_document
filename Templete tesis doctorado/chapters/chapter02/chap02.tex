@@ -95,10 +95,10 @@ It is assumed that all graphs are undirected, meaning that if $(v_i, v_j)\in E$,
 \subsection{The graph partitioning problem}
 In order to introduce the graph partitioning problem in its different settings, the mathematical definition of the concepts involved are presented below.
 \begin{definition}
-	Given a graph $G = (V, E)$, a \textit{partition} of $G$ is a collection of $k$ subsets $P_1, P_2, ..., P_k\subset V$ such that:
+	Given a graph $G = (V, E)$ and an integer $K$, a \textit{partition} of $G$ is a collection of $K$ subsets $P_1, P_2, ..., P_K\subset V$ such that:
 	\begin{enumerate}
-		\item $P_i \cap P_j = \emptyset$ for $i\neq j$, where $i,j\in \{1,2,...,k\}$
-		\item $\cup_{i=1}^k P_k = V$
+		\item $P_i \cap P_j = \emptyset$ for $i\neq j$, where $i,j\in \{1,2,...,K\}$
+		\item $\cup_{k=1}^K P_k = V$
 	\end{enumerate}	 
 \end{definition}
     A partition of a graph can be seen as simply removing edges from the original graph in such way the obtained partitions are subgraphs. There are many ways a graph can be partitioned into subgraphs and the way it gets done depends completely on the application of interest. However, independently of the problem to solve, the objective relies on minimizing the connections between the partitions in the original graph. The following concepts provides a useful notation to turn the problem into an optimization one.
@@ -111,7 +111,7 @@ In order to introduce the graph partitioning problem in its different settings, 
 	Now the problem turns into finding a partition $P_1, P_2, ..., P_k$ such that minimizes the \textit{cut value} of the partition, usually called just \textit{cut}, which is defined as
 	\begin{equation}
 	    \label{mincut}
-	    \textsc{Cut}(P_1, P_2, ..., P_k) := \frac{1}{2} \sum_{i=1}^k \partial(P_i)
+	    \textsc{Cut}(P_1, P_2, ..., P_K) := \frac{1}{2} \sum_{k=1}^K \left|\partial(P_k)\right|
 	\end{equation}
 	
 	The notion of cut allows to measure the quality of any partition, nevertheless solving the min cut problem ...
@@ -130,15 +130,17 @@ solve the mincut problem
 
 The next consider two different ways of measuring the size of the partitions
 \begin{align*}
-	\textsc{RatioCut}(P_1, P_2, ..., P_k) &:= \frac{1}{2} \sum_{i=1}^k \frac{\partial\left(P_i\right)}{\left| P_i \right|} \\
-	&= \sum_{i=1}^k \frac{\textsc{Cut}(P_i, \overline{P_i})}{\left| P_i \right|}
+	\textsc{RatioCut}(P_1, P_2, ..., P_K) &:= \frac{1}{2} \sum_{k=1}^K \frac{\left|\partial\left(P_k\right)\right|}{\left| P_k \right|} \\
+	&= \sum_{k=1}^K \frac{\textsc{Cut}(P_k, \overline{P_k})}{\left| P_k \right|}
 \end{align*}
 
 \begin{align*}
-	\textsc{NormCut}(P_1, P_2, ..., P_k) & := \frac{1}{2} \sum_{i=1}^k \frac{\partial\left(P_i\right)}{\textsc{Vol}(P_i)}\\
-	&= \sum_{i=1}^k \frac{\textsc{Cut}(P_i, \overline{P_i})}{\textsc{Vol}(P_i)}
+	\textsc{NormCut}(P_1, P_2, ..., P_K) & := \frac{1}{2} \sum_{k=1}^K \frac{\left|\partial\left(P_k\right)\right|}{\textsc{Vol}(P_k)}\\
+	&= \sum_{k=1}^K \frac{\textsc{Cut}(P_k, \overline{P_k})}{\textsc{Vol}(P_k)}
 \end{align*}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\begin{comment}
 \textbf{The spectral method}
 \begin{enumerate}
 	\item Let $v$ denote the second smallest eigenvector of $\mathcal{L}$. Sort the vertices $i$ of $G$ in increasing order of $v_i$. Let the resulting ordering be $v_1 \leq v_2 \leq \cdots v_n$
@@ -181,14 +183,72 @@ The \textit{conductance} or \textit{Cheeger constant} of a graph $G$ is denoted 
 \cite{hamilton}
 \cite{gatti}
 \cite{gap}
-
+\end{comment}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Spectral partitioning and Normalized Cut}
+Here will be presented the derivation of the normalized cut as relaxation of the problem to solve the spectral partitioning problem
 
 \section{Literature review}
-
+Mention all the approaches that use Graph Neural Networks and its importance in solving graph related tasks
 \subsection{Graph Convolutional Neural Networks and GraphSAGE}
-
+Start with Grpah Convolutional Neural Networks (GCN) and its limitations. Emphasize in how GraphSAGE solve those limitations and how it extends the GCN capabilities
 \subsection{Generalizable Approximate Graph Partitioning (GAP) Framework}
+From all the Deep Learning approaches that solve the Graph Partitioning problem, one of the most notorious, not only for its simplicity but for the exceptional results, is the \textit{Generalizable Approximate Graph Partitioning} framework better known as GAP~\cite{gap}.
+
+GAP is a Graph Neural Network approach that propose a continuous relaxation of the problem using a differentiable loss function that is based on the normalized cut. According to Nazi et al.~\cite{gap}, it is an unsupervised learning algorithm that is capable of generalization, meaning that it can be trained in small graphs and its capable of generalize into unseen much larger ones. This section describes the model described by them in the original paper which consists of two modules: the Graph Embedding Module and the Graph Partitioning Module.
+
+The framework takes a graph $G = (V, E)$, where $V = \left\{ v_1, v_2, ..., v_n\right\}$, as input and outputs the probabilities tensor $Y\in \mathbb R^{n\times K}$, where $Y_{ik}$ represents the probability that node $v_i$ belongs to partition $P_k$. %being $P_1, P_2, ..., P_k$ 
+
+\subsubsection{Expected Normalized Cut Loss Function}
+Recall the normalized cut given by
+\begin{equation}
+    \label{eq:normalized_cut}
+        \textsc{NormCut}(P_1, P_2, ..., P_K) = \sum_{k=1}^K \frac{\textsc{Cut}(P_k, \overline{P_k})}{\textsc{Vol}(P_k)}
+\end{equation}
+    
+In order to calculate the normalized cut expected value, one need compute the expected value of $\textsc{Cut}(P_k, \overline{P_k})$ and $\textsc{Vol}(P_k)$ from Equation~\ref{eq:normalized_cut}. For the deduction of those quantities, it will be followed an approach similar to the one presented in~\citep{gap2}.
+
+Since $Y_{ik}$ represents the probability that node $v_i\in P_k$, $1 - Y_{ik}$ is the probability that $v_i\notin P_k$, and hence 
+\begin{equation}
+    \label{eq:first_expected_cut}
+    \mathbb{E}[\textsc{Cut}(P_k, \overline{P_k})] = \sum_{i=1}^{|V|} \sum_{v_j\in\EuScript{N}(v_i)} Y_{ik}(1-Y_{jk})
+\end{equation}
+Due to the fact that for a given node, the adjacent nodes can be retrieved from the adjacency matrix $A$, Equation~\ref{eq:first_expected_cut} can be rewritten as follows:
+\begin{equation}
+    \label{eq:expected_cut}
+    \mathbb{E}[\textsc{Cut}(P_k, \overline{P_k})] = \sum_{i=1}^{|V|}\sum_{j=1}^{|V|}Y_{ik}(1-Y_{kj}^T)A_{ij} 
+\end{equation}
+
+Keeping in mind that $\textsc{Vol}(P_k)$ is the sum over the degrees, define $\Delta$ to be a column tensor where $\Delta_i$ is the degree of the node $v_i\in V$. Then, given $Y$ one can calculate the expected value of $\textsc{Vol}(P_k)$ as follows:
+\begin{equation}
+    \label{eq:expected_vol}
+    \begin{split}
+        \Gamma &= Y^T\Delta \\
+        \mathbb{E}[\textsc{Vol}&(P_k)] = \Gamma_k
+    \end{split}
+\end{equation}
+
+From the results obtained in Equation~\ref{eq:expected_cut} and Equation~\ref{eq:expected_vol}, it is obtained a way to calculate the expected value of $\textsc{NormCut}(P_1, P_2, ..., P_K)$, obtaining
+\begin{equation}
+    \label{eq:expected_norm_cut}
+    \mathbb{E}[\textsc{NormCut}(P_1, P_2, ..., P_K)] = \sum_{k=1}^K\sum_{i=1}^{|V|}\sum_{j=1}^{|V|}\frac{Y_{ik}(1-Y_{kj}^T)A_{ij}}{\Gamma_k}
+\end{equation}
+
+Nazi et al.~\cite{gap}, also showed that given the probability tensor $Y$ one can evaluate how balanced those partitions.
+Note that the sum of the columns in $Y$ is the expected number of nodes in each partition, i.e., $\mathbb{E}[|P_k|]=\sum_{i=1}^{|V|}Y_{ik}$. In the other hand, in order to have balanced partitions, the number of nodes in each one should be $\frac{|V|}{K}$. As a consequence, the quantity $\left|\sum_{i=1}^{|V|}Y_{ik} - \frac{|V|}{K}\right|$ measures how balanced the partition $P_k$ is.
+
+Using the last result, replacing the absolute value by the squared function, together with Equation~\ref{eq:expected_norm_cut}, one can derive the loss function used in GAP that minimizes the expected value of the normalized cut at the same time that intends to balance the cardinalities of the partitions:
+
+\begin{equation}
+    \label{eq:loss_function}
+    \mathcal{L} = \sum_{k=1}^K\sum_{i=1}^{|V|}\sum_{j=1}^{|V|}\frac{Y_{ik}(1-Y_{kj}^T)A_{ij}}{\Gamma_k} + \sum_{k=1}^K\left(\sum_{i=1}^{|V|}Y_{ik} - \frac{|V|}{K}\right)^2
+\end{equation}
+
+\subsubsection{Embedding Module}
+
+
+\subsubsection{Partitioning Module}
+
 
 \subsection{PinSAGE and Markov Chain Negative Sampling (MCNS)}

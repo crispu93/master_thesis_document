@@ -1,19 +1,19 @@
 \begin{thebibliography}{1}
 
-\bibitem{gatti}
+\bibitem{gap2}
 Alice Gatti, Zhixiong Hu, Tess Smidt, Esmond~G. Ng, and Pieter Ghysels.
 \newblock {\em Deep Learning and Spectral Embedding for Graph Partitioning},
   pages 25--36.
-
-\bibitem{hamilton}
-William~L. Hamilton.
-\newblock Graph representation learning.
-\newblock {\em Synthesis Lectures on Artificial Intelligence and Machine
-  Learning}, 14(3):1--159.
 
 \bibitem{gap}
 Azade Nazi, Will Hang, Anna Goldie, Sujith Ravi, and Azalia Mirhoseini.
 \newblock Gap: Generalizable approximate graph partitioning framework.
 \newblock {\em ArXiv}, abs/1903.00614, 2019.
+
+\bibitem{archive}
+Alan Soper, Chris Walshaw, and Mark Cross.
+\newblock A combined evolutionary search and multilevel optimisation approach
+  to graph-partitioning.
+\newblock {\em Journal of Global Optimization}, 29:225--241, 06 2004.
 
 \end{thebibliography}

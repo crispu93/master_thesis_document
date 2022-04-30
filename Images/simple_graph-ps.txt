@@ -1,0 +1,43 @@
+\documentclass[10pt]{article}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\definecolor{zzttff}{rgb}{0.6,0.2,1}
+\definecolor{ffvvqq}{rgb}{1,0.3333333333333333,0}
+\definecolor{ccqqqq}{rgb}{0.8,0,0}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\clip(-8.02,-7.7) rectangle (13.78,6.72);
+\draw [line width=2pt] (-5.24,0.42)-- (-2.96,2.14);
+\draw [line width=2pt] (-2.96,2.14)-- (-0.86,-1.7);
+\draw [line width=2pt] (-4.36,-1.02)-- (-0.86,-1.7);
+\draw [line width=2pt] (-4.36,-1.02)-- (-5.24,0.42);
+\draw [line width=2pt] (0.88,1)-- (4.26,2.92);
+\draw [line width=2pt] (4.26,2.92)-- (6.2,0.84);
+\draw [line width=2pt] (6.2,0.84)-- (3.62,-1.92);
+\draw [line width=2pt] (0.88,1)-- (3.62,-1.92);
+\draw [line width=2pt,dash pattern=on 1pt off 1pt,color=ccqqqq] (0.88,1)-- (-0.86,-1.7);
+\draw [line width=2pt,dash pattern=on 1pt off 1pt,color=ccqqqq] (4.26,2.92)-- (-2.96,2.14);
+\draw [line width=2pt,dash pattern=on 1pt off 1pt,color=ccqqqq] (-0.86,-1.7)-- (3.62,-1.92);
+\draw [line width=2pt] (3.62,-1.92)-- (4.26,2.92);
+\draw [line width=2pt] (0.88,1)-- (6.2,0.84);
+\draw [line width=2pt] (-4.36,-1.02)-- (-2.96,2.14);
+\draw [line width=2pt] (-5.24,0.42)-- (-0.86,-1.7);
+\draw [shift={(-4.579090909090907,-0.165)},line width=2pt]  plot[domain=2.4170459389567274:4.963238173123914,variable=\t]({1*0.8826243971510648*cos(\t r)+0*0.8826243971510648*sin(\t r)},{0*0.8826243971510648*cos(\t r)+1*0.8826243971510648*sin(\t r)});
+\draw [shift={(2.8556132344552174,1.380405019965775)},line width=2pt]  plot[domain=4.939980176496047:6.122984325760261,variable=\t]({1*3.3877662881543795*cos(\t r)+0*3.3877662881543795*sin(\t r)},{0*3.3877662881543795*cos(\t r)+1*3.3877662881543795*sin(\t r)});
+\draw [rotate around={67.12633480937323:(3.44,0.76)},line width=2pt,color=ffvvqq,fill=ffvvqq,fill opacity=0.2] (3.44,0.76) ellipse (4.151333212207351cm and 3.084407145429378cm);
+\draw [rotate around={-63.28822499636915:(-3.37,0.14)},line width=2pt,color=zzttff,fill=zzttff,fill opacity=0.2] (-3.37,0.14) ellipse (4.325470993938847cm and 2.5515484160419746cm);
+\begin{scriptsize}
+\draw [fill=black] (-5.24,0.42) circle (4.5pt);
+\draw [fill=black] (-2.96,2.14) circle (4.5pt);
+\draw [fill=black] (-0.86,-1.7) circle (4.5pt);
+\draw [fill=black] (-4.36,-1.02) circle (4.5pt);
+\draw [fill=black] (0.88,1) circle (4.5pt);
+\draw [fill=black] (4.26,2.92) circle (4.5pt);
+\draw [fill=black] (6.2,0.84) circle (4.5pt);
+\draw [fill=black] (3.62,-1.92) circle (4.5pt);
+\end{scriptsize}
+\end{tikzpicture}
+\end{document}
