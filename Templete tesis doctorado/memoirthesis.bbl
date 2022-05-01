@@ -5,6 +5,17 @@ Alice Gatti, Zhixiong Hu, Tess Smidt, Esmond~G. Ng, and Pieter Ghysels.
 \newblock {\em Deep Learning and Spectral Embedding for Graph Partitioning},
   pages 25--36.
 
+\bibitem{xavier}
+Xavier Glorot and Yoshua Bengio.
+\newblock Understanding the difficulty of training deep feedforward neural
+  networks.
+\newblock In {\em AISTATS}, 2010.
+
+\bibitem{gap1}
+Anna Goldie, Sujith Ravi, and Azalia Mirhoseini.
+\newblock A deep learning framework for graph partitioning.
+\newblock 2019.
+
 \bibitem{gap}
 Azade Nazi, Will Hang, Anna Goldie, Sujith Ravi, and Azalia Mirhoseini.
 \newblock Gap: Generalizable approximate graph partitioning framework.

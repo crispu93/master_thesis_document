@@ -2,7 +2,7 @@
 % File: chap02.tex
 %
 \let\textcircled=\pgftextcircled
-\chapter{Theory and conceptual framework}
+chapter{Theory and conceptual framework}
 \label{Chapter2}
 
 \section{Preliminaries}
@@ -108,7 +108,7 @@ In order to introduce the graph partitioning problem in its different settings, 
 		\partial(S) := \left\{ \left\{u, v\right\}  \in E \mid u \notin S \text{ and } v\in S \right\}
 	\end{displaymath}
 	
-	Now the problem turns into finding a partition $P_1, P_2, ..., P_k$ such that minimizes the \textit{cut value} of the partition, usually called just \textit{cut}, which is defined as
+	Now the problem turns into finding a partition $P_1, P_2, ..., P_K$ such that minimizes the \textit{cut value} of the partition, usually called just \textit{cut}, which is defined as
 	\begin{equation}
 	    \label{mincut}
 	    \textsc{Cut}(P_1, P_2, ..., P_K) := \frac{1}{2} \sum_{k=1}^K \left|\partial(P_k)\right|
@@ -116,7 +116,7 @@ In order to introduce the graph partitioning problem in its different settings, 
 	
 	The notion of cut allows to measure the quality of any partition, nevertheless solving the min cut problem ...
 
-	For a collection of vertices $S\subset V$ consider the following quantities related to the edges of 
+	For a collection of vertices $S\subset V$, consider the following quantities related to the edges of 
 	
 	\begin{displaymath}
 		\textsc{Vol}(S) :=  \sum_{v_i \in S} d_i 
@@ -179,10 +179,6 @@ The \textit{conductance} or \textit{Cheeger constant} of a graph $G$ is denoted 
 	\item Treating each row of $Y$ as a point in $\mathbb R^k$, cluster them into $k$ clusters using $K-means$
 	\item Finally, assign the original vertex to cluster $j$ if and only if row $i$ of the matrix was assigned to cluster $j$
 \end{enumerate}
-
-\cite{hamilton}
-\cite{gatti}
-\cite{gap}
 \end{comment}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -191,14 +187,18 @@ Here will be presented the derivation of the normalized cut as relaxation of the
 
 \section{Literature review}
 Mention all the approaches that use Graph Neural Networks and its importance in solving graph related tasks
+achieving superior performance on many graph-related tasks
 \subsection{Graph Convolutional Neural Networks and GraphSAGE}
+Talk a little bit about traditional node embeddings approaches and its delimitations.
+Talk about the message passing framework
 Start with Grpah Convolutional Neural Networks (GCN) and its limitations. Emphasize in how GraphSAGE solve those limitations and how it extends the GCN capabilities
 \subsection{Generalizable Approximate Graph Partitioning (GAP) Framework}
-From all the Deep Learning approaches that solve the Graph Partitioning problem, one of the most notorious, not only for its simplicity but for the exceptional results, is the \textit{Generalizable Approximate Graph Partitioning} framework better known as GAP~\cite{gap}.
+From all the Deep Learning approaches that solve the Graph Partitioning problem, one of the most notorious not only for its simplicity but for its exceptional results, is the \textit{Generalizable Approximate Graph Partitioning} framework better known as GAP~\cite{gap1}.
 
-GAP is a Graph Neural Network approach that propose a continuous relaxation of the problem using a differentiable loss function that is based on the normalized cut. According to Nazi et al.~\cite{gap}, it is an unsupervised learning algorithm that is capable of generalization, meaning that it can be trained in small graphs and its capable of generalize into unseen much larger ones. This section describes the model described by them in the original paper which consists of two modules: the Graph Embedding Module and the Graph Partitioning Module.
+GAP is a Graph Neural Network approach that proposes a continuous relaxation of the problem using a differentiable loss function that is based on the normalized cut. According to Nazi et al.~\cite{gap}, it is an unsupervised learning algorithm that is capable of generalization, meaning that it can be trained in small graphs, which allows it to generalize into unseen much larger ones. This section describes the model described in the original paper which consists of two modules: the Graph Embedding Module and the Graph Partitioning Module.
 
-The framework takes a graph $G = (V, E)$, where $V = \left\{ v_1, v_2, ..., v_n\right\}$, as input and outputs the probabilities tensor $Y\in \mathbb R^{n\times K}$, where $Y_{ik}$ represents the probability that node $v_i$ belongs to partition $P_k$. %being $P_1, P_2, ..., P_k$ 
+In the following subsections, it is assumed that the framework takes a graph $G = (V, E)$ as input, where $V = \left\{ v_1, v_2, ..., v_n\right\}$, and outputs the probabilities tensor $Y\in \mathbb R^{n\times K}$, where $Y_{ik}$ represents the probability that node $v_i$ belongs to partition $P_k$. %being $P_1, P_2, ..., P_k$ 
+Before going into the model description, the deduction of the loss function is as follows.
 
 \subsubsection{Expected Normalized Cut Loss Function}
 Recall the normalized cut given by
@@ -207,20 +207,20 @@ Recall the normalized cut given by
         \textsc{NormCut}(P_1, P_2, ..., P_K) = \sum_{k=1}^K \frac{\textsc{Cut}(P_k, \overline{P_k})}{\textsc{Vol}(P_k)}
 \end{equation}
     
-In order to calculate the normalized cut expected value, one need compute the expected value of $\textsc{Cut}(P_k, \overline{P_k})$ and $\textsc{Vol}(P_k)$ from Equation~\ref{eq:normalized_cut}. For the deduction of those quantities, it will be followed an approach similar to the one presented in~\citep{gap2}.
+In order to calculate the normalized cut expected value, one needs to compute the expected value of $\textsc{Cut}(P_k, \overline{P_k})$ and $\textsc{Vol}(P_k)$ from Equation~\ref{eq:normalized_cut}. For the deduction of those quantities, an approach similar to the one presented in~\citep{gap2} will be followed .
 
-Since $Y_{ik}$ represents the probability that node $v_i\in P_k$, $1 - Y_{ik}$ is the probability that $v_i\notin P_k$, and hence 
+Since $Y_{ik}$ represents the probability that node $v_i\in P_k$, $1 - Y_{ik}$ is the probability that $v_i\notin P_k$, hence 
 \begin{equation}
     \label{eq:first_expected_cut}
     \mathbb{E}[\textsc{Cut}(P_k, \overline{P_k})] = \sum_{i=1}^{|V|} \sum_{v_j\in\EuScript{N}(v_i)} Y_{ik}(1-Y_{jk})
 \end{equation}
-Due to the fact that for a given node, the adjacent nodes can be retrieved from the adjacency matrix $A$, Equation~\ref{eq:first_expected_cut} can be rewritten as follows:
+Due to the fact that for a given node the adjacent nodes can be retrieved from the adjacency matrix $A$, Equation~\ref{eq:first_expected_cut} can be rewritten as follows:
 \begin{equation}
     \label{eq:expected_cut}
     \mathbb{E}[\textsc{Cut}(P_k, \overline{P_k})] = \sum_{i=1}^{|V|}\sum_{j=1}^{|V|}Y_{ik}(1-Y_{kj}^T)A_{ij} 
 \end{equation}
 
-Keeping in mind that $\textsc{Vol}(P_k)$ is the sum over the degrees, define $\Delta$ to be a column tensor where $\Delta_i$ is the degree of the node $v_i\in V$. Then, given $Y$ one can calculate the expected value of $\textsc{Vol}(P_k)$ as follows:
+Keeping in mind that $\textsc{Vol}(P_k)$ is the sum of the degrees of the nodes in $P_k$, $\Delta$ is defined to be the column tensor where $\Delta_i$ is the degree of the node $v_i\in V$. Then, given $Y$, one can calculate the expected value of $\textsc{Vol}(P_k)$ as follows:
 \begin{equation}
     \label{eq:expected_vol}
     \begin{split}
@@ -229,26 +229,39 @@ Keeping in mind that $\textsc{Vol}(P_k)$ is the sum over the degrees, define $\D
     \end{split}
 \end{equation}
 
-From the results obtained in Equation~\ref{eq:expected_cut} and Equation~\ref{eq:expected_vol}, it is obtained a way to calculate the expected value of $\textsc{NormCut}(P_1, P_2, ..., P_K)$, obtaining
+From the results obtained in Equation~\ref{eq:expected_cut} and Equation~\ref{eq:expected_vol}, a way to calculate the expected value of $\textsc{NormCut}(P_1, P_2, ..., P_K)$ is given by:
 \begin{equation}
     \label{eq:expected_norm_cut}
     \mathbb{E}[\textsc{NormCut}(P_1, P_2, ..., P_K)] = \sum_{k=1}^K\sum_{i=1}^{|V|}\sum_{j=1}^{|V|}\frac{Y_{ik}(1-Y_{kj}^T)A_{ij}}{\Gamma_k}
 \end{equation}
 
-Nazi et al.~\cite{gap}, also showed that given the probability tensor $Y$ one can evaluate how balanced those partitions.
-Note that the sum of the columns in $Y$ is the expected number of nodes in each partition, i.e., $\mathbb{E}[|P_k|]=\sum_{i=1}^{|V|}Y_{ik}$. In the other hand, in order to have balanced partitions, the number of nodes in each one should be $\frac{|V|}{K}$. As a consequence, the quantity $\left|\sum_{i=1}^{|V|}Y_{ik} - \frac{|V|}{K}\right|$ measures how balanced the partition $P_k$ is.
+Nazi et al.~\cite{gap} also showed that given the probability tensor $Y$, one can evaluate how balanced those partitions are.
+Note that the sum of the columns in $Y$ is the expected number of nodes in each partition, i.e., $\mathbb{E}[|P_k|]=\sum_{i=1}^{|V|}Y_{ik}$. On the other hand, in order to have balanced partitions, the number of nodes in each one should be $\frac{|V|}{K}$. As a consequence, the quantity $\left|\sum_{i=1}^{|V|}Y_{ik} - \frac{|V|}{K}\right|$ measures how balanced the partition $P_k$ is.
 
-Using the last result, replacing the absolute value by the squared function, together with Equation~\ref{eq:expected_norm_cut}, one can derive the loss function used in GAP that minimizes the expected value of the normalized cut at the same time that intends to balance the cardinalities of the partitions:
+Using the last result, and replacing the absolute value by the squared function, one can derive the loss function from Equation~\ref{eq:expected_norm_cut}. This is the one originally used in GAP that intends to minimize the expected value of the normalized cut and at the same time balances the cardinalities of the partitions:
 
 \begin{equation}
     \label{eq:loss_function}
     \mathcal{L} = \sum_{k=1}^K\sum_{i=1}^{|V|}\sum_{j=1}^{|V|}\frac{Y_{ik}(1-Y_{kj}^T)A_{ij}}{\Gamma_k} + \sum_{k=1}^K\left(\sum_{i=1}^{|V|}Y_{ik} - \frac{|V|}{K}\right)^2
 \end{equation}
 
-\subsubsection{Embedding Module}
+\subsubsection{The Embedding Module} In the graph embedding module, the algorithm learns node embeddings by encoding local structure information and the node features. The embeddings are calculated using Graph Neural Networks (GNN) which have become very popular during the recent years. To ensure generalization, the GAP authors opted for an inductive GNN approach by leveraging GraphSAGE with a Graph Convolutional Network (GCN) based approach.
 
+In the paper where GAP was presented, the authors used a $3$-layer GCN using Xavier initialization that can be found in~\cite{xavier}
+\begin{displaymath}
+    Z = \tanh(\hat{A}\tanh(\hat{A}\tanh(\hat{A}X\boldsymbol W^{(0)})\boldsymbol W^{(1)})\boldsymbol W^{(2)})
+\end{displaymath}
+where $\hat{A} = (D+I)^{-\frac{1}{2}}(A+I)(D+I)^{-\frac{1}{2}}$ is a normalized variant of the adjacency matrix with self loops, $X$ is the feature matrix, and $\boldsymbol W^{(l)}$ is a learnable parameter matrix.
 
-\subsubsection{Partitioning Module}
+\subsubsection{The Partitioning Module}
+The second module of GAP is composed of a fully connected layer that takes as input a node embedding vector $\boldsymbol z_u$ generated in the embedding module. This fully connected layer is then followed by a softmax layer 
+trained to minimize the expected normalized loss function given by Equation~\ref{eq:loss_function}.
+
+This module is the responsible for partitioning the graph by returning $Y\in \mathbb R^{|V|\times K}$, the probabilities matrix that each node belongs to each of the partitions $P_1, P_2, ..., P_K$. At the same time, it ensures that for a given node, the sum of the probabilities of belonging each of the partitions is $1$
+\begin{displaymath}
+    \sum_{k=0}^K Y_{ik} = 1
+\end{displaymath}
+
 
 
 \subsection{PinSAGE and Markov Chain Negative Sampling (MCNS)}

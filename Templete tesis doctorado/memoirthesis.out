@@ -13,21 +13,20 @@
 \BOOKMARK [1][-]{section.1.5}{Research Problem}{chapter.1}% 13
 \BOOKMARK [1][-]{section.1.6}{Hypothesis}{chapter.1}% 14
 \BOOKMARK [1][-]{section.1.7}{Project organization}{chapter.1}% 15
-\BOOKMARK [0][-]{chapter.2}{Theory and conceptual framework}{}% 16
-\BOOKMARK [1][-]{section.2.1}{Preliminaries}{chapter.2}% 17
-\BOOKMARK [1][-]{section.2.2}{Graphs and Laplacian Matrices}{chapter.2}% 18
-\BOOKMARK [2][-]{subsection.2.2.1}{The Unnormalized Laplacian}{section.2.2}% 19
-\BOOKMARK [2][-]{subsection.2.2.2}{Normalized Laplacians}{section.2.2}% 20
-\BOOKMARK [2][-]{subsection.2.2.3}{The graph partitioning problem}{section.2.2}% 21
-\BOOKMARK [2][-]{subsection.2.2.4}{Spectral partitioning and Normalized Cut}{section.2.2}% 22
-\BOOKMARK [1][-]{section.2.3}{Literature review}{chapter.2}% 23
-\BOOKMARK [2][-]{subsection.2.3.1}{Graph Convolutional Neural Networks and GraphSAGE}{section.2.3}% 24
-\BOOKMARK [2][-]{subsection.2.3.2}{Generalizable Approximate Graph Partitioning \(GAP\) Framework}{section.2.3}% 25
-\BOOKMARK [2][-]{subsection.2.3.3}{PinSAGE and Markov Chain Negative Sampling \(MCNS\)}{section.2.3}% 26
-\BOOKMARK [0][-]{chapter.3}{Proposed solution \(Graph Partitioning for Large Graphs\)}{}% 27
-\BOOKMARK [0][-]{chapter.4}{Experimental Results}{}% 28
-\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 29
-\BOOKMARK [1][-]{section.5.1}{Contributions}{chapter.5}% 30
-\BOOKMARK [1][-]{section.5.2}{Recommendations and future work}{chapter.5}% 31
-\BOOKMARK [0][-]{appendix.A}{Analisis}{}% 32
-\BOOKMARK [0][-]{appendix*.8}{Bibliography}{}% 33
+\BOOKMARK [1][-]{section.1.8}{Preliminaries}{chapter.1}% 16
+\BOOKMARK [1][-]{section.1.9}{Graphs and Laplacian Matrices}{chapter.1}% 17
+\BOOKMARK [2][-]{subsection.1.9.1}{The Unnormalized Laplacian}{section.1.9}% 18
+\BOOKMARK [2][-]{subsection.1.9.2}{Normalized Laplacians}{section.1.9}% 19
+\BOOKMARK [2][-]{subsection.1.9.3}{The graph partitioning problem}{section.1.9}% 20
+\BOOKMARK [2][-]{subsection.1.9.4}{Spectral partitioning and Normalized Cut}{section.1.9}% 21
+\BOOKMARK [1][-]{section.1.10}{Literature review}{chapter.1}% 22
+\BOOKMARK [2][-]{subsection.1.10.1}{Graph Convolutional Neural Networks and GraphSAGE}{section.1.10}% 23
+\BOOKMARK [2][-]{subsection.1.10.2}{Generalizable Approximate Graph Partitioning \(GAP\) Framework}{section.1.10}% 24
+\BOOKMARK [2][-]{subsection.1.10.3}{PinSAGE and Markov Chain Negative Sampling \(MCNS\)}{section.1.10}% 25
+\BOOKMARK [0][-]{chapter.2}{Proposed solution \(Graph Partitioning for Large Graphs\)}{}% 26
+\BOOKMARK [0][-]{chapter.3}{Experimental Results}{}% 27
+\BOOKMARK [0][-]{chapter.4}{Conclusion}{}% 28
+\BOOKMARK [1][-]{section.4.1}{Contributions}{chapter.4}% 29
+\BOOKMARK [1][-]{section.4.2}{Recommendations and future work}{chapter.4}% 30
+\BOOKMARK [0][-]{appendix.A}{Analisis}{}% 31
+\BOOKMARK [0][-]{appendix*.8}{Bibliography}{}% 32
