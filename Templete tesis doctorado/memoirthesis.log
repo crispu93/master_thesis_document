@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.1)  1 MAY 2022 08:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.1)  1 MAY 2022 18:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1814,19 +1814,19 @@ File: mt-eus.cfg 2006/07/28 v1.2 microtype config. file: AMS Euler Script (RS)
 [6] [7]
 
 LaTeX Font Warning: Font shape `U/stmry/b/n' undefined
-(Font)              using `U/stmry/m/n' instead on input line 252.
+(Font)              using `U/stmry/m/n' instead on input line 253.
 
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <9> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 252.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 253.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 252.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 253.
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <9> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 252.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 253.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 252.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 253.
 
 [8]) [9] [10
 
@@ -1860,12 +1860,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ] [18
 
-] (./memoirthesis.bbl) [19
+] (./memoirthesis.bbl [19
 
 
-] [20
-
-]
+]) [20]
 No complaints by nag.
 \tf@toc=\write7
 \openout7 = `memoirthesis.toc'.
@@ -1889,11 +1887,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 30561 strings out of 483007
- 571619 string characters out of 5961758
- 1014214 words of memory out of 5000000
- 44549 multiletter control sequences out of 15000+600000
- 680762 words of font info for 258 fonts, out of 8000000 for 9000
+ 30597 strings out of 483007
+ 572078 string characters out of 5961758
+ 1014259 words of memory out of 5000000
+ 44558 multiletter control sequences out of 15000+600000
+ 682634 words of font info for 276 fonts, out of 8000000 for 9000
  112 hyphenation exceptions out of 8191
  52i,17n,80p,1012b,530s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -1907,10 +1905,10 @@ ic/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utop
 ia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putbi8a.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on memoirthesis.pdf (32 pages, 261965 bytes).
+Output written on memoirthesis.pdf (32 pages, 267673 bytes).
 PDF statistics:
- 417 PDF objects out of 1000 (max. 8388607)
- 366 compressed objects within 4 object streams
- 93 named destinations out of 1000 (max. 500000)
+ 424 PDF objects out of 1000 (max. 8388607)
+ 373 compressed objects within 4 object streams
+ 96 named destinations out of 1000 (max. 500000)
  41234 words of extra memory for PDF output out of 42996 (max. 10000000)
 

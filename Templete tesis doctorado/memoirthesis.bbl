@@ -21,10 +21,31 @@ Azade Nazi, Will Hang, Anna Goldie, Sujith Ravi, and Azalia Mirhoseini.
 \newblock Gap: Generalizable approximate graph partitioning framework.
 \newblock {\em ArXiv}, abs/1903.00614, 2019.
 
+\bibitem{deepwalk}
+Bryan Perozzi, Rami Al-Rfou, and Steven Skiena.
+\newblock Deepwalk: Online learning of social representations.
+\newblock In {\em Proceedings of the 20th ACM SIGKDD International Conference
+  on Knowledge Discovery and Data Mining}, KDD '14, page 701–710, New York,
+  NY, USA, 2014. Association for Computing Machinery.
+
+\bibitem{karateclub}
+Benedek Rozemberczki, Oliver Kiss, and Rik Sarkar.
+\newblock {Karate Club: An API Oriented Open-source Python Framework for
+  Unsupervised Learning on Graphs}.
+\newblock In {\em Proceedings of the 29th ACM International Conference on
+  Information and Knowledge Management (CIKM '20)}, page 3125–3132. ACM,
+  2020.
+
 \bibitem{archive}
 Alan Soper, Chris Walshaw, and Mark Cross.
 \newblock A combined evolutionary search and multilevel optimisation approach
   to graph-partitioning.
 \newblock {\em Journal of Global Optimization}, 29:225--241, 06 2004.
+
+\bibitem{deepwalk_hyper}
+Chen Yunfang, Li~Wang, Dehao Qi, and Wei Zhang.
+\newblock {\em Community Detection Based on DeepWalk in Large Scale Networks},
+  pages 568--583.
+\newblock 08 2020.
 
 \end{thebibliography}
