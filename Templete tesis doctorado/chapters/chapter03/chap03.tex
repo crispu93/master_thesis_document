@@ -40,6 +40,9 @@ http://www.cs.emory.edu/~jyang71/files/gnnfeature.pdf
     \includegraphics[scale=0.5]{partitioning_module}
 \end{center}
 
+and after playing a little bit
+
+although GCN have been shown to extract very useful information about graph topology we need to find a different way to get that information
 
 Some work on using Graph Neural Networks without features has been made. Use one hot representation or Initialize random feature matrices (Those methods have been shown to be equivalents and they do not generalize as mention in \citep{hamilton}. Other methods propose using applying methods as PCA to the adjacency matrix to extract the top k-eigenvalues but those approaches are computationaly very expensive, which is infeasible for large graphs and only and does not
 To help capturing local information related to the graph's structure a random walk approach was chosen, have been shown efficient representation learning techniques for graphs https://arxiv.org/pdf/1901.01346.pdf, random walk kernels to produce high quality graph representations https://proceedings.neurips.cc/paper/2020/file/ba95d78a7c942571185308775a97a3a0-Paper.pdf

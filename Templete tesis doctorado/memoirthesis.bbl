@@ -1,4 +1,9 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{compressgraphs}
+Giorgos Bouritsas, Andreas Loukas, Nikolaos Karalias, and Michael~M. Bronstein.
+\newblock Partition and code: learning how to compress graphs.
+\newblock In {\em NeurIPS}, 2021.
 
 \bibitem{gap2}
 Alice Gatti, Zhixiong Hu, Tess Smidt, Esmond~G. Ng, and Pieter Ghysels.
@@ -15,6 +20,24 @@ Xavier Glorot and Yoshua Bengio.
 Anna Goldie, Sujith Ravi, and Azalia Mirhoseini.
 \newblock A deep learning framework for graph partitioning.
 \newblock 2019.
+
+\bibitem{imagesegmentation}
+L.~Grady and E.L. Schwartz.
+\newblock Isoperimetric graph partitioning for image segmentation.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  28(3):469--475, 2006.
+
+\bibitem{hamilton}
+William~L. Hamilton.
+\newblock Graph representation learning.
+\newblock {\em Synthesis Lectures on Artificial Intelligence and Machine
+  Learning}, 14(3):1--159.
+
+\bibitem{deviceplacement}
+Milko Mitropolitsky, Zainab Abbas, and Amir~H. Payberah.
+\newblock Graph representation matters in device placement.
+\newblock {\em Proceedings of the Workshop on Distributed Infrastructures for
+  Deep Learning}, 2020.
 
 \bibitem{gap}
 Azade Nazi, Will Hang, Anna Goldie, Sujith Ravi, and Azalia Mirhoseini.
@@ -41,6 +64,13 @@ Alan Soper, Chris Walshaw, and Mark Cross.
 \newblock A combined evolutionary search and multilevel optimisation approach
   to graph-partitioning.
 \newblock {\em Journal of Global Optimization}, 29:225--241, 06 2004.
+
+\bibitem{islanding}
+Zhonglin Sun, Yannis Spyridis, Thomas Lagkas, Achilleas Sesis, Georgios
+  Efstathopoulos, and Panagiotis Sarigiannidis.
+\newblock End-to-end deep graph convolutional neural network approach for
+  intentional islanding in power systems considering load-generation balance.
+\newblock {\em Sensors}, 21(5), 2021.
 
 \bibitem{deepwalk_hyper}
 Chen Yunfang, Li~Wang, Dehao Qi, and Wei Zhang.

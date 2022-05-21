@@ -5,23 +5,75 @@
 \chapter{Introduction}
 \label{Chapter1}
 
-
-El cap\'itulo 1 inicia aqu\'i...
+This chapter provides to the reader the necessary information to get familiar with the present work. It intends to contextualize the reader with the topics in the subsequent chapters and show them the path that should be followed.
 
 \section{Presentation}
 
+
+The computational complexity behind solving Combinatorial Optimization problems is a very well known concern. 
+Combinatorial Optimization problems ... On one hand, it is necessary to keep researching for new theoretical results limitations and to more asumptions and use this knowledge to influence the way we approach that kind of problems. On the other hand, there is a need to solve those problems in real life and come up with practical and efficient solutions in a considerably small amount of time. The theoretical and practical are tied
+To deal with the computational complexity in solving problems of the Combinatorial Optimization type, different techniques have been proposed which are based on optimization strategies like Heuristic Methods or Integer Programming, just to mention a few.
+
+The ability to address the underlying issues that arise in this kind of problems has been improved drastically during the last years. Those huge steps forward towards need for fast approximations for 
+
+In terms of mathematical results and computing power, the technological progress that has taken place during the last decade has given rise to new ways to find algorithms that provide efficient solutions, particularly for graph-related Combinatorial Optimization problems.
+
+Some recent approaches are being designed to take advantage of Machine Learning capabilities. In particular, Deep Learning strategies are providing alternative ways to deal with some of the underlying issues that arise with those kinds of problems. For determined problems, those approaches have shown to be the most successful in terms of running time efficiency, less human intervention, and the quality of the solutions. \\
+
+Balanced graph partitioning is one of the fundamental Combinatorial Optimization problems and one of those who has gotten the best from Deep Learning.
+
+application to solve 
+time consuming and computationally too expensive to get solutions
+ 
+
 \section{Objectives}
 
-	\subsection{General objective}
-	
-	\subsection{Particular objective}
-	
+\subsection{General objective}
+\begin{itemize}
+    \item To develop an machine learning algorithm that solves the graph partitioning problem that works for large-scale graph instances.
+\end{itemize}
+\subsection{Particular objective}
+\begin{itemize}
+    \item To understand and analyze the Generalizable Approximate Partitioning (GAP) framework and to use it for solving the graph partitioning problem.
+    \item Based on GAP, design an algorithm that works for general graphs (non-attributed graphs) that relies completely on their structure.
+    \item To build a framework that is easy to modify in order to use different objective functions in the partitioning stage.
+    \item To explore different types of sampling and study the impact they have in the efficiency of the algorithm.
+\end{itemize}
 \section{Justification}
 
-\section{Limitations and delimitations of the project}
+Graphs are mathematical representations of what is colloquially known as networks. They are used to describe the relationships between objects which is adopted as a similitude measure and allows to model an extensive amount of real life problems. Due to their modeling capacity and their power of abstraction, they are widely studied in different areas of mathematics and computer science. 
+
+Applications of graph partitioning to real life:
+
+Graph partitioning plays an essential role in paralleling computations and the design of new algorithms on large graphs. For example device placement problem where one aims to distribute work accross multiple devices and have applications in Deep Learning to train Neural Networks accross multiple devices \cite{deviceplacement} 
+
+Intentional Islanding in Power Systems
+Considering Load-Generation Balance
+problem of intentional islanding in power systems considering load generation balance ~ \cite{islanding}
+
+Image segmentation~\cite{imagesegmentation}
+Applications of graph partitioning to solve graph-related problems:
+
+Graph partitioning it is used as a subrutine in tasks as graph compression ~ \cite{compressgraphs}
+\section{Limitations and project scope}
+\begin{itemize}
+    \item The sizes of the datasets
+    \item Values based on previous work
+    \item What assumptions do I make?
+    \item not distributed work which could improve
+    \item It only accepts a certain format SCOTCH and Networkx
+\end{itemize}
 
 \section{Research Problem}
+Graph partitioning algorithms based on DL
 
+https://arxiv.org/pdf/2104.03546.pdf
 \section{Hypothesis}
 
 \section{Project organization}
+
+Future work
+extend to different problem statements, such as balanced graph partitioning with tolerance or weighted graph partitioning.
+Study the real impact on choosing the way to extract the features and try different algorithms
+look for new ways the algorithm relies only on topological graph's structure
+To generalize the algorithm and code to construct graphs from the features

@@ -1,39 +1,38 @@
 \babel@toc {english}{}
 \babel@toc {english}{}
-\contentsline {chapter}{Resumen}{i}{chapter*.1}%
-\contentsline {chapter}{Abstract}{iii}{chapter*.2}%
-\contentsline {paragraph}{}{v}{section*.4}%
-\contentsline {chapter}{Contents}{vii}{section*.5}%
-\contentsline {chapter}{List of Figures}{ix}{section*.6}%
-\contentsline {chapter}{List of Tables}{xi}{section*.7}%
+\contentsline {chapter}{Abstract}{i}{chapter*.1}%
+\contentsline {chapter}{Contents}{iii}{section*.2}%
+\contentsline {chapter}{List of Figures}{v}{section*.3}%
+\contentsline {chapter}{List of Tables}{vii}{section*.4}%
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Presentation}{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Objectives}{1}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}General objective}{1}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Particular objective}{1}{subsection.1.2.2}%
-\contentsline {section}{\numberline {1.3}Justification}{1}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Limitations and delimitations of the project}{1}{section.1.4}%
-\contentsline {section}{\numberline {1.5}Research Problem}{1}{section.1.5}%
-\contentsline {section}{\numberline {1.6}Hypothesis}{1}{section.1.6}%
-\contentsline {section}{\numberline {1.7}Project organization}{1}{section.1.7}%
-\contentsline {section}{\numberline {1.8}Preliminaries}{3}{section.1.8}%
-\contentsline {section}{\numberline {1.9}Graphs and Laplacian Matrices}{3}{section.1.9}%
-\contentsline {subsection}{\numberline {1.9.1}The Unnormalized Laplacian}{4}{subsection.1.9.1}%
-\contentsline {subsection}{\numberline {1.9.2}Normalized Laplacians}{4}{subsection.1.9.2}%
-\contentsline {subsection}{\numberline {1.9.3}The graph partitioning problem}{5}{subsection.1.9.3}%
-\contentsline {subsection}{\numberline {1.9.4}Spectral partitioning and Normalized Cut}{6}{subsection.1.9.4}%
-\contentsline {section}{\numberline {1.10}Literature review}{6}{section.1.10}%
-\contentsline {subsection}{\numberline {1.10.1}Generalizable Approximate Graph Partitioning (GAP) Framework}{6}{subsection.1.10.1}%
-\contentsline {subsubsection}{\numberline {1.10.1.1}Expected Normalized Cut Loss Function}{7}{subsubsection.1.10.1.1}%
-\contentsline {subsubsection}{\numberline {1.10.1.2}The Embedding Module}{8}{subsubsection.1.10.1.2}%
-\contentsline {subsubsection}{\numberline {1.10.1.3}The Partitioning Module}{8}{subsubsection.1.10.1.3}%
-\contentsline {subsection}{\numberline {1.10.2}PinSAGE and Markov Chain Negative Sampling (MCNS)}{8}{subsection.1.10.2}%
-\contentsline {chapter}{\chapternumberline {2}Proposed solution (Graph Partitioning for Large Graphs)}{9}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Graph Convolutional Neural Networks and GraphSAGE}{9}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Node Features}{9}{section.2.2}%
-\contentsline {chapter}{\chapternumberline {3}Experimental Results}{13}{chapter.3}%
-\contentsline {chapter}{\chapternumberline {4}Conclusion}{15}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Contributions}{15}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Recommendations and future work}{15}{section.4.2}%
-\contentsline {appendix}{\chapternumberline {A}Analisis}{17}{appendix.A}%
-\contentsline {chapter}{Bibliography}{19}{appendix*.8}%
+\contentsline {section}{\numberline {1.2}Objectives}{2}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}General objective}{2}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Particular objective}{2}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}Justification}{3}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Limitations and project scope}{3}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Research Problem}{3}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Hypothesis}{4}{section.1.6}%
+\contentsline {section}{\numberline {1.7}Project organization}{4}{section.1.7}%
+\contentsline {chapter}{\chapternumberline {2}Theory and conceptual framework}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Preliminaries}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Graphs and Laplacian Matrices}{6}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}The Unnormalized Laplacian}{6}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Normalized Laplacians}{7}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}The graph partitioning problem}{7}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Spectral partitioning and Normalized Cut}{8}{subsection.2.2.4}%
+\contentsline {section}{\numberline {2.3}Literature review}{8}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Generalizable Approximate Graph Partitioning (GAP) Framework}{8}{subsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.1.1}Expected Normalized Cut Loss Function}{9}{subsubsection.2.3.1.1}%
+\contentsline {subsubsection}{\numberline {2.3.1.2}The Embedding Module}{10}{subsubsection.2.3.1.2}%
+\contentsline {subsubsection}{\numberline {2.3.1.3}The Partitioning Module}{10}{subsubsection.2.3.1.3}%
+\contentsline {subsection}{\numberline {2.3.2}PinSAGE and Markov Chain Negative Sampling (MCNS)}{11}{subsection.2.3.2}%
+\contentsline {chapter}{\chapternumberline {3}Proposed solution (Graph Partitioning for Large Graphs)}{13}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Graph Convolutional Neural Networks and GraphSAGE}{13}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Node Features}{13}{section.3.2}%
+\contentsline {chapter}{\chapternumberline {4}Experimental Results}{17}{chapter.4}%
+\contentsline {chapter}{\chapternumberline {5}Conclusion}{19}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Contributions}{19}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Recommendations and future work}{19}{section.5.2}%
+\contentsline {appendix}{\chapternumberline {A}Analisis}{21}{appendix.A}%
+\contentsline {chapter}{Bibliography}{23}{appendix*.5}%

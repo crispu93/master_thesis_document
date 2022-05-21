@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.1)  17 MAY 2022 21:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.1)  21 MAY 2022 12:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1581,52 +1581,52 @@ Loading lettrine.cfg
 (./memoirthesis.aux)
 \openout1 = `memoirthesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 152.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 154.
 LaTeX Font Info:    Trying to load font information for FML+futm on input line 
-152.
+154.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 152.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 154.
 LaTeX Font Info:    Trying to load font information for FMS+futm on input line 
-152.
+154.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 152.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 154.
 LaTeX Font Info:    Trying to load font information for FMX+futm on input line 
-152.
+154.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-Package nag Info: pgf.sty is broken: disabling dollar check on input line 152.
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 152.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 152.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+Package nag Info: pgf.sty is broken: disabling dollar check on input line 154.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 154.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 154.
 
 
-Package layouts Warning: Layout scale set to 0.5 on input line 152.
+Package layouts Warning: Layout scale set to 0.5 on input line 154.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1651,7 +1651,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box100
-Package hyperref Info: Link coloring ON on input line 152.
+Package hyperref Info: Link coloring ON on input line 154.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1666,22 +1666,22 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 152.
-LaTeX Info: Redefining \ref on input line 152.
-LaTeX Info: Redefining \pageref on input line 152.
-LaTeX Info: Redefining \nameref on input line 152.
+LaTeX Info: Redefining \nameref on input line 154.
+LaTeX Info: Redefining \ref on input line 154.
+LaTeX Info: Redefining \pageref on input line 154.
+LaTeX Info: Redefining \nameref on input line 154.
 (./memoirthesis.out) (./memoirthesis.out)
 \@outlinefile=\write6
 \openout6 = `memoirthesis.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 152.
+LaTeX Info: Redefining \microtypecontext on input line 154.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 152.
+LaTeX Info: Redefining \showhyphens on input line 154.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1692,37 +1692,26 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 ABD: EveryShipout initializing macros
 Package nag Info: Command \caption@xlabel not defined, skipping amendment on in
-put line 152.
+put line 154.
 Package nag Info: Command \captionabove not defined, skipping amendment on inpu
-t line 152.
+t line 154.
 Package nag Info: Command \captionbelow not defined, skipping amendment on inpu
-t line 152.
+t line 154.
 Package nag Info: Command \hc@caption not defined, skipping amendment on input 
-line 152.
+line 154.
 Package nag Info: Command \topcaption not defined, skipping amendment on input 
-line 152.
- (./frontmatter/resumen.tex [1
+line 154.
+ (./frontmatter/abstract.tex
+Package lettrine.sty Info: Targeted height = 42.04892pt
+(lettrine.sty)             (no accent, loversize=0),
+(lettrine.sty)             Lettrine height = 41.04784pt ( \color {purple} {\tex
+tsc {T}});
+(lettrine.sty)             reported on input line 7.
+ [1
 
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) [2
-
-
-] (./frontmatter/abstract.tex
-Package lettrine.sty Info: Targeted height = 42.04892pt
-(lettrine.sty)             (no accent, loversize=0),
-(lettrine.sty)             Lettrine height = 41.04784pt ( \color {purple} {\tex
-tsc {A}});
-(lettrine.sty)             reported on input line 7.
-
-[3
-
-]) [4
-
-
-] (./frontmatter/acknowledgements.tex [5
-
-]) [6
 
 
 ] (./memoirthesis.toc
@@ -1788,20 +1777,36 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-eur.cfg
 File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
-) [7]) [8]
-(./memoirthesis.lof) [9
+) [3]) [4]
+(./memoirthesis.lof) [5
 
-] [10
+] [6
 
-] (./memoirthesis.lot) [11] [12
+] (./memoirthesis.lot) [7] [8
 
 ]
-(./chapters/chapter01/chap01.tex) [1
+(./chapters/chapter01/chap01.tex [1
 
 
-] [2
+]
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
 
-] (./chapters/chapter02/chap02.tex
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+futs on input line 
+33.
+(/usr/share/texlive/texmf-dist/tex/latex/fourier/ts1futs.fd
+File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `futs' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [2]) [3] [4]
+(./chapters/chapter02/chap02.tex [5
+
+
+]
 LaTeX Font Info:    Trying to load font information for U+eus on input line 51.
 
 
@@ -1810,8 +1815,8 @@ File: ueus.fd 2013/01/14 v3.01 Euler Script
 )
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-eus.cfg
 File: mt-eus.cfg 2006/07/28 v1.2 microtype config. file: AMS Euler Script (RS)
-) [3] [4] [5]
-[6] [7]
+) [6] [7] [8]
+[9]
 
 LaTeX Font Warning: Font shape `U/stmry/b/n' undefined
 (Font)              using `U/stmry/m/n' instead on input line 247.
@@ -1828,57 +1833,50 @@ LaTeX Font Warning: Font shape `U/wasy/b/n' in size <9> not available
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
 (Font)              Font shape `U/wasy/m/n' tried instead on input line 247.
 
-) [8] (./chapters/chapter03/chap03.tex [9
+[10]) [11] [12
 
+] (./chapters/chapter03/chap03.tex [13
 
 ]
-<chapters/chapter03/partitioning_module.png, id=316, 698.61pt x 397.485pt>
+<chapters/chapter03/partitioning_module.png, id=322, 698.61pt x 397.485pt>
 File: chapters/chapter03/partitioning_module.png Graphic file (type png)
 <use chapters/chapter03/partitioning_module.png>
 Package pdftex.def Info: chapters/chapter03/partitioning_module.png  used on in
 put line 40.
 (pdftex.def)             Requested size: 349.30414pt x 198.742pt.
 
-
-Package natbib Warning: Citation `hamilton' on page 10 undefined on input line 
-44.
-
-
-Overfull \hbox (85.61725pt too wide) in paragraph at lines 44--46
+Overfull \hbox (85.61725pt too wide) in paragraph at lines 47--49
 \T1/futs/m/n/12 (-20) graph rep-re-sen-ta-tions https://proceedings.neurips.cc/
 paper/2020/file/ba95d78a7c942571185308775a97a3a0-
  []
 
-[10 <./chapters/chapter03/partitioning_module.png>]
-Overfull \hbox (292.65424pt too wide) in paragraph at lines 60--61
+[14 <./chapters/chapter03/partitioning_module.png>]
+Overfull \hbox (292.65424pt too wide) in paragraph at lines 63--64
 []\T1/futs/m/n/12 (-20) Ratio cut it is still used and rel-e-vant to mod-ern re
 -search cite here https://proceedings.neurips.cc/paper/2020/file/aa108f56a10e75
 c1f20f27723ecac85f-
  []
 
-) [11] [12] (./chapters/chapter04/chap04.tex) [13
+) [15] [16] (./chapters/chapter04/chap04.tex) [17
 
-
-] [14
-
-]
-(./chapters/conclusiones/conclusions.tex [15
-
-]) [16
-
-
-]
-(./chapters/appendices/app0A.tex) [17
 
 ] [18
 
-] (./memoirthesis.bbl [19
+]
+(./chapters/conclusiones/conclusions.tex [19
+
+]) [20
 
 
-]) [20]
+]
+(./chapters/appendices/app0A.tex) [21
 
-Package natbib Warning: There were undefined citations.
+] [22
 
+] (./memoirthesis.bbl [23
+
+
+]) [24]
 No complaints by nag.
 \tf@toc=\write7
 \openout7 = `memoirthesis.toc'.
@@ -1889,26 +1887,26 @@ No complaints by nag.
 \tf@lot=\write9
 \openout9 = `memoirthesis.lot'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 216.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 216.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 218.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 218.
 (./memoirthesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 216.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 216.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 218.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 218.
 Package rerunfilecheck Info: File `memoirthesis.out' has not changed.
-(rerunfilecheck)             Checksum: 126176EBCA23EFE25B1088BC3F130E87;2218.
+(rerunfilecheck)             Checksum: D98CD4BC03BBD40341FE4EAF0658CEB5;2221.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 30623 strings out of 483007
- 572343 string characters out of 5961758
- 1015395 words of memory out of 5000000
- 44566 multiletter control sequences out of 15000+600000
- 683714 words of font info for 288 fonts, out of 8000000 for 9000
+ 30662 strings out of 483007
+ 572880 string characters out of 5961758
+ 1015489 words of memory out of 5000000
+ 44599 multiletter control sequences out of 15000+600000
+ 684202 words of font info for 293 fonts, out of 8000000 for 9000
  112 hyphenation exceptions out of 8191
- 52i,17n,80p,1012b,530s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,17n,80p,1012b,574s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/fourier/fourier-bb.pfb></usr/share/texlive/texmf-d
@@ -1920,10 +1918,10 @@ ic/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utop
 ia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putbi8a.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on memoirthesis.pdf (32 pages, 272152 bytes).
+Output written on memoirthesis.pdf (32 pages, 281523 bytes).
 PDF statistics:
- 438 PDF objects out of 1000 (max. 8388607)
- 386 compressed objects within 4 object streams
- 98 named destinations out of 1000 (max. 500000)
- 41242 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 446 PDF objects out of 1000 (max. 8388607)
+ 394 compressed objects within 4 object streams
+ 101 named destinations out of 1000 (max. 500000)
+ 41754 words of extra memory for PDF output out of 42996 (max. 10000000)
 

@@ -4,5 +4,13 @@
 \addcontentsline{toc}{chapter}{Abstract}
 
 %\begin{SingleSpace}
-\initial{A}qu\'i inicia el abstract...
+\initial{T}he design of algorithms that solve Combinatorial Optimization problems is a challenging task due to their intractable nature. One of the fundamental and most studied problem in the area is the Graph Partitioning problem. In recent years, several Deep Learning strategies have shown to be successful when dealing with this problem. One of the famous ones is the Generalizable Approximate Partitioning (GAP) framework. The present work is aimed to present an extension to this framework that works for non-attributed graphs and generalizes well to large ones.
+
+One of the first observations made by the authors of this work is that in GAP, they used an architecture based on Graph Convolutional Networks (GCN) which tends to be slow for big graphs. Here, it is presented a modification, still inspired on GCN, that reduces the computation time.
+
+In addition, it was noted that GAP requires graphs with node features due to the model architecture chosen by its authors. That dependency was eliminated used a random walk approach to generate node features. This was an important modification because the algorithm now relies purely on the graph's structure which is Graph Partitioning problem.
+
+In the last part of the written, it is shown how to use a negative sampling technique to accelerate the process of finding balanced partitions without sacrificing the quality of those partitions. The proposed algorithm shows results comparable with widely used partitioning algorithms like METIS.
+
+
 \clearpage
