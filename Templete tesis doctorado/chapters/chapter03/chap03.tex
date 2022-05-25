@@ -2,17 +2,53 @@
 % File: chap02.tex
 %
 \let\textcircled=\pgftextcircled
-\chapter{Proposed solution (Graph Partitioning for Large Graphs)}
+\chapter{Graph Partitioning for Large Graphs}
 \label{Chapter3}
+This chapter is going to develop all the concepts related to the modifications made to the GAP framework. It contains the proposed solution and the principles to understand them.
+
+Maybe talk a little bit about GNN in general before going to GCN
+\section{Graph Convolutional Neural Networks and GraphSAGE}
+As mentioned by Zhang et. al. in \cite{gcnreview}, GCN's and its variants have become a very hot topic in Machine Learning and they are being extremely used to solve plenty of problems with . Indeed, the use use of Graph Convolutional Networks (GCN) to generate node embeddings was a key factor that made the GAP framework very successful in producing good quality partitions.
+
+Graph Convolutional Networks were originally proposed by Kifp et. al. in~\cite{gcn}. According to their authors. a single layer follows the following propagation rule:
+\begin{align}
+    H^{(l+1)} = f(H^{(l)}, A) &= \sigma\left(\hat{D}^{-\frac{1}{2}}\hat{A}\hat{D}^{-\frac{1}{2}}H^{(l)}W^{(l)}\right) \\
+    & H^{(0)} = X,
+\end{align}
+where $W^{(l)}$ is a the learnable parameter weight matrix for the $l$-th network layer, $\hat{A}=A+I$ is the adjacency matrix with self loops, $\hat{D}$ is the diagonal node degree matrix of $\hat{A}$, $X$ is the feature matrix, and $\sigma$ is a non-linear activation function.
+
+Downsides bottleneck
+\begin{itemize}
+    \item efficiency
+\end{itemize}
+
+To solve this issues in GCN's, several solutions have been proposed that deal with the downsides mentioned without loosing expression of GCN.
+FastGCN
+GraphSAGE 
+PinSAGE
+
+Different approaches that can be followed are found by the author in~\citep{gnnsurvey} or~\cite{hamilton}
+
+
+Describe Downsides
+
 Mention all the approaches that use Graph Neural Networks and its importance in solving graph related tasks
 achieving superior performance on many graph-related tasks
-\section{Graph Convolutional Neural Networks and GraphSAGE}
+
+
 Talk a little bit about traditional node embeddings approaches and its delimitations.
  Embeddings: dense vector representations
 Talk about the message passing framework
 Start with Grpah Convolutional Neural Networks (GCN) and its limitations. Emphasize in how GraphSAGE solve those limitations and how it extends the GCN capabilities
 
+Benefits of GraphSAGE:As claimed by the authors of GraphSAGE in \citep{graphsage}, it has the following 
+\begin{itemize}
+\item It naturally generalize to unseen nodes and does not require that all nodes are present during training of the embeddings.
+\end{itemize}
+
 \section{Node Features}
+Describe the entries of the feature matrix and its dimension
+
 One of the main limitations of GAP is that it requires node features. Due to the nature of the GCNs that make use of the symmetrically normalized graph Laplacian
 GNNs aim at learning node
 representations by learning the similarities shared between
@@ -103,3 +139,7 @@ auto & 448695 & 3314611  \\
 \end{table}
 
 METIS was used from the networkx interface
+
+a table for commonly used notation
+
+\subsection{PinSAGE and Markov Chain Negative Sampling (MCNS)}

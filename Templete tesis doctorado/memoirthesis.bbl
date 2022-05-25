@@ -33,6 +33,11 @@ William~L. Hamilton.
 \newblock {\em Synthesis Lectures on Artificial Intelligence and Machine
   Learning}, 14(3):1--159.
 
+\bibitem{gcn}
+Thomas~N Kipf and Max Welling.
+\newblock Semi-supervised classification with graph convolutional networks.
+\newblock {\em arXiv preprint arXiv:1609.02907}, 2016.
+
 \bibitem{deviceplacement}
 Milko Mitropolitsky, Zainab Abbas, and Amir~H. Payberah.
 \newblock Graph representation matters in device placement.
@@ -77,5 +82,16 @@ Chen Yunfang, Li~Wang, Dehao Qi, and Wei Zhang.
 \newblock {\em Community Detection Based on DeepWalk in Large Scale Networks},
   pages 568--583.
 \newblock 08 2020.
+
+\bibitem{gcnreview}
+Si~Zhang, Hanghang Tong, Jiejun Xu, and Ross Maciejewski.
+\newblock Graph convolutional networks: a comprehensive review.
+\newblock {\em Computational Social Networks}, 6, 11 2019.
+
+\bibitem{gnnsurvey}
+Ziwei Zhang, Peng Cui, and Wenwu Zhu.
+\newblock Deep learning on graphs: A survey.
+\newblock {\em IEEE Transactions on Knowledge and Data Engineering}, PP:1--1,
+  03 2020.
 
 \end{thebibliography}

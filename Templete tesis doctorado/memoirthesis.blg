@@ -8,45 +8,45 @@ Warning--empty year in gap2
 Warning--empty booktitle in gap1
 Warning--empty year in hamilton
 Warning--empty publisher in deepwalk_hyper
-You've used 13 entries,
+You've used 16 entries,
             2118 wiz_defined-function locations,
-            574 strings with 6482 characters,
-and the built_in function-call counts, 4904 in all, are:
-= -- 464
-> -- 258
+            592 strings with 6914 characters,
+and the built_in function-call counts, 5767 in all, are:
+= -- 545
+> -- 312
 < -- 4
-+ -- 103
-- -- 88
-* -- 324
-:= -- 786
-add.period$ -- 40
-call.type$ -- 13
-change.case$ -- 81
++ -- 124
+- -- 106
+* -- 385
+:= -- 945
+add.period$ -- 49
+call.type$ -- 16
+change.case$ -- 99
 chr.to.int$ -- 0
-cite$ -- 18
-duplicate$ -- 216
-empty$ -- 362
-format.name$ -- 88
-if$ -- 1060
+cite$ -- 21
+duplicate$ -- 247
+empty$ -- 418
+format.name$ -- 106
+if$ -- 1231
 int.to.chr$ -- 0
-int.to.str$ -- 13
-missing$ -- 15
-newline$ -- 67
-num.names$ -- 26
-pop$ -- 107
+int.to.str$ -- 16
+missing$ -- 18
+newline$ -- 82
+num.names$ -- 32
+pop$ -- 121
 preamble$ -- 1
-purify$ -- 70
+purify$ -- 85
 quote$ -- 0
-skip$ -- 168
+skip$ -- 191
 stack$ -- 0
-substring$ -- 212
-swap$ -- 74
+substring$ -- 236
+swap$ -- 77
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 48
+type$ -- 60
 warning$ -- 5
-while$ -- 35
-width$ -- 15
-write$ -- 139
+while$ -- 42
+width$ -- 18
+write$ -- 171
 (There were 5 warnings)

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.1)  21 MAY 2022 12:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.1)  24 MAY 2022 21:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1777,8 +1777,11 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-eur.cfg
 File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
-) [3]) [4]
-(./memoirthesis.lof) [5
+)
+Underfull \vbox (badness 1248) has occurred while \output is active []
+
+ [3])
+[4] (./memoirthesis.lof) [5
 
 ] [6
 
@@ -1815,65 +1818,81 @@ File: ueus.fd 2013/01/14 v3.01 Euler Script
 )
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-eus.cfg
 File: mt-eus.cfg 2006/07/28 v1.2 microtype config. file: AMS Euler Script (RS)
-) [6] [7] [8]
+) [6] [7]
+Overfull \hbox (152.76727pt too wide) in paragraph at lines 190--193
+\T1/futs/m/n/12 (-20) B-GRAP: BAL-ANCED GRAPH PAR-TI-TION-ING AL-GO-RITHM FOR L
+ARGE GRAPHS: https://www.rintonpress.com/xjdi2/xjdi2-
+ []
+
+[8]
+Overfull \hbox (19.7774pt too wide) in paragraph at lines 197--199
+[]\T1/futs/m/n/12 (-20) Application Driven Graph Par-ti-tion-ing https://dl.acm
+.org/doi/abs/10.1145/3318464.3389745 
+ []
+
 [9]
 
 LaTeX Font Warning: Font shape `U/stmry/b/n' undefined
-(Font)              using `U/stmry/m/n' instead on input line 247.
+(Font)              using `U/stmry/m/n' instead on input line 258.
 
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <9> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 247.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 258.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 247.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 258.
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <9> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 247.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 258.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 247.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 258.
 
 [10]) [11] [12
 
 ] (./chapters/chapter03/chap03.tex [13
 
 ]
-<chapters/chapter03/partitioning_module.png, id=322, 698.61pt x 397.485pt>
+Overfull \hbox (13.17139pt too wide) in paragraph at lines 47--61
+\T1/futs/m/n/12 (-20) tion here: Deep Fraud De-tec-tion on Non-attributed Graph
+ https://arxiv.org/pdf/2110.01171.pdf
+ []
+
+<chapters/chapter03/partitioning_module.png, id=325, 698.61pt x 397.485pt>
 File: chapters/chapter03/partitioning_module.png Graphic file (type png)
 <use chapters/chapter03/partitioning_module.png>
 Package pdftex.def Info: chapters/chapter03/partitioning_module.png  used on in
-put line 40.
+put line 71.
 (pdftex.def)             Requested size: 349.30414pt x 198.742pt.
 
-Overfull \hbox (85.61725pt too wide) in paragraph at lines 47--49
+Underfull \vbox (badness 4291) has occurred while \output is active []
+
+ [14]
+Overfull \hbox (85.61725pt too wide) in paragraph at lines 78--80
 \T1/futs/m/n/12 (-20) graph rep-re-sen-ta-tions https://proceedings.neurips.cc/
 paper/2020/file/ba95d78a7c942571185308775a97a3a0-
  []
 
-[14 <./chapters/chapter03/partitioning_module.png>]
-Overfull \hbox (292.65424pt too wide) in paragraph at lines 63--64
+[15 <./chapters/chapter03/partitioning_module.png>]
+Overfull \hbox (292.65424pt too wide) in paragraph at lines 94--95
 []\T1/futs/m/n/12 (-20) Ratio cut it is still used and rel-e-vant to mod-ern re
 -search cite here https://proceedings.neurips.cc/paper/2020/file/aa108f56a10e75
 c1f20f27723ecac85f-
  []
 
-) [15] [16] (./chapters/chapter04/chap04.tex) [17
+) [16] [17] [18
 
+] (./chapters/chapter04/chap04.tex) [19
 
-] [18
-
-]
-(./chapters/conclusiones/conclusions.tex [19
-
-]) [20
-
+] [20
 
 ]
-(./chapters/appendices/app0A.tex) [21
+(./chapters/conclusiones/conclusions.tex [21
 
-] [22
+]) [22
 
-] (./memoirthesis.bbl [23
+
+] (./memoirthesis.bbl
+[23
 
 
 ]) [24]
@@ -1893,18 +1912,21 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 218.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 218.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 218.
 Package rerunfilecheck Info: File `memoirthesis.out' has not changed.
-(rerunfilecheck)             Checksum: D98CD4BC03BBD40341FE4EAF0658CEB5;2221.
+(rerunfilecheck)             Checksum: 64695591E6E15D4B73B25B0331394F1C;2153.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 30662 strings out of 483007
- 572880 string characters out of 5961758
- 1015489 words of memory out of 5000000
- 44599 multiletter control sequences out of 15000+600000
- 684202 words of font info for 293 fonts, out of 8000000 for 9000
+ 30674 strings out of 483007
+ 573002 string characters out of 5961758
+ 1015452 words of memory out of 5000000
+ 44603 multiletter control sequences out of 15000+600000
+ 684742 words of font info for 299 fonts, out of 8000000 for 9000
  112 hyphenation exceptions out of 8191
  52i,17n,80p,1012b,574s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -1918,10 +1940,10 @@ ic/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utop
 ia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putbi8a.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on memoirthesis.pdf (32 pages, 281523 bytes).
+Output written on memoirthesis.pdf (32 pages, 285502 bytes).
 PDF statistics:
- 446 PDF objects out of 1000 (max. 8388607)
- 394 compressed objects within 4 object streams
- 101 named destinations out of 1000 (max. 500000)
- 41754 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 451 PDF objects out of 1000 (max. 8388607)
+ 399 compressed objects within 4 object streams
+ 105 named destinations out of 1000 (max. 500000)
+ 41746 words of extra memory for PDF output out of 42996 (max. 10000000)
 
