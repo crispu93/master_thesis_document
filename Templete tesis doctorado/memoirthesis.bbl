@@ -33,6 +33,13 @@ William~L. Hamilton.
 \newblock {\em Synthesis Lectures on Artificial Intelligence and Machine
   Learning}, 14(3):1--159.
 
+\bibitem{graphsage}
+William~L. Hamilton, Rex Ying, and Jure Leskovec.
+\newblock Inductive representation learning on large graphs.
+\newblock In {\em Proceedings of the 31st International Conference on Neural
+  Information Processing Systems}, NIPS'17, page 1025–1035, Red Hook, NY,
+  USA, 2017. Curran Associates Inc.
+
 \bibitem{gcn}
 Thomas~N Kipf and Max Welling.
 \newblock Semi-supervised classification with graph convolutional networks.
@@ -76,6 +83,11 @@ Zhonglin Sun, Yannis Spyridis, Thomas Lagkas, Achilleas Sesis, Georgios
 \newblock End-to-end deep graph convolutional neural network approach for
   intentional islanding in power systems considering load-generation balance.
 \newblock {\em Sensors}, 21(5), 2021.
+
+\bibitem{nodefeatures}
+Chen Wang, Yingtong Dou, Min Chen, Jia Chen, Zhiwei Liu, and Philip~S. Yu.
+\newblock Deep fraud detection on non-attributed graph.
+\newblock {\em CoRR}, abs/2110.01171, 2021.
 
 \bibitem{deepwalk_hyper}
 Chen Yunfang, Li~Wang, Dehao Qi, and Wei Zhang.

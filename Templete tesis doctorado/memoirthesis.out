@@ -22,11 +22,13 @@
 \BOOKMARK [1][-]{section.2.3}{Literature review}{chapter.2}% 22
 \BOOKMARK [2][-]{subsection.2.3.1}{Generalizable Approximate Graph Partitioning \(GAP\) Framework}{section.2.3}% 23
 \BOOKMARK [0][-]{chapter.3}{Graph Partitioning for Large Graphs}{}% 24
-\BOOKMARK [1][-]{section.3.1}{Graph Convolutional Neural Networks and GraphSAGE}{chapter.3}% 25
-\BOOKMARK [1][-]{section.3.2}{Node Features}{chapter.3}% 26
-\BOOKMARK [2][-]{subsection.3.2.1}{PinSAGE and Markov Chain Negative Sampling \(MCNS\)}{section.3.2}% 27
-\BOOKMARK [0][-]{chapter.4}{Experimental Results}{}% 28
-\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 29
-\BOOKMARK [1][-]{section.5.1}{Contributions}{chapter.5}% 30
-\BOOKMARK [1][-]{section.5.2}{Recommendations and future work}{chapter.5}% 31
-\BOOKMARK [0][-]{chapter*.5}{Bibliography}{}% 32
+\BOOKMARK [1][-]{section.3.1}{Node Embeddings}{chapter.3}% 25
+\BOOKMARK [2][-]{subsection.3.1.1}{Graph Convolutional Networks}{section.3.1}% 26
+\BOOKMARK [2][-]{subsection.3.1.2}{GraphSAGE}{section.3.1}% 27
+\BOOKMARK [1][-]{section.3.2}{Node Features}{chapter.3}% 28
+\BOOKMARK [2][-]{subsection.3.2.1}{PinSAGE and Markov Chain Negative Sampling \(MCNS\)}{section.3.2}% 29
+\BOOKMARK [0][-]{chapter.4}{Experimental Results}{}% 30
+\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 31
+\BOOKMARK [1][-]{section.5.1}{Contributions}{chapter.5}% 32
+\BOOKMARK [1][-]{section.5.2}{Recommendations and future work}{chapter.5}% 33
+\BOOKMARK [0][-]{chapter*.5}{Bibliography}{}% 34
