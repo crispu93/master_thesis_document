@@ -7,10 +7,10 @@
 This chapter is going to develop all the concepts related to the modifications made to the GAP framework. It contains the proposed solution and the principles to understand them.
 
 \section{Node Embeddings}
-As mentioned by Zhang et. al. in \cite{gcnreview}, GCN's and its variants have become a very hot topic in Machine Learning and they are being extremely used to solve plenty of problems. Indeed, the use use of Graph Convolutional Networks (GCN) to generate node embeddings was a key factor that made the GAP framework very successful in producing good quality partitions.
+As mentioned by Zhang et. al.~\cite{gcnreview}, GCN's and its variants have become a very hot topic in Machine Learning and they are being extremely used to solve plenty of problems. Indeed, the use use of Graph Convolutional Networks (GCN) to generate node embeddings was a key factor that made the GAP framework very successful in producing good quality partitions.
 
 \subsection{Graph Convolutional Networks}
-Graph Convolutional Networks were originally proposed by Kifp et. al. in~\cite{gcn}. According to their authors, a single layer follows the following propagation rule:
+Graph Convolutional Networks were originally proposed by Kifp et. al.~\cite{gcn}. When they first came up with its algorithm, they proposed a model where a single layer follows the following propagation rule:
 \begin{align}
     \label{eq:gcn}
     H^{(l+1)} = f(H^{(l)}, A) &= \sigma\left(\hat{D}^{-\frac{1}{2}}\hat{A}\hat{D}^{-\frac{1}{2}}H^{(l)}W^{(l)}\right) \\
@@ -18,12 +18,11 @@ Graph Convolutional Networks were originally proposed by Kifp et. al. in~\cite{g
 \end{align}
 where $\boldsymbol W^{(l)}$ is a the learnable parameter weight matrix for the $l$-th network layer, $\hat{A}=A+I$ is the adjacency matrix with self loops, $\hat{D}$ is the diagonal node degree matrix of $\hat{A}$, $X$ is the feature matrix, and $\sigma$ is a non-linear activation function. Also note that the term $\hat{D}^{-\frac{1}{2}}\hat{A}\hat{D}^{-\frac{1}{2}}$ is a symmetric normalized version of the graph Laplacian.
 
-\newpage
-
 Although GCN's are extremely powerful to generate node embeddings, in practice they have the following downsides:
 \begin{itemize}
     \item In terms of efficiency, GCN's are . As it can be seen in Equation~\ref{eq:gcn}, they multiply feature matrices by powers of the graph's normalized Laplacian, i.e., they are computationally very expensive.
     \item Over-smoothing
+    \item 
 \end{itemize}
 
 To solve this issues in GCN's, several solutions have been proposed that deal with the downsides mentioned without loosing expression of GCN.
@@ -48,7 +47,7 @@ Start with Grpah Convolutional Neural Networks (GCN) and its limitations. Emphas
 \subsection{GraphSAGE}
 As claimed by the authors of the paper~\cite{graphsage} where it was first proposed, GraphSAGE is an inductive framework that generate node embeddings for previously unseen data. It can be seen as an extension of the GCN framework to the inductive setting but it results advantageous in this process as it:
 \begin{itemize}
-    \item Performs localized convolutions without needing to use the whole normalized Laplacian resulting in a reduction of the computing time.
+    \item Performs localized convolutions without needing to use the whole normalized Laplacian resulting in a reduction of the computing time. Due to the nature of the GCN's, they make use of the symmetrically normalized graph Laplacian localized convolutions.
     \item Does not require that all nodes are present during training of the embeddings which turns out in a highly scalable framework.
     \item Naturally generalize to unseen nodes and even complete sub-graphs.
     \item Is capable of recognizing local and global structural properties of nodes based only on its neighborhood even though it still depends on node features.
@@ -88,17 +87,16 @@ To learn the GraphSAGE parameters and get useful predictive node representations
 \section{Node Features}
 Many graphs come with very representative node feature information that can be very enlightening in the node embedding generation process. The key idea of Graph Neural Networks is to generate representations of nodes that depends not only on the structure of the graph but from any feature information of the graph. 
 
-Citing textually to Chen Wang et. al. in ~\cite{nodefeatures}, Graph Neural Networks (GNN) aim at learning node representations by learning the similarities shared between connected nodes. However, the expressive ability of a GNN
-is highly dependent on the quality of node features.
-However, one of the first observations made by the authors is that for the Graph Partitioning Problem, node features are irrelevant.
+Citing textually to Chen Wang et. al.~\cite{nodefeatures}, Graph Neural Networks (GNN's) aim at learning node representations by learning the similarities shared between connected nodes. However, the expressive ability of a GNN is highly dependent on the quality of node features.
 
-Due to this inherent characteristic of GCN's, one of the main limitations of GAP is that it requires node features.
+An important thing to consider is that for solving the graph partitioning problem in the version presented here, node features are irrelevant.
+
+Due to this inherent characteristic of GNN's, and particularly of GCN's, one of the main limitations of GAP is that it requires node features.
 
 For a graph $G = (V,E)$, where $V=\{v_1, v_2, ..., v_n\}$, the feature matrix $X$ can be described as the $n\times F$ matrix where the rows $X_{v_i}$ are that comes depending on the graph.
 
 The way we generate node features independing task and also helps with the overall running time of the algorithm.S
 
-Due to the nature of the GCNs that make use of the symmetrically normalized graph Laplacian
 GNNs aim 
 Mention here: Deep Fraud Detection on Non-attributed Graph
 https://arxiv.org/pdf/2110.01171.pdf

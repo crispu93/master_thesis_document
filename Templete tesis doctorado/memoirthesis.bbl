@@ -5,10 +5,16 @@ Giorgos Bouritsas, Andreas Loukas, Nikolaos Karalias, and Michael~M. Bronstein.
 \newblock Partition and code: learning how to compress graphs.
 \newblock In {\em NeurIPS}, 2021.
 
+\bibitem{fernandes}
+Albert Einstein~Muritiba Fernandes.
+\newblock {\em Algorithms and Models For Combinatorial Optimization Problems}.
+\newblock PhD thesis, 2010.
+
 \bibitem{gap2}
 Alice Gatti, Zhixiong Hu, Tess Smidt, Esmond~G. Ng, and Pieter Ghysels.
 \newblock {\em Deep Learning and Spectral Embedding for Graph Partitioning},
   pages 25--36.
+\newblock 2022.
 
 \bibitem{xavier}
 Xavier Glorot and Yoshua Bengio.
@@ -31,7 +37,7 @@ L.~Grady and E.L. Schwartz.
 William~L. Hamilton.
 \newblock Graph representation learning.
 \newblock {\em Synthesis Lectures on Artificial Intelligence and Machine
-  Learning}, 14(3):1--159.
+  Learning}, 14(3):1--159, 2020.
 
 \bibitem{graphsage}
 William~L. Hamilton, Rex Ying, and Jure Leskovec.
@@ -44,6 +50,16 @@ William~L. Hamilton, Rex Ying, and Jure Leskovec.
 Thomas~N Kipf and Max Welling.
 \newblock Semi-supervised classification with graph convolutional networks.
 \newblock {\em arXiv preprint arXiv:1609.02907}, 2016.
+
+\bibitem{appcombinatorial}
+Bernhard Korte and Jens Vygen.
+\newblock {\em Combinatorial Optimization: Theory and Algorithms}.
+\newblock Springer Publishing Company, Incorporated, 5th edition, 2012.
+
+\bibitem{brilliant}
+Henry Maltby and Eli Ross.
+\newblock Combinatorial optimization.
+\newblock \url{https://brilliant.org/wiki/combinatorial-optimization/}, 2022.
 
 \bibitem{deviceplacement}
 Milko Mitropolitsky, Zainab Abbas, and Amir~H. Payberah.
@@ -93,7 +109,7 @@ Chen Wang, Yingtong Dou, Min Chen, Jia Chen, Zhiwei Liu, and Philip~S. Yu.
 Chen Yunfang, Li~Wang, Dehao Qi, and Wei Zhang.
 \newblock {\em Community Detection Based on DeepWalk in Large Scale Networks},
   pages 568--583.
-\newblock 08 2020.
+\newblock Springer Publishing Company, Incorporated, 08 2020.
 
 \bibitem{gcnreview}
 Si~Zhang, Hanghang Tong, Jiejun Xu, and Ross Maciejewski.

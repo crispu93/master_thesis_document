@@ -4,5 +4,6 @@
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {table}{\numberline {4.1}{\ignorespaces Summary of the graphs characteristics. Taken from "The Graph Partitioning Archive~\cite {archive}"}}{19}{table.4.1}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Summary of the graphs characteristics. Taken from "The Graph Partitioning Archive" ~\cite {archive}}}{20}{table.4.1}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Comparison of the results obtained by different algorithms in the computation graphs}}{20}{table.4.2}%
 \addvspace {10pt}

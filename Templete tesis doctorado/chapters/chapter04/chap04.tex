@@ -8,6 +8,15 @@ The number of partitions was set to three
 
 For the dataset used to train and test the algorithm "The Graph Partitioning Archive"~\cite{archive}
 
+For the purposes of this research, the graphs contained in "The Graph Partitioning Archive" where categorized in one of the following categories according to their vertex cardinality: 
+\begin{itemize}
+    \item Tiny graphs: those with less than $10,000$ nodes,
+    \item Small graphs: those with node size between $45,000$ and $75,000$ and,
+    \item Medium graphs: those with at least $99,000$ nodes but no more than $500,000$.
+\end{itemize}
+
+Ask Luis: is there a word for graphs with size more than big
+
 \begin{table}
 \centering
 \begin{tabular}{ |p{1.75cm}||cc|  }
@@ -37,5 +46,42 @@ m14b & 214765 & 1679018	 \\
 auto & 448695 & 3314611  \\
 \hline
 \end{tabular}
-\caption{\label{tab:comp_graphs}Summary of the graphs characteristics. Taken from "The Graph Partitioning Archive~\cite{archive}"}
+\caption{\label{tab:results}Summary of the graphs characteristics. Taken from "The Graph Partitioning Archive" ~\cite{archive}}
+\end{table}
+
+In table 
+
+\begin{table}
+\centering
+\begin{tabular}{ |p{1.75cm}||cc|cc|cc|  }
+%\hline
+%\multicolumn{3}{|c|}{\textbf{Results}} \\
+\hline
+\hline
+\textbf{Graphs} & \multicolumn{2}{c}{\textbf{METIS}} & \multicolumn{2}{c}{\textbf{GAP}} & \multicolumn{2}{c|}{\textbf{Modified GAP}} \\
+\hline
+\hline
+Name & Edge Cut & Balancedness & Edge Cut & Balancedness & Edge Cut & Balancedness \\
+\hline
+add20 & 0 & 0 & 0 & 0 & 0 & 0  \\
+data & 0 & 0 & 0 & 0 & 0 & 0  \\
+3elt & 0 & 0 & 0 & 0 & 0 & 0  \\
+uk & 0 & 0 & 0 & 0 & 0 & 0  \\
+add32 & 0 & 0 & 0 & 0 & 0 & 0  \\
+bcsstk33 & 0 & 0 & 0 & 0 & 0 & 0  \\
+whitaker3 & 0 & 0 & 0 & 0 & 0 & 0  \\
+crack & 0 & 0 & 0 & 0 & 0 & 0  \\
+\hline
+fe\_body & 0 & 0 & 0 & 0 & 0 & 0  \\
+t60k & 0 & 0 & 0 & 0 & 0 & 0  \\
+wing & 0 & 0 & 0 & 0 & 0 & 0  \\
+finan512 & 0 & 0 & 0 & 0 & 0 & 0  \\
+\hline
+fe\_rotor & 0 & 0 & 0 & 0 & 0 & 0  \\
+598a & 0 & 0 & 0 & 0 & 0 & 0  \\
+m14b & 0 & 0 & 0 & 0 & 0 & 0  \\
+auto & 0 & 0 & 0 & 0 & 0 & 0  \\
+\hline
+\end{tabular}
+\caption{\label{tab:comp_graphs}Comparison of the results obtained by different algorithms in the computation graphs}
 \end{table}

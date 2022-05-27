@@ -9,6 +9,9 @@ This chapter provides to the reader the necessary information to get familiar wi
 
 \section{Presentation}
 
+Brilliant~\cite{brilliant}
+
+Tehcniques proposed~\cite{fernandes}
 
 The computational complexity behind solving Combinatorial Optimization problems is a very well known concern. 
 Combinatorial Optimization ~\cite{appcombinatorial}... On one hand, it is necessary to keep researching for new theoretical results limitations and to more asumptions and use this knowledge to influence the way we approach that kind of problems. On the other hand, there is a need to solve those problems in real life and come up with practical and efficient solutions in a considerably small amount of time. The theoretical and practical are tied
@@ -55,11 +58,12 @@ Applications of graph partitioning to solve graph-related problems:
 Graph partitioning it is used as a subrutine in tasks as graph compression ~ \cite{compressgraphs}
 \section{Limitations and project scope}
 \begin{itemize}
-    \item The sizes of the datasets. It haven't been tested on biggest real-world graphs
+    \item One of the first limitation found was the sizes of the dataset used to test the algorithm. Most of them were taken from "The Graph Partitioning Archive" and it do. While using this dataset offers a good comparison point, the algorithm have not been tested on biggest real-world graphs.
     \item Values based on previous work
     \item What assumptions do I make?
     \item not distributed work which could improve
     \item It only accepts a certain format SCOTCH and Networkx
+    \item Comparison with GAP was using graphs without features, an interesting thing would be to check performance with the same datasets they used but getting rid of the features, e.g., cora citation
 \end{itemize}
 
 \section{Research Problem}

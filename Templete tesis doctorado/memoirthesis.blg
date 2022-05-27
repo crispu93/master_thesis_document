@@ -3,50 +3,48 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: memoirthesis.aux
 The style file: plain.bst
 Database file #1: references.bib
+Warning--empty school in fernandes
 Warning--empty publisher in gap2
-Warning--empty year in gap2
 Warning--empty booktitle in gap1
-Warning--empty year in hamilton
-Warning--empty publisher in deepwalk_hyper
-You've used 18 entries,
+You've used 21 entries,
             2118 wiz_defined-function locations,
-            606 strings with 7333 characters,
-and the built_in function-call counts, 6695 in all, are:
-= -- 643
-> -- 363
+            623 strings with 7831 characters,
+and the built_in function-call counts, 7398 in all, are:
+= -- 714
+> -- 396
 < -- 5
-+ -- 144
-- -- 124
-* -- 439
-:= -- 1085
-add.period$ -- 56
-call.type$ -- 18
-change.case$ -- 114
++ -- 157
+- -- 134
+* -- 467
+:= -- 1214
+add.period$ -- 66
+call.type$ -- 21
+change.case$ -- 127
 chr.to.int$ -- 0
-cite$ -- 23
-duplicate$ -- 294
-empty$ -- 473
-format.name$ -- 124
-if$ -- 1441
+cite$ -- 24
+duplicate$ -- 322
+empty$ -- 531
+format.name$ -- 134
+if$ -- 1590
 int.to.chr$ -- 0
-int.to.str$ -- 18
-missing$ -- 20
-newline$ -- 92
-num.names$ -- 36
-pop$ -- 135
+int.to.str$ -- 21
+missing$ -- 22
+newline$ -- 108
+num.names$ -- 42
+pop$ -- 151
 preamble$ -- 1
-purify$ -- 98
+purify$ -- 109
 quote$ -- 0
-skip$ -- 238
+skip$ -- 261
 stack$ -- 0
-substring$ -- 268
-swap$ -- 102
+substring$ -- 283
+swap$ -- 105
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 68
-warning$ -- 5
-while$ -- 47
-width$ -- 20
-write$ -- 196
-(There were 5 warnings)
+type$ -- 78
+warning$ -- 3
+while$ -- 53
+width$ -- 23
+write$ -- 231
+(There were 3 warnings)
