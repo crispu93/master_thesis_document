@@ -11,7 +11,7 @@
 \contentsline {subsection}{\numberline {1.2.1}General objective}{2}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}Particular objective}{2}{subsection.1.2.2}%
 \contentsline {section}{\numberline {1.3}Justification}{3}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Limitations and project scope}{3}{section.1.4}%
+\contentsline {section}{\numberline {1.4}Project scope and limitations }{3}{section.1.4}%
 \contentsline {section}{\numberline {1.5}Research Problem}{4}{section.1.5}%
 \contentsline {section}{\numberline {1.6}Hypothesis}{4}{section.1.6}%
 \contentsline {section}{\numberline {1.7}Project organization}{4}{section.1.7}%
@@ -34,7 +34,7 @@
 \contentsline {section}{\numberline {3.2}Node Features}{15}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}PinSAGE and Markov Chain Negative Sampling (MCNS)}{18}{subsection.3.2.1}%
 \contentsline {chapter}{\chapternumberline {4}Experimental Results}{19}{chapter.4}%
-\contentsline {chapter}{\chapternumberline {5}Conclusion}{21}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Contributions}{21}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Recommendations and future work}{21}{section.5.2}%
-\contentsline {chapter}{Bibliography}{23}{chapter*.6}%
+\contentsline {chapter}{\chapternumberline {5}Conclusion}{23}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Contributions}{23}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Recommendations and future work}{23}{section.5.2}%
+\contentsline {chapter}{Bibliography}{25}{chapter*.12}%

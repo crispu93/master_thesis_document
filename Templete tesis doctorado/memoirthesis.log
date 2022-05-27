@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.1)  27 MAY 2022 00:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.1)  27 MAY 2022 11:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1501,6 +1501,52 @@ File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 zlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )))
+
+Class memoir Warning: For the caption package to function properly with memoir,
+ we will now reset\caption and friends to kernel defaults and then let the capt
+ion package take over. Remember: all caption configuration now goves via the ca
+ption package interface, not the interface from the memoir class. .
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen324
+\captionmargin@=\dimen325
+\captionwidth=\dimen326
+\caption@tempdima=\dimen327
+\caption@indent=\dimen328
+\caption@parindent=\dimen329
+\caption@hangindent=\dimen330
+Package caption Info: memoir document class detected.
+)
+\c@caption@flags=\count451
+\c@continuedfloat=\count452
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2018/08/26 v1.4a longtable captions (AR)
+)
+Package caption Info: rotating package is loaded.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
+
+
+Package caption Warning: Using already defined counter `subfigure' on input lin
+e 68.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: Using already defined counter `subtable' on input line
+ 68.
+See the caption package documentation for explanation.
+
+)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibraryarrows.code.tex
 File: tikzlibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
@@ -1508,7 +1554,7 @@ File: tikzlibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.
 tex
 File: pgflibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\arrowsize=\dimen324
+\arrowsize=\dimen331
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibraryshapes.code.tex
@@ -1593,14 +1639,14 @@ zlibrarydecorations.pathmorphing.code.tex
 zlibrarydecorations.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.cod
 e.tex
-\pgfdecoratedcompleteddistance=\dimen325
-\pgfdecoratedremainingdistance=\dimen326
-\pgfdecoratedinputsegmentcompleteddistance=\dimen327
-\pgfdecoratedinputsegmentremainingdistance=\dimen328
-\pgf@decorate@distancetomove=\dimen329
-\pgf@decorate@repeatstate=\count451
-\pgfdecorationsegmentamplitude=\dimen330
-\pgfdecorationsegmentlength=\dimen331
+\pgfdecoratedcompleteddistance=\dimen332
+\pgfdecoratedremainingdistance=\dimen333
+\pgfdecoratedinputsegmentcompleteddistance=\dimen334
+\pgfdecoratedinputsegmentremainingdistance=\dimen335
+\pgf@decorate@distancetomove=\dimen336
+\pgf@decorate@repeatstate=\count453
+\pgfdecorationsegmentamplitude=\dimen337
+\pgfdecorationsegmentlength=\dimen338
 )
 \tikz@lib@dec@box=\box140
 )
@@ -1634,86 +1680,167 @@ File: lettrine.sty 2019-04-06 v2.22 (Daniel Flipo)
 (/usr/share/texlive/texmf-dist/tex/generic/minifp/minifp.sty
 Package: minifp 2013/12/30 v0.96. Macros for real number operations and a stack
 -based programing language.
-\MFP@loopctr=\count452
+\MFP@loopctr=\count454
 )
-\c@DefaultLines=\count453
-\c@DefaultDepth=\count454
-\DefaultFindent=\dimen332
-\DefaultNindent=\dimen333
-\DefaultSlope=\dimen334
-\DiscardVskip=\dimen335
+\c@DefaultLines=\count455
+\c@DefaultDepth=\count456
+\DefaultFindent=\dimen339
+\DefaultNindent=\dimen340
+\DefaultSlope=\dimen341
+\DiscardVskip=\dimen342
 \L@lbox=\box143
 \L@tbox=\box144
-\c@L@lines=\count455
-\c@L@depth=\count456
-\L@Pindent=\dimen336
-\L@Findent=\dimen337
-\L@Nindent=\dimen338
-\L@lraise=\dimen339
-\L@first=\dimen340
-\L@next=\dimen341
-\L@slope=\dimen342
-\L@height=\dimen343
-\L@novskip=\dimen344
-\L@target@ht=\dimen345
-\L@target@dp=\dimen346
-\L@target@tht=\dimen347
-\LettrineWidth=\dimen348
-\LettrineHeight=\dimen349
-\LettrineDepth=\dimen350
+\c@L@lines=\count457
+\c@L@depth=\count458
+\L@Pindent=\dimen343
+\L@Findent=\dimen344
+\L@Nindent=\dimen345
+\L@lraise=\dimen346
+\L@first=\dimen347
+\L@next=\dimen348
+\L@slope=\dimen349
+\L@height=\dimen350
+\L@novskip=\dimen351
+\L@target@ht=\dimen352
+\L@target@dp=\dimen353
+\L@target@tht=\dimen354
+\LettrineWidth=\dimen355
+\LettrineHeight=\dimen356
+\LettrineDepth=\dimen357
 \Llist@everypar=\toks63
 
 Loading lettrine.cfg
 (/usr/share/texlive/texmf-dist/tex/latex/lettrine/lettrine.cfg))
-\c@theorem=\count457
-\c@proposition=\count458
-\c@definition=\count459
-\c@corollary=\count460
+\c@theorem=\count459
+\c@proposition=\count460
+\c@definition=\count461
+\c@corollary=\count462
 
-(./memoirthesis.aux)
+(./memoirthesis.aux
+
+LaTeX Warning: Label `fig:sub-first' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub-first' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub-second' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub-second' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub-third' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub-third' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub-fourth' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub-fourth' multiply defined.
+
+
+LaTeX Warning: Label `fig:fig' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub-first' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub-first' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub-second' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub-second' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub-third' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub-third' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub-fourth' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub-fourth' multiply defined.
+
+
+LaTeX Warning: Label `fig:fig' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub-first' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub-first' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub-second' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub-second' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub-third' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub-third' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub-fourth' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub-fourth' multiply defined.
+
+
+LaTeX Warning: Label `fig:fig' multiply defined.
+
+)
 \openout1 = `memoirthesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 155.
-LaTeX Font Info:    ... okay on input line 155.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 155.
-LaTeX Font Info:    ... okay on input line 155.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 155.
-LaTeX Font Info:    ... okay on input line 155.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 155.
-LaTeX Font Info:    ... okay on input line 155.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 155.
-LaTeX Font Info:    ... okay on input line 155.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 155.
-LaTeX Font Info:    ... okay on input line 155.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 155.
-LaTeX Font Info:    ... okay on input line 155.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 155.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 157.
 LaTeX Font Info:    Trying to load font information for FML+futm on input line 
-155.
-
-(/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutm.fd
+157.
+ (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 155.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 157.
 LaTeX Font Info:    Trying to load font information for FMS+futm on input line 
-155.
+157.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 155.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 157.
 LaTeX Font Info:    Trying to load font information for FMX+futm on input line 
-155.
+157.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 155.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 155.
-LaTeX Font Info:    ... okay on input line 155.
-Package nag Info: pgf.sty is broken: disabling dollar check on input line 155.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+Package nag Info: pgf.sty is broken: disabling dollar check on input line 157.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1749,23 +1876,23 @@ Package nag Info: pgf.sty is broken: disabling dollar check on input line 155.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 155.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 155.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 157.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 157.
 
-Package layouts Warning: Layout scale set to 0.5 on input line 155.
+Package layouts Warning: Layout scale set to 0.5 on input line 157.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count461
-\scratchdimen=\dimen351
+\scratchcounter=\count463
+\scratchdimen=\dimen358
 \scratchbox=\box145
-\nofMPsegments=\count462
-\nofMParguments=\count463
+\nofMPsegments=\count464
+\nofMParguments=\count465
 \everyMPshowfont=\toks64
-\MPscratchCnt=\count464
-\MPscratchDim=\dimen352
-\MPnumerator=\count465
-\makeMPintoPDFobject=\count466
+\MPscratchCnt=\count466
+\MPscratchDim=\dimen359
+\MPnumerator=\count467
+\makeMPintoPDFobject=\count468
 \everyMPtoPDFconversion=\toks65
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1777,7 +1904,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box146
-Package hyperref Info: Link coloring ON on input line 155.
+Package hyperref Info: Link coloring ON on input line 157.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1788,26 +1915,26 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count467
+\c@section@level=\count469
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 155.
-LaTeX Info: Redefining \ref on input line 155.
-LaTeX Info: Redefining \pageref on input line 155.
-LaTeX Info: Redefining \nameref on input line 155.
+LaTeX Info: Redefining \nameref on input line 157.
+LaTeX Info: Redefining \ref on input line 157.
+LaTeX Info: Redefining \pageref on input line 157.
+LaTeX Info: Redefining \nameref on input line 157.
 (./memoirthesis.out) (./memoirthesis.out)
 \@outlinefile=\write6
 \openout6 = `memoirthesis.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 155.
+LaTeX Info: Redefining \microtypecontext on input line 157.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 155.
+LaTeX Info: Redefining \showhyphens on input line 157.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1817,16 +1944,16 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 
 ABD: EveryShipout initializing macros
-Package nag Info: Command \caption@xlabel not defined, skipping amendment on in
-put line 155.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 Package nag Info: Command \captionabove not defined, skipping amendment on inpu
-t line 155.
+t line 157.
 Package nag Info: Command \captionbelow not defined, skipping amendment on inpu
-t line 155.
+t line 157.
 Package nag Info: Command \hc@caption not defined, skipping amendment on input 
-line 155.
+line 157.
 Package nag Info: Command \topcaption not defined, skipping amendment on input 
-line 155.
+line 157.
  (./frontmatter/titlepage.tex
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
@@ -1999,17 +2126,17 @@ tsc {T}});
 e identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.23 
+l.25 
       [1
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 24--25
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
 
  []
 
 LaTeX Font Info:    Trying to load font information for TS1+futs on input line 
-36.
+40.
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/ts1futs.fd
 File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
 )
@@ -2021,7 +2148,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.48 
+l.52 
       [2] [3]) [4] (./chapters/chapter02/chap02.tex [5
 
 
@@ -2071,7 +2198,10 @@ LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
 
 Package nag Warning: \label in float, but not after \caption on input line 80.
 
-<chapters/chapter03/graphSAGE_loss.png, id=380, 3006.23125pt x 1452.42625pt>
+
+Package nag Warning: \label in float, but not after \caption on input line 80.
+
+<chapters/chapter03/graphSAGE_loss.png, id=387, 3006.23125pt x 1452.42625pt>
 File: chapters/chapter03/graphSAGE_loss.png Graphic file (type png)
 <use chapters/chapter03/graphSAGE_loss.png>
 Package pdftex.def Info: chapters/chapter03/graphSAGE_loss.png  used on input l
@@ -2095,11 +2225,8 @@ Overfull \hbox (105.02336pt too wide) in paragraph at lines 100--110
 ttributed Graph https://arxiv.org/pdf/2110.01171.pdf
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [16 <./chapters/chapter03/graphSAGE_loss.png>]
-<chapters/chapter03/partitioning_module.png, id=396, 698.61pt x 397.485pt>
+[16 <./chapters/chapter03/graphSAGE_loss.png>]
+<chapters/chapter03/partitioning_module.png, id=403, 698.61pt x 397.485pt>
 File: chapters/chapter03/partitioning_module.png Graphic file (type png)
 <use chapters/chapter03/partitioning_module.png>
 Package pdftex.def Info: chapters/chapter03/partitioning_module.png  used on in
@@ -2119,21 +2246,109 @@ c1f20f27723ecac85f-
  []
 
 ) [18] (./chapters/chapter04/chap04.tex
-Overfull \hbox (30.03181pt too wide) in paragraph at lines 56--86
+Overfull \hbox (30.03181pt too wide) in paragraph at lines 52--78
  [][] 
  []
+
+<chapters/chapter04/small_graphs/bcsstk33.png, id=426, 462.528pt x 346.896pt>
+File: chapters/chapter04/small_graphs/bcsstk33.png Graphic file (type png)
+<use chapters/chapter04/small_graphs/bcsstk33.png>
+Package pdftex.def Info: chapters/chapter04/small_graphs/bcsstk33.png  used on 
+input line 88.
+(pdftex.def)             Requested size: 156.80273pt x 117.60431pt.
+<chapters/chapter04/small_graphs/crack.png, id=427, 462.528pt x 346.896pt>
+File: chapters/chapter04/small_graphs/crack.png Graphic file (type png)
+<use chapters/chapter04/small_graphs/crack.png>
+Package pdftex.def Info: chapters/chapter04/small_graphs/crack.png  used on inp
+ut line 95.
+(pdftex.def)             Requested size: 156.80273pt x 117.60431pt.
+<chapters/chapter04/small_graphs/add32.png, id=428, 462.528pt x 346.896pt>
+File: chapters/chapter04/small_graphs/add32.png Graphic file (type png)
+<use chapters/chapter04/small_graphs/add32.png>
+Package pdftex.def Info: chapters/chapter04/small_graphs/add32.png  used on inp
+ut line 103.
+(pdftex.def)             Requested size: 156.80273pt x 117.60431pt.
+<chapters/chapter04/small_graphs/data.png, id=429, 462.528pt x 346.896pt>
+File: chapters/chapter04/small_graphs/data.png Graphic file (type png)
+<use chapters/chapter04/small_graphs/data.png>
+Package pdftex.def Info: chapters/chapter04/small_graphs/data.png  used on inpu
+t line 110.
+(pdftex.def)             Requested size: 156.80273pt x 117.60431pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<chapters/chapter04/medium_graphs/fe_body.png, id=430, 462.528pt x 346.896pt>
+File: chapters/chapter04/medium_graphs/fe_body.png Graphic file (type png)
+<use chapters/chapter04/medium_graphs/fe_body.png>
+Package pdftex.def Info: chapters/chapter04/medium_graphs/fe_body.png  used on 
+input line 125.
+(pdftex.def)             Requested size: 156.80273pt x 117.60431pt.
+<chapters/chapter04/medium_graphs/finan512.png, id=431, 462.528pt x 346.896pt>
+File: chapters/chapter04/medium_graphs/finan512.png Graphic file (type png)
+<use chapters/chapter04/medium_graphs/finan512.png>
+Package pdftex.def Info: chapters/chapter04/medium_graphs/finan512.png  used on
+ input line 132.
+(pdftex.def)             Requested size: 156.80273pt x 117.60431pt.
+<chapters/chapter04/medium_graphs/t60k.png, id=432, 462.528pt x 346.896pt>
+File: chapters/chapter04/medium_graphs/t60k.png Graphic file (type png)
+<use chapters/chapter04/medium_graphs/t60k.png>
+Package pdftex.def Info: chapters/chapter04/medium_graphs/t60k.png  used on inp
+ut line 140.
+(pdftex.def)             Requested size: 156.80273pt x 117.60431pt.
+<chapters/chapter04/medium_graphs/wing.png, id=433, 462.528pt x 346.896pt>
+File: chapters/chapter04/medium_graphs/wing.png Graphic file (type png)
+<use chapters/chapter04/medium_graphs/wing.png>
+Package pdftex.def Info: chapters/chapter04/medium_graphs/wing.png  used on inp
+ut line 147.
+(pdftex.def)             Requested size: 156.80273pt x 117.60431pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<chapters/chapter04/large_graphs/598a.png, id=434, 462.528pt x 346.896pt>
+File: chapters/chapter04/large_graphs/598a.png Graphic file (type png)
+<use chapters/chapter04/large_graphs/598a.png>
+Package pdftex.def Info: chapters/chapter04/large_graphs/598a.png  used on inpu
+t line 162.
+(pdftex.def)             Requested size: 156.80273pt x 117.60431pt.
+<chapters/chapter04/large_graphs/auto.png, id=435, 462.528pt x 346.896pt>
+File: chapters/chapter04/large_graphs/auto.png Graphic file (type png)
+<use chapters/chapter04/large_graphs/auto.png>
+Package pdftex.def Info: chapters/chapter04/large_graphs/auto.png  used on inpu
+t line 169.
+(pdftex.def)             Requested size: 156.80273pt x 117.60431pt.
+<chapters/chapter04/large_graphs/fe_rotor.png, id=436, 462.528pt x 346.896pt>
+File: chapters/chapter04/large_graphs/fe_rotor.png Graphic file (type png)
+<use chapters/chapter04/large_graphs/fe_rotor.png>
+Package pdftex.def Info: chapters/chapter04/large_graphs/fe_rotor.png  used on 
+input line 177.
+(pdftex.def)             Requested size: 156.80273pt x 117.60431pt.
+<chapters/chapter04/large_graphs/m14b.png, id=437, 462.528pt x 346.896pt>
+File: chapters/chapter04/large_graphs/m14b.png Graphic file (type png)
+<use chapters/chapter04/large_graphs/m14b.png>
+Package pdftex.def Info: chapters/chapter04/large_graphs/m14b.png  used on inpu
+t line 184.
+(pdftex.def)             Requested size: 156.80273pt x 117.60431pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) [19
 
 
-] [20] (./chapters/conclusiones/conclusions.tex [21
+] [20] [21 <./chapters/chapter04/small_graphs/bcsstk33.png> <./chapters/chapter
+04/small_graphs/crack.png> <./chapters/chapter04/small_graphs/add32.png> <./cha
+pters/chapter04/small_graphs/data.png> <./chapters/chapter04/medium_graphs/fe_b
+ody.png> <./chapters/chapter04/medium_graphs/finan512.png> <./chapters/chapter0
+4/medium_graphs/t60k.png> <./chapters/chapter04/medium_graphs/wing.png>]
+[22 <./chapters/chapter04/large_graphs/598a.png> <./chapters/chapter04/large_gr
+aphs/auto.png> <./chapters/chapter04/large_graphs/fe_rotor.png> <./chapters/cha
+pter04/large_graphs/m14b.png>] (./chapters/conclusiones/conclusions.tex
+[23
 
 
-]) [22
+]) [24
 
 
-]
-(./memoirthesis.bbl [23
+] (./memoirthesis.bbl [25
 
 
 ]
@@ -2147,11 +2362,11 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [24]) [25] [26
+ [26]) [27] [28
 
 ]
 
-Package nag Warning: 6 complaints in total.
+Package nag Warning: 7 complaints in total.
 
 \tf@toc=\write7
 \openout7 = `memoirthesis.toc'.
@@ -2162,42 +2377,57 @@ Package nag Warning: 6 complaints in total.
 \tf@lot=\write9
 \openout9 = `memoirthesis.lot'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 223.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 223.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 225.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 225.
 (./memoirthesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 223.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 223.
-Package rerunfilecheck Info: File `memoirthesis.out' has not changed.
-(rerunfilecheck)             Checksum: E676FC977C1FFC8F4AE389DBAFBC09BB;2308.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 225.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 225.
 
+
+Package rerunfilecheck Warning: File `memoirthesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `memoirthesis.out':
+(rerunfilecheck)             Before: 544197E439AD13EC3A37A354881D0C1C;2310
+(rerunfilecheck)             After:  C4F6458E61A4623332E361AE73D64636;2310.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 31463 strings out of 483007
- 585429 string characters out of 5961758
- 1043534 words of memory out of 5000000
- 45293 multiletter control sequences out of 15000+600000
+ 32708 strings out of 483007
+ 609629 string characters out of 5961758
+ 1065437 words of memory out of 5000000
+ 46502 multiletter control sequences out of 15000+600000
  723082 words of font info for 347 fonts, out of 8000000 for 9000
  112 hyphenation exceptions out of 8191
- 52i,17n,80p,1012b,604s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/crispu/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.60
-0pk>{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/fourier/fourier-bb.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/fourier/fourier-mcl.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/fourier/fourier-mex.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/fourier/fourier-ml.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/fourier/fourier-mlit.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/ut
-opia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putbi8a
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on memoirthesis.pdf (38 pages, 602568 bytes).
+ 55i,17n,96p,1012b,604s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{figure.caption.12} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter*.13} has been referenced but does not exist
+, replaced by a fixed one
+
+ </home/crispu/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.600p
+k>{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/fourier/fourier-bb.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/fourier/fourier-mcl.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/fourier/fourier-mex.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/fourier/fourier-ml.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/fourier/fourier-mlit.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utop
+ia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putbi8a.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
+Output written on memoirthesis.pdf (40 pages, 770406 bytes).
 PDF statistics:
- 548 PDF objects out of 1000 (max. 8388607)
- 462 compressed objects within 5 object streams
- 123 named destinations out of 1000 (max. 500000)
- 54585 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 590 PDF objects out of 1000 (max. 8388607)
+ 478 compressed objects within 5 object streams
+ 130 named destinations out of 1000 (max. 500000)
+ 54645 words of extra memory for PDF output out of 61914 (max. 10000000)
 

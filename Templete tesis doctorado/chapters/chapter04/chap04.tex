@@ -26,13 +26,9 @@ Ask Luis: is there a word for graphs with size more than big
 \hline
 \textbf{Name} & \textbf{Nodes} & \textbf{Edges} \\
 \hline
-add20 & 2395 & 7462  \\
 data & 2851 & 15093  \\
-3elt & 4720 & 13722  \\
-uk & 4824 & 6837  \\
 add32 & 4960 & 9462  \\
 bcsstk33 & 8738 & 291583  \\
-whitaker3 & 9800 & 28989  \\
 crack & 10240 & 30380  \\
 \hline
 fe\_body & 45087 & 163734  \\
@@ -63,13 +59,9 @@ In table
 \hline
 Name & Edge Cut & Balancedness & Edge Cut & Balancedness & Edge Cut & Balancedness \\
 \hline
-add20 & 0 & 0 & 0 & 0 & 0 & 0  \\
 data & 0 & 0 & 0 & 0 & 0 & 0  \\
-3elt & 0 & 0 & 0 & 0 & 0 & 0  \\
-uk & 0 & 0 & 0 & 0 & 0 & 0  \\
 add32 & 0 & 0 & 0 & 0 & 0 & 0  \\
 bcsstk33 & 0 & 0 & 0 & 0 & 0 & 0  \\
-whitaker3 & 0 & 0 & 0 & 0 & 0 & 0  \\
 crack & 0 & 0 & 0 & 0 & 0 & 0  \\
 \hline
 fe\_body & 0 & 0 & 0 & 0 & 0 & 0  \\
@@ -85,3 +77,152 @@ auto & 0 & 0 & 0 & 0 & 0 & 0  \\
 \end{tabular}
 \caption{\label{tab:comp_graphs}Comparison of the results obtained by different algorithms in the computation graphs}
 \end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Small graph histograms %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[h!]
+\centering
+\begin{subfigure}[b]{.35\textwidth}
+  \centering
+  % include first image
+  \includegraphics[width=\linewidth]{small_graphs/bcsstk33.png}  
+  \caption{bcsstk33}
+  \label{fig:sub-first}
+\end{subfigure}
+\begin{subfigure}[b]{.35\textwidth}
+  \centering
+  % include second image
+  \includegraphics[width=\linewidth]{small_graphs/crack.png}  
+  \caption{crack}
+  \label{fig:sub-second}
+\end{subfigure}
+
+\begin{subfigure}[b]{.35\textwidth}
+  \centering
+  % include third image
+  \includegraphics[width=\linewidth]{small_graphs/add32.png}  
+  \caption{add32}
+  \label{fig:sub-third}
+\end{subfigure}
+\begin{subfigure}[b]{.35\textwidth}
+  \centering
+  % include fourth image
+  \includegraphics[width=\linewidth]{small_graphs/data.png}  
+  \caption{data}
+  \label{fig:sub-fourth}
+\end{subfigure}
+\caption{Degree histogram of small graphs: bcsstk33, crack, add32, and data. Graphs are not so dense.}
+\label{fig:fig}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Medium graph histograms %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[h!]
+\centering
+\begin{subfigure}{.35\textwidth}
+  \centering
+  % include first image
+  \includegraphics[width=\linewidth]{medium_graphs/fe_body.png}  
+  \caption{fe\_body}
+  \label{fig:sub-first}
+\end{subfigure}
+\begin{subfigure}{.35\textwidth}
+  \centering
+  % include second image
+  \includegraphics[width=\linewidth]{medium_graphs/finan512.png}  
+  \caption{finan512}
+  \label{fig:sub-second}
+\end{subfigure}
+
+\begin{subfigure}{.35\textwidth}
+  \centering
+  % include third image
+  \includegraphics[width=\linewidth]{medium_graphs/t60k.png}  
+  \caption{t60k}
+  \label{fig:sub-third}
+\end{subfigure}
+\begin{subfigure}{.35\textwidth}
+  \centering
+  % include fourth image
+  \includegraphics[width=\linewidth]{medium_graphs/wing.png}  
+  \caption{wing}
+  \label{fig:sub-fourth}
+\end{subfigure}
+\caption{Degree histogram of medium graphs. Graphs are not so dense.}
+\label{fig:fig}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Large graph histograms %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[h!]
+\centering
+\begin{subfigure}{.35\textwidth}
+  \centering
+  % include first image
+  \includegraphics[width=\linewidth]{large_graphs/598a.png}  
+  \caption{598a}
+  \label{fig:sub-first}
+\end{subfigure}
+\begin{subfigure}{.35\textwidth}
+  \centering
+  % include second image
+  \includegraphics[width=\linewidth]{large_graphs/auto.png}  
+  \caption{auto}
+  \label{fig:sub-second}
+\end{subfigure}
+
+\begin{subfigure}{.35\textwidth}
+  \centering
+  % include third image
+  \includegraphics[width=\linewidth]{large_graphs/fe_rotor.png}  
+  \caption{fe\_rotor}
+  \label{fig:sub-third}
+\end{subfigure}
+\begin{subfigure}{.35\textwidth}
+  \centering
+  % include fourth image
+  \includegraphics[width=\linewidth]{large_graphs/m14b.png}  
+  \caption{m14b}
+  \label{fig:sub-fourth}
+\end{subfigure}
+\caption{Degree histogram of large graphs. Graphs are not so dense.}
+\label{fig:fig}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Graph images %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{comment}
+\begin{figure}[h!]
+\centering
+\begin{subfigure}{.35\textwidth}
+  \centering
+  % include first image
+  \includegraphics[width=0.7\linewidth]{graphs/bcsstk33.png}  
+  \caption{bcsstk33}
+  \label{fig:sub-first}
+\end{subfigure}
+\begin{subfigure}{.35\textwidth}
+  \centering
+  % include second image
+  \includegraphics[width=0.7\linewidth]{graphs/crack-min.png}  
+  \caption{crack}
+  \label{fig:sub-second}
+\end{subfigure}
+
+\begin{subfigure}{.35\textwidth}
+  \centering
+  % include third image
+  \includegraphics[width=0.7\linewidth]{graphs/add32.png}  
+  \caption{add32}
+  \label{fig:sub-third}
+\end{subfigure}
+\begin{subfigure}{.35\textwidth}
+  \centering
+  % include fourth image
+  \includegraphics[width=0.7\linewidth]{graphs/data.png}  
+  \caption{data}
+  \label{fig:sub-fourth}
+\end{subfigure}
+\caption{Visualization of some of the graphs used in the experiments.}
+\label{fig:fig}
+\end{figure}
+\end{comment}
