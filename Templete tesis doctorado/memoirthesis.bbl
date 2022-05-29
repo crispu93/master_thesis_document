@@ -5,10 +5,21 @@ Giorgos Bouritsas, Andreas Loukas, Nikolaos Karalias, and Michael~M. Bronstein.
 \newblock Partition and code: learning how to compress graphs.
 \newblock In {\em NeurIPS}, 2021.
 
+\bibitem{complexnetworks}
+Dirk Brockmann and Dirk Helbing.
+\newblock The hidden geometry of complex, network-driven contagion phenomena.
+\newblock {\em Science}, 342(6164):1337--1342, 2013.
+
 \bibitem{fernandes}
 Albert Einstein~Muritiba Fernandes.
 \newblock {\em Algorithms and Models For Combinatorial Optimization Problems}.
 \newblock PhD thesis, 2010.
+
+\bibitem{nesteddissection}
+Alice Gatti, Zhixiong Hu, Pieter Ghysels, Esmond~G. Ng, and Tess~E. Smidt.
+\newblock Graph partitioning and sparse matrix ordering using reinforcement
+  learning.
+\newblock {\em ArXiv}, abs/2104.03546, 2021.
 
 \bibitem{gap2}
 Alice Gatti, Zhixiong Hu, Tess Smidt, Esmond~G. Ng, and Pieter Ghysels.
@@ -33,6 +44,13 @@ L.~Grady and E.L. Schwartz.
 \newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
   28(3):469--475, 2006.
 
+\bibitem{matrixordering}
+A.~Gupta.
+\newblock Fast and effective algorithms for graph partitioning and
+  sparse-matrix ordering.
+\newblock {\em IBM Journal of Research and Development}, 41(1.2):171--183,
+  1997.
+
 \bibitem{hamilton}
 William~L. Hamilton.
 \newblock Graph representation learning.
@@ -45,6 +63,23 @@ William~L. Hamilton, Rex Ying, and Jure Leskovec.
 \newblock In {\em Proceedings of the 31st International Conference on Neural
   Information Processing Systems}, NIPS'17, page 1025–1035, Red Hook, NY,
   USA, 2017. Curran Associates Inc.
+
+\bibitem{branchimage}
+Máté Hegyháti.
+\newblock Introduction into the modeling and optimization of linear systems.
+\newblock \url{https://hegyhati.github.io/IMOLS/}, 2022.
+\newblock Accessed: 2010-09-30.
+
+\bibitem{integeroptimization}
+Karla~L. Hoffman and Ted~K. Ralphs.
+\newblock {\em Integer and Combinatorial Optimization}, pages 771--783.
+\newblock Springer US, Boston, MA, 2013.
+
+\bibitem{bettersuited}
+Vassilis~G. Kaburlasos, Lefteris Moussiades, and Athena Vakali.
+\newblock Fuzzy lattice reasoning (flr) type neural computation for weighted
+  graph partitioning.
+\newblock {\em Neurocomputing}, 72:2121--2133, 2009.
 
 \bibitem{gcn}
 Thomas~N Kipf and Max Welling.
@@ -59,13 +94,18 @@ Bernhard Korte and Jens Vygen.
 \bibitem{brilliant}
 Henry Maltby and Eli Ross.
 \newblock Combinatorial optimization.
-\newblock \url{https://brilliant.org/wiki/combinatorial-optimization/}, 2022.
+\newblock \url{ https://brilliant.org/wiki/combinatorial-optimization/ }, 2022.
 
 \bibitem{deviceplacement}
 Milko Mitropolitsky, Zainab Abbas, and Amir~H. Payberah.
 \newblock Graph representation matters in device placement.
 \newblock {\em Proceedings of the Workshop on Distributed Infrastructures for
   Deep Learning}, 2020.
+
+\bibitem{branchbound}
+David~R. Morrison, Sheldon~H. Jacobson, Jason~J. Sauppe, and Edward~C. Sewell.
+\newblock Branch-and-bound algorithms.
+\newblock {\em Discret. Optim.}, 19(C):79–102, feb 2016.
 
 \bibitem{gap}
 Azade Nazi, Will Hang, Anna Goldie, Sujith Ravi, and Azalia Mirhoseini.
@@ -87,11 +127,24 @@ Benedek Rozemberczki, Oliver Kiss, and Rik Sarkar.
   Information and Knowledge Management (CIKM '20)}, page 3125–3132. ACM,
   2020.
 
+\bibitem{schrijver-book}
+A.~Schrijver.
+\newblock {\em Combinatorial Optimization - Polyhedra and Efficiency}.
+\newblock Springer, 2003.
+
 \bibitem{archive}
 Alan Soper, Chris Walshaw, and Mark Cross.
 \newblock A combined evolutionary search and multilevel optimisation approach
   to graph-partitioning.
 \newblock {\em Journal of Global Optimization}, 29:225--241, 06 2004.
+
+\bibitem{sparcification}
+Daniel~A. Spielman and Shang-Hua Teng.
+\newblock Nearly-linear time algorithms for graph partitioning, graph
+  sparsification, and solving linear systems.
+\newblock In {\em Proceedings of the Thirty-Sixth Annual ACM Symposium on
+  Theory of Computing}, STOC '04, page 81–90, New York, NY, USA, 2004.
+  Association for Computing Machinery.
 
 \bibitem{islanding}
 Zhonglin Sun, Yannis Spyridis, Thomas Lagkas, Achilleas Sesis, Georgios

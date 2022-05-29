@@ -236,6 +236,144 @@ edition = {5th},
 abstract = {This comprehensive textbook on combinatorial optimization places specialemphasis on theoretical results and algorithms with provably goodperformance, in contrast to heuristics. It is based on numerous courses on combinatorial optimization and specialized topics, mostly at graduate level. This book reviews the fundamentals, covers the classical topics (paths, flows, matching, matroids, NP-completeness, approximation algorithms) in detail, and proceeds to advanced and recent topics, some of which have not appeared in a textbook before. Throughout,it contains complete but concise proofs, and also provides numerousexercises and references. This fifth edition has again been updated, revised, and significantlyextended, with more than 60 new exercises and new material on varioustopics, including Cayley's formula, blocking flows, fasterb-matching separation, multidimensional knapsack, multicommoditymax-flow min-cut ratio, and sparsest cut. Thus, this book represents the state of the art of combinatorial optimization.}
 }
 
-@misc{brilliant, title={Combinatorial optimization}, url={https://brilliant.org/wiki/combinatorial-optimization/}, howpublished = {\url{https://brilliant.org/wiki/combinatorial-optimization/}}, journal={Brilliant Math and Science Wiki}, author={Henry Maltby and Eli Ross }, year = {2022} }
+@misc{brilliant, 
+    title={Combinatorial optimization}, 
+    url={https://brilliant.org/wiki/combinatorial-optimization/}, 
+    howpublished = {\url{ https://brilliant.org/wiki/combinatorial-optimization/ }}, 
+    journal={Brilliant Math and Science Wiki}, 
+    author={Henry Maltby and Eli Ross }, 
+    year = {2022} 
+}
 
-@phdthesis{fernandes, title={Algorithms and Models For Combinatorial Optimization Problems}, author={Fernandes, Albert Einstein Muritiba}, year={2010}} 
+@phdthesis{fernandes, 
+title={Algorithms and Models For Combinatorial Optimization Problems}, 
+author={Fernandes, Albert Einstein Muritiba}, 
+year={2010}
+}
+
+@book{schrijver-book,
+  added-at = {2007-07-05T16:17:35.000+0200},
+  author = {Schrijver, A.},
+  biburl = {https://www.bibsonomy.org/bibtex/2496d0012f9b295acbef270a129061375/jleny},
+  description = {bandit problems},
+  interhash = {dfbeb3a87380195540f44a10e9995230},
+  intrahash = {496d0012f9b295acbef270a129061375},
+  keywords = {imported},
+  publisher = {Springer},
+  timestamp = {2007-07-05T16:17:37.000+0200},
+  title = {Combinatorial Optimization - Polyhedra and Efficiency},
+  year = {2003}
+}
+
+@Inbook{integeroptimization,
+author="Hoffman, Karla L.
+and Ralphs, Ted K.",
+editor="Gass, Saul I.
+and Fu, Michael C.",
+title="Integer and Combinatorial Optimization",
+bookTitle="Encyclopedia of Operations Research and Management Science",
+year="2013",
+publisher="Springer US",
+address="Boston, MA",
+pages="771--783",
+isbn="978-1-4419-1153-7",
+doi="10.1007/978-1-4419-1153-7_129",
+url="https://doi.org/10.1007/978-1-4419-1153-7_129"
+}
+
+@article{branchbound,
+author = {Morrison, David R. and Jacobson, Sheldon H. and Sauppe, Jason J. and Sewell, Edward C.},
+title = {Branch-and-Bound Algorithms},
+year = {2016},
+issue_date = {February 2016},
+publisher = {Elsevier Science Publishers B. V.},
+address = {NLD},
+volume = {19},
+number = {C},
+issn = {1572-5286},
+url = {https://doi.org/10.1016/j.disopt.2016.01.005},
+doi = {10.1016/j.disopt.2016.01.005},
+abstract = {The branch-and-bound (B&B) algorithmic framework has been used successfully to find exact solutions for a wide array of optimization problems. B&B uses a tree search strategy to implicitly enumerate all possible solutions to a given problem, applying pruning rules to eliminate regions of the search space that cannot lead to a better solution. There are three algorithmic components in B&B that can be specified by the user to fine-tune the behavior of the algorithm. These components are the search strategy, the branching strategy, and the pruning rules. This survey presents a description of recent research advances in the design of B&B algorithms, particularly with regards to these three components. Moreover, three future research directions are provided in order to motivate further exploration in these areas.},
+journal = {Discret. Optim.},
+month = {feb},
+pages = {79–102},
+numpages = {24},
+keywords = {Cyclic best first search, 90C10, 90C57, Discrete optimization, Survey, 90C27, Branch-and-bound, Integer programming, 90-02, Search strategies}
+}
+
+@book{heuristics,
+author = {Pearl, Judea},
+title = {Heuristics:  Intelligent Search Strategies for Computer Problem Solving},
+year = {1984},
+isbn = {0201055945},
+publisher = {Addison-Wesley Longman Publishing Co., Inc.},
+address = {USA}
+}
+
+@misc{branchimage,
+  title = {Introduction into the Modeling and Optimization of Linear Systems},
+  howpublished = {\url{https://hegyhati.github.io/IMOLS/}},
+  note = {Accessed: 2010-09-30},
+  author = {Máté Hegyháti},
+  year = {2022}
+}
+
+@article{complexnetworks,
+author = {Dirk Brockmann  and Dirk Helbing },
+title = {The Hidden Geometry of Complex, Network-Driven Contagion Phenomena},
+journal = {Science},
+volume = {342},
+number = {6164},
+pages = {1337-1342},
+year = {2013},
+doi = {10.1126/science.1245200},
+URL = {https://www.science.org/doi/abs/10.1126/science.1245200},
+eprint = {https://www.science.org/doi/pdf/10.1126/science.1245200},
+abstract = {In combating the global spread of an emerging infectious disease, answers must be obtained to three crucial questions: Where did the disease emerge? Where will it go next? When will it arrive? Brockmann and Helbing (p. 1337; see the Perspective by McLean) analyzed disease spread via the “effective distance” rather than geographical distance, wherein two locations that are connected by a strong link are effectively close. The approach was successfully applied to predict disease arrival times or disease source using data from the the 2003 SARS viral epidemic, 2009 H1N1 influenza pandemic, and the 2011 foodborne enterohaemorrhagic Escherichia coli outbreak in Germany. A model based on effective rather than geographical distance can reveal the origin, timing, and likely spread of epidemics. [Also see Perspective by McLean] The global spread of epidemics, rumors, opinions, and innovations are complex, network-driven dynamic processes. The combined multiscale nature and intrinsic heterogeneity of the underlying networks make it difficult to develop an intuitive understanding of these processes, to distinguish relevant from peripheral factors, to predict their time course, and to locate their origin. However, we show that complex spatiotemporal patterns can be reduced to surprisingly simple, homogeneous wave propagation patterns, if conventional geographic distance is replaced by a probabilistically motivated effective distance. In the context of global, air-traffic–mediated epidemics, we show that effective distance reliably predicts disease arrival times. Even if epidemiological parameters are unknown, the method can still deliver relative arrival times. The approach can also identify the spatial origin of spreading processes and successfully be applied to data of the worldwide 2009 H1N1 influenza pandemic and 2003 SARS epidemic.}
+}
+
+@article{bettersuited,
+  title={Fuzzy lattice reasoning (FLR) type neural computation for weighted graph partitioning},
+  author={Vassilis G. Kaburlasos and Lefteris Moussiades and Athena Vakali},
+  journal={Neurocomputing},
+  year={2009},
+  volume={72},
+  pages={2121-2133}
+}
+
+@inproceedings{sparcification,
+author = {Spielman, Daniel A. and Teng, Shang-Hua},
+title = {Nearly-Linear Time Algorithms for Graph Partitioning, Graph Sparsification, and Solving Linear Systems},
+year = {2004},
+isbn = {1581138520},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/1007352.1007372},
+doi = {10.1145/1007352.1007372},
+abstract = {We present algorithms for solving symmetric, diagonally-dominant linear systems to accuracy ε in time linear in their number of non-zeros and log (κf (A) ε), where κf (A) is the condition number of the matrix defining the linear system. Our algorithm applies the preconditioned Chebyshev iteration with preconditioners designed using nearly-linear time algorithms for graph sparsification and graph partitioning.},
+booktitle = {Proceedings of the Thirty-Sixth Annual ACM Symposium on Theory of Computing},
+pages = {81–90},
+numpages = {10},
+keywords = {preconditioners, graph partitioning, graph sparsification},
+location = {Chicago, IL, USA},
+series = {STOC '04}
+}
+
+@article{nesteddissection,
+  title={Graph Partitioning and Sparse Matrix Ordering using Reinforcement Learning},
+  author={Alice Gatti and Zhixiong Hu and Pieter Ghysels and Esmond G. Ng and Tess E. Smidt},
+  journal={ArXiv},
+  year={2021},
+  volume={abs/2104.03546}
+}
+
+@ARTICLE{matrixordering,
+  author={Gupta, A.},
+  journal={IBM Journal of Research and Development}, 
+  title={Fast and effective algorithms for graph partitioning and sparse-matrix ordering}, 
+  year={1997},
+  volume={41},
+  number={1.2},
+  pages={171-183},
+  doi={10.1147/rd.411.0171}
+}

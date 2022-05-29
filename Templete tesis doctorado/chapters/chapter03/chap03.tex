@@ -20,7 +20,7 @@ where $\boldsymbol W^{(l)}$ is a the learnable parameter weight matrix for the $
 
 Although GCN's are extremely powerful to generate node embeddings, in practice they have the following downsides:
 \begin{itemize}
-    \item In terms of efficiency, GCN's are . As it can be seen in Equation~\ref{eq:gcn}, they multiply feature matrices by powers of the graph's normalized Laplacian, i.e., they are computationally very expensive.
+    \item In terms of efficiency, GCN's are for sure not the best . As it can be seen in Equation~\ref{eq:gcn}, they multiply feature matrices by powers of the graph's normalized Laplacian, i.e., they are computationally very expensive. Under those circumstances, they are not suitable for big graphs.
     \item Over-smoothing
     \item 
 \end{itemize}

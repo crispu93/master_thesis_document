@@ -6,45 +6,46 @@ Database file #1: references.bib
 Warning--empty school in fernandes
 Warning--empty publisher in gap2
 Warning--empty booktitle in gap1
-You've used 21 entries,
+Warning--can't use both author and editor fields in integeroptimization
+You've used 30 entries,
             2118 wiz_defined-function locations,
-            623 strings with 7831 characters,
-and the built_in function-call counts, 7398 in all, are:
-= -- 714
-> -- 396
-< -- 5
-+ -- 157
-- -- 134
-* -- 467
-:= -- 1214
-add.period$ -- 66
-call.type$ -- 21
-change.case$ -- 127
+            682 strings with 9351 characters,
+and the built_in function-call counts, 10454 in all, are:
+= -- 1019
+> -- 525
+< -- 7
++ -- 209
+- -- 176
+* -- 667
+:= -- 1708
+add.period$ -- 95
+call.type$ -- 30
+change.case$ -- 173
 chr.to.int$ -- 0
-cite$ -- 24
-duplicate$ -- 322
-empty$ -- 531
-format.name$ -- 134
-if$ -- 1590
+cite$ -- 34
+duplicate$ -- 446
+empty$ -- 776
+format.name$ -- 176
+if$ -- 2251
 int.to.chr$ -- 0
-int.to.str$ -- 21
-missing$ -- 22
-newline$ -- 108
-num.names$ -- 42
-pop$ -- 151
+int.to.str$ -- 30
+missing$ -- 32
+newline$ -- 154
+num.names$ -- 60
+pop$ -- 201
 preamble$ -- 1
-purify$ -- 109
+purify$ -- 148
 quote$ -- 0
-skip$ -- 261
+skip$ -- 357
 stack$ -- 0
-substring$ -- 283
-swap$ -- 105
-text.length$ -- 5
+substring$ -- 474
+swap$ -- 139
+text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 78
-warning$ -- 3
-while$ -- 53
-width$ -- 23
-write$ -- 231
-(There were 3 warnings)
+type$ -- 110
+warning$ -- 4
+while$ -- 79
+width$ -- 32
+write$ -- 334
+(There were 4 warnings)
