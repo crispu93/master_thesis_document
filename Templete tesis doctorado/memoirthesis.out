@@ -7,7 +7,7 @@
 \BOOKMARK [1][-]{section.1.1}{Presentation}{chapter.1}% 7
 \BOOKMARK [1][-]{section.1.2}{Objectives}{chapter.1}% 8
 \BOOKMARK [2][-]{subsection.1.2.1}{General objective}{section.1.2}% 9
-\BOOKMARK [2][-]{subsection.1.2.2}{Particular objectives}{section.1.2}% 10
+\BOOKMARK [2][-]{subsection.1.2.2}{Specific objectives}{section.1.2}% 10
 \BOOKMARK [1][-]{section.1.3}{Justification}{chapter.1}% 11
 \BOOKMARK [1][-]{section.1.4}{Project scope and limitations}{chapter.1}% 12
 \BOOKMARK [1][-]{section.1.5}{Research Problem}{chapter.1}% 13
@@ -27,9 +27,10 @@
 \BOOKMARK [2][-]{subsection.3.1.1}{Graph Convolutional Networks}{section.3.1}% 27
 \BOOKMARK [2][-]{subsection.3.1.2}{GraphSAGE}{section.3.1}% 28
 \BOOKMARK [1][-]{section.3.2}{Node Features}{chapter.3}% 29
-\BOOKMARK [2][-]{subsection.3.2.1}{PinSAGE and Markov Chain Negative Sampling \(MCNS\)}{section.3.2}% 30
-\BOOKMARK [0][-]{chapter.4}{Experimental Results}{}% 31
-\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 32
-\BOOKMARK [1][-]{section.5.1}{Contributions}{chapter.5}% 33
-\BOOKMARK [1][-]{section.5.2}{Recommendations and future work}{chapter.5}% 34
-\BOOKMARK [0][-]{chapter*.14}{Bibliography}{}% 35
+\BOOKMARK [2][-]{subsection.3.2.1}{DeepWalk as feature extraction}{section.3.2}% 30
+\BOOKMARK [1][-]{section.3.3}{Markov Chain Negative Sampling \(MCNS\)}{chapter.3}% 31
+\BOOKMARK [0][-]{chapter.4}{Experimental Results}{}% 32
+\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 33
+\BOOKMARK [1][-]{section.5.1}{Contributions}{chapter.5}% 34
+\BOOKMARK [1][-]{section.5.2}{Recommendations and future work}{chapter.5}% 35
+\BOOKMARK [0][-]{chapter*.16}{Bibliography}{}% 36

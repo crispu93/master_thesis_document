@@ -1,5 +1,10 @@
 \begin{thebibliography}{10}
 
+\bibitem{unsupervisedloss}
+Nabila Abraham.
+\newblock Graphsage and inductive representation learning.
+\newblock \url{ shorturl.at/oDEIY }, 2020.
+
 \bibitem{compressgraphs}
 Giorgos Bouritsas, Andreas Loukas, Nikolaos Karalias, and Michael~M. Bronstein.
 \newblock Partition and code: learning how to compress graphs.
@@ -10,10 +15,55 @@ Dirk Brockmann and Dirk Helbing.
 \newblock The hidden geometry of complex, network-driven contagion phenomena.
 \newblock {\em Science}, 342(6164):1337--1342, 2013.
 
+\bibitem{nonattributed}
+Chen Cai and Yusu Wang.
+\newblock A simple yet effective baseline for non-attribute graph
+  classification.
+\newblock {\em arXiv preprint arXiv:1811.03508}, 2018.
+
+\bibitem{eigen}
+Kamalika Chaudhuri, Fan Chung, and Alexander Tsiatas.
+\newblock Spectral clustering of graphs with general degrees in the extended
+  planted partition model.
+\newblock {\em Journal of Machine Learning Research}, 23:35.1--35.23, 01 2012.
+
+\bibitem{fastgcn}
+Jie Chen, Tengfei Ma, and Cao Xiao.
+\newblock Fastgcn: Fast learning with graph convolutional networks via
+  importance sampling.
+\newblock In {\em 6th International Conference on Learning Representations,
+  {ICLR} 2018, Vancouver, BC, Canada, April 30 - May 3, 2018, Conference Track
+  Proceedings}. OpenReview.net, 2018.
+
+\bibitem{onpositional}
+Hejie Cui, Zijie Lu, Pan Li, and Carl Yang.
+\newblock On positional and structural node features for graph neural networks
+  on non-attributed graphs.
+\newblock {\em ArXiv}, abs/2107.01495, 2021.
+
+\bibitem{onnodefeatures}
+Chi~Thang Duong, Thanh~Dat Hoang, Haikun Dang, Quoc Viet~Hung Nguyen, and Karl
+  Aberer.
+\newblock On node features for graph neural networks.
+\newblock {\em ArXiv}, abs/1911.08795, 2019.
+
+\bibitem{clustering}
+K.~Erciyes.
+\newblock {\em Graph Partitioning and ClusteringGraph partitioning}, pages
+  199--218.
+\newblock Springer International Publishing, Cham, 2021.
+
 \bibitem{fernandes}
 Albert Einstein~Muritiba Fernandes.
 \newblock {\em Algorithms and Models For Combinatorial Optimization Problems}.
 \newblock PhD thesis, 2010.
+
+\bibitem{imagenodefeatures}
+Hongyang Gao, Zhengyang Wang, and Shuiwang Ji.
+\newblock Large-scale learnable graph convolutional networks.
+\newblock In {\em Proceedings of the 24th ACM SIGKDD International Conference
+  on Knowledge Discovery and Data Mining}, KDD '18, page 1416–1424, New York,
+  NY, USA, 2018. Association for Computing Machinery.
 
 \bibitem{nesteddissection}
 Alice Gatti, Zhixiong Hu, Pieter Ghysels, Esmond~G. Ng, and Tess~E. Smidt.
@@ -74,6 +124,12 @@ Máté Hegyháti.
 Karla~L. Hoffman and Ted~K. Ralphs.
 \newblock {\em Integer and Combinatorial Optimization}, pages 771--783.
 \newblock Springer US, Boston, MA, 2013.
+
+\bibitem{eigen2}
+Qian Huang, Horace He, Abhay Singh, Ser-Nam Lim, and Austin Benson.
+\newblock Combining label propagation and simple models out-performs graph
+  neural networks.
+\newblock In {\em International Conference on Learning Representations}, 2021.
 
 \bibitem{bettersuited}
 Vassilis~G. Kaburlasos, Lefteris Moussiades, and Athena Vakali.
@@ -138,13 +194,23 @@ Alan Soper, Chris Walshaw, and Mark Cross.
   to graph-partitioning.
 \newblock {\em Journal of Global Optimization}, 29:225--241, 06 2004.
 
-\bibitem{sparcification}
+\bibitem{sparsification}
 Daniel~A. Spielman and Shang-Hua Teng.
-\newblock Nearly-linear time algorithms for graph partitioning, graph
-  sparsification, and solving linear systems.
-\newblock In {\em Proceedings of the Thirty-Sixth Annual ACM Symposium on
-  Theory of Computing}, STOC '04, page 81–90, New York, NY, USA, 2004.
-  Association for Computing Machinery.
+\newblock Spectral sparsification of graphs.
+\newblock {\em SIAM Journal on Computing}, 40(4):981--1025, 2011.
+
+\bibitem{local_clustering}
+Daniel~A. Spielman and Shang-Hua Teng.
+\newblock A local clustering algorithm for massive graphs and its application
+  to nearly linear time graph partitioning.
+\newblock {\em SIAM Journal on Computing}, 42(1):1--26, 2013.
+
+\bibitem{linearsystems}
+Daniel~A. Spielman and Shang-Hua Teng.
+\newblock Nearly linear time algorithms for preconditioning and solving
+  symmetric, diagonally dominant linear systems.
+\newblock {\em SIAM Journal on Matrix Analysis and Applications},
+  35(3):835--885, 2014.
 
 \bibitem{islanding}
 Zhonglin Sun, Yannis Spyridis, Thomas Lagkas, Achilleas Sesis, Georgios
@@ -153,10 +219,29 @@ Zhonglin Sun, Yannis Spyridis, Thomas Lagkas, Achilleas Sesis, Georgios
   intentional islanding in power systems considering load-generation balance.
 \newblock {\em Sensors}, 21(5), 2021.
 
+\bibitem{jostle}
+Chris Walshaw.
+\newblock Contents the jostle executable user guide: Version 3.1.
+\newblock 08 2005.
+
 \bibitem{nodefeatures}
 Chen Wang, Yingtong Dou, Min Chen, Jia Chen, Zhiwei Liu, and Philip~S. Yu.
 \newblock Deep fraud detection on non-attributed graph.
 \newblock {\em CoRR}, abs/2110.01171, 2021.
+
+\bibitem{encoderlimitations}
+Keyulu Xu, Weihua Hu, Jure Leskovec, and Stefanie Jegelka.
+\newblock How powerful are graph neural networks?
+\newblock In {\em International Conference on Learning Representations}, 2019.
+
+\bibitem{pinsage}
+Rex Ying, Ruining He, Kaifeng Chen, Pong Eksombatchai, William~L. Hamilton, and
+  Jure Leskovec.
+\newblock Graph convolutional neural networks for web-scale recommender
+  systems.
+\newblock In {\em Proceedings of the 24th ACM SIGKDD International Conference
+  on Knowledge Discovery and Data Mining}, KDD '18, page 974–983, New York,
+  NY, USA, 2018. Association for Computing Machinery.
 
 \bibitem{deepwalk_hyper}
 Chen Yunfang, Li~Wang, Dehao Qi, and Wei Zhang.

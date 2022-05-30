@@ -9,9 +9,9 @@
 \contentsline {section}{\numberline {1.1}Presentation}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Objectives}{3}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}General objective}{3}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Particular objectives}{3}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.2}Specific objectives}{3}{subsection.1.2.2}%
 \contentsline {section}{\numberline {1.3}Justification}{4}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Project scope and limitations}{5}{section.1.4}%
+\contentsline {section}{\numberline {1.4}Project scope and limitations}{6}{section.1.4}%
 \contentsline {section}{\numberline {1.5}Research Problem}{7}{section.1.5}%
 \contentsline {section}{\numberline {1.6}Hypothesis}{7}{section.1.6}%
 \contentsline {section}{\numberline {1.7}Project organization}{7}{section.1.7}%
@@ -29,12 +29,13 @@
 \contentsline {subsubsection}{\numberline {2.3.1.3}The Partitioning Module}{15}{subsubsection.2.3.1.3}%
 \contentsline {chapter}{\chapternumberline {3}Graph Partitioning for Large Graphs}{17}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Node Embeddings}{17}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Graph Convolutional Networks}{17}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}GraphSAGE}{18}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Node Features}{20}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}PinSAGE and Markov Chain Negative Sampling (MCNS)}{22}{subsection.3.2.1}%
-\contentsline {chapter}{\chapternumberline {4}Experimental Results}{23}{chapter.4}%
-\contentsline {chapter}{\chapternumberline {5}Conclusion}{27}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Contributions}{27}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Recommendations and future work}{27}{section.5.2}%
-\contentsline {chapter}{Bibliography}{29}{chapter*.14}%
+\contentsline {subsection}{\numberline {3.1.1}Graph Convolutional Networks}{18}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}GraphSAGE}{19}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Node Features}{21}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}DeepWalk as feature extraction}{22}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.3}Markov Chain Negative Sampling (MCNS)}{23}{section.3.3}%
+\contentsline {chapter}{\chapternumberline {4}Experimental Results}{25}{chapter.4}%
+\contentsline {chapter}{\chapternumberline {5}Conclusion}{29}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Contributions}{29}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Recommendations and future work}{29}{section.5.2}%
+\contentsline {chapter}{Bibliography}{31}{chapter*.16}%

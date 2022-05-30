@@ -432,25 +432,164 @@ eprint = {
 }
 
 @article{linearsystems,
-author = {Spielman, Daniel A. and Teng, Shang-Hua},
-title = {Nearly Linear Time Algorithms for Preconditioning and Solving Symmetric, Diagonally Dominant Linear Systems},
-journal = {SIAM Journal on Matrix Analysis and Applications},
-volume = {35},
-number = {3},
-pages = {835-885},
-year = {2014},
-doi = {10.1137/090771430},
-
-URL = { 
+    author = {Spielman, Daniel A. and Teng, Shang-Hua},
+    title = {Nearly Linear Time Algorithms for Preconditioning and Solving Symmetric, Diagonally Dominant Linear Systems},
+    journal = {SIAM Journal on Matrix Analysis and Applications},
+    volume = {35},
+    number = {3},
+    pages = {835-885},
+    year = {2014},
+    doi = {10.1137/090771430},
+    URL = { 
         https://doi.org/10.1137/090771430
     
 },
-eprint = { 
+    eprint = { 
         https://doi.org/10.1137/090771430
     
 }
-,
-    abstract = { We present a randomized algorithm that on input a symmetric, weakly diagonally dominant \$n\$-by-\$n\$ matrix \$A\$ with \$m\$ nonzero entries and an \$n\$-vector \$b\$ produces an \${\tilde{x}} \$ such that \$\|{\tilde{x}} - A^{\dagger} {b} \|\_{A} \leq \epsilon \|A^{\dagger} {b}\|\_{A}\$ in expected time \$O (m \log^{c}n \log (1/\epsilon))\$ for some constant \$c\$. By applying this algorithm inside the inverse power method, we compute approximate Fiedler vectors in a similar amount of time. The algorithm applies subgraph preconditioners in a recursive fashion. These preconditioners improve upon the subgraph preconditioners first introduced by Vaidya in 1990. For any symmetric, weakly diagonally dominant matrix \$A\$ with nonpositive off-diagonal entries and \$k \geq 1\$, we construct in time \$O (m \log^{c} n)\$ a preconditioner \$B\$ of \$A\$ with at most \$2 (n - 1) + O ((m/k) \log^{39} n)\$ nonzero off-diagonal entries such that the finite generalized condition number \$\kappa\_{f} (A,B)\$ is at most \$k\$, for some other constant \$c\$. In the special case when the nonzero structure of the matrix is planar the corresponding linear system solver runs in expected time \$O (n \log^{2} n + n \log n \ \log \log n \ \log (1/\epsilon))\$. We hope that our introduction of algorithms of low asymptotic complexity will lead to the development of algorithms that are also fast in practice. }
 }
 
+@Inbook{clustering,
+author="Erciyes, K.",
+title="Graph Partitioning and ClusteringGraph partitioning",
+bookTitle="Algebraic Graph Algorithms: A Practical Guide Using Python",
+year="2021",
+publisher="Springer International Publishing",
+address="Cham",
+pages="199--218",
+abstract="Partitioning and clustering are two main operations on graphs that find a wide range of applications. Graph partitioning aims at balanced partitions with minimum interactions between partitions. However, graph clustering algorithms attempt to discover densely populated regions of graphs. We review algebraic algorithms for these problems and provide Python implementations of these algorithms in this chapter.",
+isbn="978-3-030-87886-3",
+doi="10.1007/978-3-030-87886-3_11",
+url="https://doi.org/10.1007/978-3-030-87886-3_11"
+}
 
+@inproceedings{encoderlimitations,
+    title={How Powerful are Graph Neural Networks?},
+    author={Keyulu Xu and Weihua Hu and Jure Leskovec and Stefanie Jegelka},
+    booktitle={International Conference on Learning Representations},
+    year={2019},
+    url={https://openreview.net/forum?id=ryGs6iA5Km}
+}
+
+@inproceedings{FastGCN,
+  author    = {Jie Chen and
+               Tengfei Ma and
+               Cao Xiao},
+  title     = {FastGCN: Fast Learning with Graph Convolutional Networks via Importance
+               Sampling},
+  booktitle = {6th International Conference on Learning Representations, {ICLR} 2018,
+               Vancouver, BC, Canada, April 30 - May 3, 2018, Conference Track Proceedings},
+  publisher = {OpenReview.net},
+  year      = {2018},
+  url       = {https://openreview.net/forum?id=rytstxWAW},
+  timestamp = {Mon, 31 May 2021 15:36:24 +0200},
+  biburl    = {https://dblp.org/rec/conf/iclr/ChenMX18.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{pinsage,
+author = {Ying, Rex and He, Ruining and Chen, Kaifeng and Eksombatchai, Pong and Hamilton, William L. and Leskovec, Jure},
+title = {Graph Convolutional Neural Networks for Web-Scale Recommender Systems},
+year = {2018},
+isbn = {9781450355520},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3219819.3219890},
+doi = {10.1145/3219819.3219890},
+abstract = {Recent advancements in deep neural networks for graph-structured data have led to state-of-the-art performance on recommender system benchmarks. However, making these methods practical and scalable to web-scale recommendation tasks with billions of items and hundreds of millions of users remains an unsolved challenge. Here we describe a large-scale deep recommendation engine that we developed and deployed at Pinterest. We develop a data-efficient Graph Convolutional Network (GCN) algorithm, which combines efficient random walks and graph convolutions to generate embeddings of nodes (i.e., items) that incorporate both graph structure as well as node feature information. Compared to prior GCN approaches, we develop a novel method based on highly efficient random walks to structure the convolutions and design a novel training strategy that relies on harder-and-harder training examples to improve robustness and convergence of the model. We also develop an efficient MapReduce model inference algorithm to generate embeddings using a trained model. Overall, we can train on and embed graphs that are four orders of magnitude larger than typical GCN implementations. We show how GCN embeddings can be used to make high-quality recommendations in various settings at Pinterest, which has a massive underlying graph with 3 billion nodes representing pins and boards, and 17 billion edges. According to offline metrics, user studies, as well as A/B tests, our approach generates higher-quality recommendations than comparable deep learning based systems. To our knowledge, this is by far the largest application of deep graph embeddings to date and paves the way for a new generation of web-scale recommender systems based on graph convolutional architectures.},
+booktitle = {Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+pages = {974–983},
+numpages = {10},
+keywords = {scalability, recommender systems, graph convolutional networks, deep learning},
+location = {London, United Kingdom},
+series = {KDD '18}
+}
+
+@misc{unsupervisedloss, 
+    title={GraphSAGE and inductive representation learning}, 
+    url={https://medium.com/analytics-vidhya/ohmygraphs-graphsage-and-inductive-representation-learning-ea26d2835331}, 
+    howpublished = {\url{ shorturl.at/oDEIY }}, 
+    journal={Medium and analytics-vidhya}, 
+    author={Nabila Abraham}, 
+    year = {2020} 
+}
+
+@article{frauddetection,
+  author    = {Chen Wang and
+               Yingtong Dou and
+               Min Chen and
+               Jia Chen and
+               Zhiwei Liu and
+               Philip S. Yu},
+  title     = {Deep Fraud Detection on Non-attributed Graph},
+  journal   = {CoRR},
+  volume    = {abs/2110.01171},
+  year      = {2021},
+  url       = {https://arxiv.org/abs/2110.01171},
+  eprinttype = {arXiv},
+  eprint    = {2110.01171},
+  timestamp = {Fri, 08 Oct 2021 15:47:55 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2110-01171.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{nonattributed,
+ title={A simple yet effective baseline for non-attribute graph classification},
+ author={Cai, Chen and Wang, Yusu},
+ journal={arXiv preprint arXiv:1811.03508},
+ year={2018}
+}
+%ICLR 2019 workshop on Representation learning on graphs and manifolds
+
+@inproceedings{imagenodefeatures,
+author = {Gao, Hongyang and Wang, Zhengyang and Ji, Shuiwang},
+title = {Large-Scale Learnable Graph Convolutional Networks},
+year = {2018},
+isbn = {9781450355520},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3219819.3219947},
+doi = {10.1145/3219819.3219947},
+abstract = {Convolutional neural networks (CNNs) have achieved great success on grid-like data such as images, but face tremendous challenges in learning from more generic data such as graphs. In CNNs, the trainable local filters enable the automatic extraction of high-level features. The computation with filters requires a fixed number of ordered units in the receptive fields. However, the number of neighboring units is neither fixed nor are they ordered in generic graphs, thereby hindering the applications of convolutional operations. Here, we address these challenges by proposing the learnable graph convolutional layer (LGCL). LGCL automatically selects a fixed number of neighboring nodes for each feature based on value ranking in order to transform graph data into grid-like structures in 1-D format, thereby enabling the use of regular convolutional operations on generic graphs. To enable model training on large-scale graphs, we propose a sub-graph training method to reduce the excessive memory and computational resource requirements suffered by prior methods on graph convolutions. Our experimental results on node classification tasks in both transductive and inductive learning settings demonstrate that our methods can achieve consistently better performance on the Cora, Citeseer, Pubmed citation network, and protein-protein interaction network datasets. Our results also indicate that the proposed methods using sub-graph training strategy are more efficient as compared to prior approaches.},
+booktitle = {Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+pages = {1416–1424},
+numpages = {9},
+keywords = {large-scale learning, graph convolutional networks, deep learning, graph mining},
+location = {London, United Kingdom},
+series = {KDD '18}
+}
+
+@article{onnodefeatures,
+  title={On Node Features for Graph Neural Networks},
+  author={Chi Thang Duong and Thanh Dat Hoang and Haikun Dang and Quoc Viet Hung Nguyen and Karl Aberer},
+  journal={ArXiv},
+  year={2019},
+  volume={abs/1911.08795}
+}
+
+@article{onpositional,
+  title={On Positional and Structural Node Features for Graph Neural Networks on Non-attributed Graphs},
+  author={Hejie Cui and Zijie Lu and Pan Li and Carl Yang},
+  journal={ArXiv},
+  year={2021},
+  volume={abs/2107.01495}
+}
+
+@article{eigen,
+author = {Chaudhuri, Kamalika and Chung, Fan and Tsiatas, Alexander},
+year = {2012},
+month = {01},
+pages = {35.1-35.23},
+title = {Spectral Clustering of Graphs with General Degrees in the Extended Planted Partition Model},
+volume = {23},
+journal = {Journal of Machine Learning Research}
+}
+
+@inproceedings{eigen2,
+title={Combining Label Propagation and Simple Models out-performs Graph Neural Networks},
+author={Qian Huang and Horace He and Abhay Singh and Ser-Nam Lim and Austin Benson},
+booktitle={International Conference on Learning Representations},
+year={2021},
+url={https://openreview.net/forum?id=8E1-f3VhX1o}
+}
