@@ -377,3 +377,80 @@ series = {STOC '04}
   pages={171-183},
   doi={10.1147/rd.411.0171}
 }
+
+@article{jostle,
+author = {Walshaw, Chris},
+year = {2005},
+month = {08},
+pages = {},
+howpublished = {\url{https://chriswalshaw.co.uk/jostle/jostle-exe.pdf}},
+title = {Contents The JOSTLE executable user guide: Version 3.1}
+}
+
+@article{local_clustering,
+author = {Spielman, Daniel A. and Teng, Shang-Hua},
+title = {A Local Clustering Algorithm for Massive Graphs and Its Application to Nearly Linear Time Graph Partitioning},
+journal = {SIAM Journal on Computing},
+volume = {42},
+number = {1},
+pages = {1-26},
+year = {2013},
+doi = {10.1137/080744888},
+
+URL = { 
+        https://doi.org/10.1137/080744888
+    
+},
+eprint = { 
+        https://doi.org/10.1137/080744888
+    
+}
+,
+    abstract = { We study the design of local algorithms for massive graphs. A local graph algorithm is one that finds a solution containing or near a given vertex without looking at the whole graph. We present a local clustering algorithm. Our algorithm finds a good cluster---a subset of vertices whose internal connections are significantly richer than its external connections---near a given vertex. The running time of our algorithm, when it finds a nonempty local cluster, is nearly linear in the size of the cluster it outputs. The running time of our algorithm also depends polylogarithmically on the size of the graph and polynomially on the conductance of the cluster it produces. Our clustering algorithm could be a useful primitive for handling massive graphs, such as social networks and web-graphs. As an application of this clustering algorithm, we present a partitioning algorithm that finds an approximate sparsest cut with nearly optimal balance. Our algorithm takes time nearly linear in the number edges of the graph. Using the partitioning algorithm of this paper, we have designed a nearly linear time algorithm for constructing spectral sparsifiers of graphs, which we in turn use in a nearly linear time algorithm for solving linear systems in symmetric, diagonally dominant matrices. The linear system solver also leads to a nearly linear time algorithm for approximating the second-smallest eigenvalue and corresponding eigenvector of the Laplacian matrix of a graph. These other results are presented in two companion papers. }
+}
+
+@article{sparsification,
+author = {Spielman, Daniel A. and Teng, Shang-Hua},
+title = {Spectral Sparsification of Graphs},
+journal = {SIAM Journal on Computing},
+volume = {40},
+number = {4},
+pages = {981-1025},
+year = {2011},
+doi = {10.1137/08074489X},
+
+URL = { 
+        https://doi.org/10.1137/08074489X
+    
+},
+eprint = { 
+        https://doi.org/10.1137/08074489X
+    
+}
+,
+    abstract = { We introduce a new notion of graph sparsification based on spectral similarity of graph Laplacians: spectral sparsification requires that the Laplacian quadratic form of the sparsifier approximate that of the original. This is equivalent to saying that the Laplacian of the sparsifier is a good preconditioner for the Laplacian of the original. We prove that every graph has a spectral sparsifier of nearly linear size. Moreover, we present an algorithm that produces spectral sparsifiers in time \$O(m\log^{c}m)\$, where m is the number of edges in the original graph and c is some absolute constant. This construction is a key component of a nearly linear time algorithm for solving linear equations in diagonally dominant matrices. Our sparsification algorithm makes use of a nearly linear time algorithm for graph partitioning that satisfies a strong guarantee: if the partition it outputs is very unbalanced, then the larger part is contained in a subgraph of high conductance. }
+}
+
+@article{linearsystems,
+author = {Spielman, Daniel A. and Teng, Shang-Hua},
+title = {Nearly Linear Time Algorithms for Preconditioning and Solving Symmetric, Diagonally Dominant Linear Systems},
+journal = {SIAM Journal on Matrix Analysis and Applications},
+volume = {35},
+number = {3},
+pages = {835-885},
+year = {2014},
+doi = {10.1137/090771430},
+
+URL = { 
+        https://doi.org/10.1137/090771430
+    
+},
+eprint = { 
+        https://doi.org/10.1137/090771430
+    
+}
+,
+    abstract = { We present a randomized algorithm that on input a symmetric, weakly diagonally dominant \$n\$-by-\$n\$ matrix \$A\$ with \$m\$ nonzero entries and an \$n\$-vector \$b\$ produces an \${\tilde{x}} \$ such that \$\|{\tilde{x}} - A^{\dagger} {b} \|\_{A} \leq \epsilon \|A^{\dagger} {b}\|\_{A}\$ in expected time \$O (m \log^{c}n \log (1/\epsilon))\$ for some constant \$c\$. By applying this algorithm inside the inverse power method, we compute approximate Fiedler vectors in a similar amount of time. The algorithm applies subgraph preconditioners in a recursive fashion. These preconditioners improve upon the subgraph preconditioners first introduced by Vaidya in 1990. For any symmetric, weakly diagonally dominant matrix \$A\$ with nonpositive off-diagonal entries and \$k \geq 1\$, we construct in time \$O (m \log^{c} n)\$ a preconditioner \$B\$ of \$A\$ with at most \$2 (n - 1) + O ((m/k) \log^{39} n)\$ nonzero off-diagonal entries such that the finite generalized condition number \$\kappa\_{f} (A,B)\$ is at most \$k\$, for some other constant \$c\$. In the special case when the nonzero structure of the matrix is planar the corresponding linear system solver runs in expected time \$O (n \log^{2} n + n \log n \ \log \log n \ \log (1/\epsilon))\$. We hope that our introduction of algorithms of low asymptotic complexity will lead to the development of algorithms that are also fast in practice. }
+}
+
+

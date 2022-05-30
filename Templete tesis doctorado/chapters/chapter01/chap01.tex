@@ -63,14 +63,15 @@ Graphs are a mathematical representation of what is colloquially known as networ
 The Graph Partitioning (GP) problem is relevant to solve a big number of graph-related tasks. Frequently, GP is employed as a pre-processing subroutine to solve a separate graph-related problem. If the edges that cross between the partition groups is relatively small compared to the original graph, then the partitioned graph may be better appropriate for analysis and problem-solving than the original~\cite{bettersuited}. 
 
 As a matter of fact, finding good quality partitions of a graph is generally the first step of distributed graph computing tasks. The next paragraphs are dedicated to describe some of the most distinguished applications of GP.
-Applications of GP into solve graph-related problems are presented first to continue then with applications to to other areas and real-life situations.
+Applications of GP into solve graph-related and other abstract computer science problems are presented first to continue then with applications to other areas and real-life situations.
 
-One of the first and most useful applications of GP that one can find in literature is graph compression. A popular method for graph compression is the reordering method, which iteratively bisects a graph into two sets of equal cardinality aiming to minimize a compression-related objective function. Note that graph bisection is a special case of GP.\\ For instance, Bouritsas et. al.~ \cite{compressgraphs} showed a way to use a Machine Learning approach combined with a parametric GP algorithm to solve this task.
+One of the first and most useful applications of GP that one can find in literature is graph compression. A popular method for graph compression is the reordering method, which iteratively bisects a graph into two sets of equal cardinality aiming to minimize a compression-related objective function. Note that graph bisection is a special case of GP.\\ For instance, Bouritsas et. al.~\cite{compressgraphs} showed a way to use a Machine Learning approach combined with a parametric GP algorithm to solve this task.
 
-for graph sparsification and solving linear systems~\cite{sparcification}. For example, Gupta~\cite{matrixordering}
+Another important application of GP is to implement graph sparsification and related to this solving linear systems~\cite{sparcification}. In its paper, Gupta~\cite{matrixordering}
 
 Nested dissection a divide and conquer heuristic for the solution of sparse symmetric systems of linear equations~\cite{nesteddissection}
 
+A close-related 
 Applications of graph partitioning to real-life problems:
 
 Graph partitioning plays an essential role in paralleling computations and the design of new algorithms on large graphs. For example device placement problem where one aims to distribute work accross multiple devices and have applications in Deep Learning to train Neural Networks accross multiple devices \cite{deviceplacement} 
@@ -82,10 +83,6 @@ Image segmentation~\cite{imagesegmentation}
 communities detection
 With
 
-Most of the mentioned research have in common that the approaches followed regularly use state-of-the-art GP algorithms. Some of the same algorithms for those tasks are unexplored in large-scale graphs and they do not consider the growth in instance-size of graph data that is emerging. The possibility that they become obsolete in the near future needs to be studied carefully as the same time alongside with the development of new strategies that overcome the inexorable challenges.
-
-Another important highlight he targets are load-balance and minimizing the communication volume. This is a consideration not all of the existing approaches have.
-
 Undoubtedly, the most recent direction where the GP problem has gained importance is in its application for clustering in complex networks. Those types of networks include but are not limited to social networks, transportation networks, web graphs, and biological networks. For an example, see Figure~\ref{fig:complexnetwork}.
 
 \begin{figure}[h!]
@@ -95,18 +92,21 @@ Undoubtedly, the most recent direction where the GP problem has gained importanc
     \label{fig:complexnetwork}
 \end{figure}
 
+Most of the mentioned research and applications have in common that the approaches followed regularly use state-of-the-art GP algorithms. Some of the same algorithms for those tasks are unexplored in large-scale graphs and they do not consider the growth in instance-size of graph data that is emerging. The possibility that they become obsolete in the near future needs to be studied carefully as the same time alongside with the development of new strategies that overcome the inexorable challenges.
+
+Another important highlight he targets are load-balance and minimizing the communication volume. This is a consideration not all of the existing approaches have.
+
 \section{Project scope and limitations}
 During the development of this project there were taken the following considerations
 \begin{itemize}
     \item One of the first limitation found is related to the dataset used to test the proposed algorithm. Most of them were taken from "The Graph Partitioning Archive", a famous dataset where some of the most successful partitioning algorithms have been tested. While this offers a good comparison point, the algorithm have not been tested on real-world graphs.
-    \item Again, due to the use of "The Graph Partitioning Archive" as dataset, the size of the graphs is not so big compared to real-world graphs as the ones used in Amazon or Pinterest. The largest graph in the dataset contains $500,000$ nodes.
-    \item In general, the graphs used for running the experiments are not so sparse. Some of the graphs that are indeed sparse, belongs to the category of small-size graphs with less than $50,000$ nodes. This is not considered to be a big deal because not all real-world graphs are sparse. However it is believed that special considerations should be taken during the training of the algorithm
-    \item computing power accessed 
-    \item Values based on previous work
-    \item What assumptions do I make?
-    \item not distributed work which could improve
-    \item It only accepts a certain format SCOTCH and Networkx
-    \item Comparison with GAP was using graphs without features, an interesting thing would be to check performance with the same datasets they used but getting rid of the features, e.g., cora citation
+    \item Again, due to the use of "The Graph Partitioning Archive" as dataset, the size of the graphs is not so big compared to real-world graphs as the ones used in Amazon or Pinterest networks. The largest graph in the dataset contains $500,000$ nodes.
+    \item In general, the graphs used for running the experiments are not so sparse. Some of the graphs that are indeed sparse, belongs to the category of small-size graphs with less than $50,000$ nodes. This is not supposed to be a big deal because not all real-world graphs are sparse. However, it is believed that special considerations should be contemplated during the training of the algorithm.
+    \item Most of the parameters values based on previous work where they were shown to have a good performance or they were recommended by the original authors. Nonetheless, more experiments in different scenarios should be run to determine better specific-task values.
+    \item The machines where the experiments were executed have very limited power computing relative to the ambitions of this project. Though hardware specification of those machines was enough to run experiments on the selected dataset, it would be impossible to process complex networks with this technology.
+    \item The proposed algorithm was not designed to run in a distributed environment. Experiments were run in single thread and the algorithm was trained only in GPU. Modifications of the algorithm to run in parallel and distribute the training load between CPU and CPU could be interesting to research topic and would improve its performance.
+    \item The proposed framework only accepts certain input formats for the graphs, more specific JOSTLE and METIS formats.
+    %\item Comparison with GAP was using graphs without features, an interesting thing would be to check performance with the same datasets they used but getting rid of the features, e.g., cora citation
 \end{itemize}
 
 \section{Research Problem}
