@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.1)  30 MAY 2022 14:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.1)  31 MAY 2022 00:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1960,7 +1960,7 @@ line 157.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<Images/logo-ipn.png, id=151, 1235.61626pt x 1323.94624pt>
+<Images/logo-ipn.png, id=163, 1235.61626pt x 1323.94624pt>
 File: Images/logo-ipn.png Graphic file (type png)
 <use Images/logo-ipn.png>
 Package pdftex.def Info: Images/logo-ipn.png  used on input line 31.
@@ -2030,7 +2030,7 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-eur.cfg
 File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 )
-<Images/CIC.png, id=153, 100.375pt x 65.24374pt>
+<Images/CIC.png, id=165, 100.375pt x 65.24374pt>
 File: Images/CIC.png Graphic file (type png)
 <use Images/CIC.png>
 Package pdftex.def Info: Images/CIC.png  used on input line 48.
@@ -2122,7 +2122,7 @@ Package nag Warning: \label in float, but not after \caption on input line 25.
 
 Package nag Warning: \label in float, but not after \caption on input line 25.
 
-<chapters/chapter01/theory_branch_and_bound.jpg, id=291, 451.6875pt x 225.84375
+<chapters/chapter01/theory_branch_and_bound.jpg, id=316, 451.6875pt x 225.84375
 pt>
 File: chapters/chapter01/theory_branch_and_bound.jpg Graphic file (type jpg)
 <use chapters/chapter01/theory_branch_and_bound.jpg>
@@ -2135,7 +2135,7 @@ been already used, duplicate ignored
                    \relax 
 l.42 
       [2 <./chapters/chapter01/theory_branch_and_bound.jpg>] [3] [4]
-<chapters/chapter01/complex_networks.png, id=328, 803.0pt x 325.215pt>
+<chapters/chapter01/complex_networks.png, id=353, 803.0pt x 325.215pt>
 File: chapters/chapter01/complex_networks.png Graphic file (type png)
 <use chapters/chapter01/complex_networks.png>
 Package pdftex.def Info: chapters/chapter01/complex_networks.png  used on input
@@ -2166,29 +2166,78 @@ Overfull \hbox (19.7774pt too wide) in paragraph at lines 197--199
 .org/doi/abs/10.1145/3318464.3389745 
  []
 
-[12] [13]
+[12]
+<chapters/chapter02/GAP.png, id=420, 1189.44376pt x 349.305pt>
+File: chapters/chapter02/GAP.png Graphic file (type png)
+<use chapters/chapter02/GAP.png>
+Package pdftex.def Info: chapters/chapter02/GAP.png  used on input line 210.
+(pdftex.def)             Requested size: 451.99333pt x 132.73727pt.
+
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 211.
+
+
+Overfull \hbox (3.99333pt too wide) in paragraph at lines 210--211
+ [] 
+ []
+
+[13 <./chapters/chapter02/GAP.png>]
+<chapters/chapter02/expectation.png, id=437, 498.14679pt x 273.02pt>
+File: chapters/chapter02/expectation.png Graphic file (type png)
+<use chapters/chapter02/expectation.png>
+Package pdftex.def Info: chapters/chapter02/expectation.png  used on input line
+ 243.
+(pdftex.def)             Requested size: 348.70036pt x 191.11269pt.
+
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 244.
+
+[14 <./chapters/chapter02/expectation.png>]
 
 LaTeX Font Warning: Font shape `U/stmry/b/n' undefined
-(Font)              using `U/stmry/m/n' instead on input line 260.
+(Font)              using `U/stmry/m/n' instead on input line 278.
 
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <9> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 260.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 278.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 260.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 278.
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <9> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 260.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 278.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 260.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 278.
 
-[14]) [15] [16
 
-] (./chapters/chapter03/chap03.tex [17
+Package nag Warning: \label in float, but not after \caption on input line 287.
+
+
+
+Package nag Warning: \label in float, but not after \caption on input line 287.
+
+
+<chapters/chapter02/partitioning_module.png, id=455, 698.61pt x 397.485pt>
+File: chapters/chapter02/partitioning_module.png Graphic file (type png)
+<use chapters/chapter02/partitioning_module.png>
+Package pdftex.def Info: chapters/chapter02/partitioning_module.png  used on in
+put line 289.
+(pdftex.def)             Requested size: 349.30414pt x 198.742pt.
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 290.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[15]) [16 <./chapters/chapter02/partitioning_module.png>]
+(./chapters/chapter03/chap03.tex [17
+
 
 ] [18] [19]
-<chapters/chapter03/graphSAGE_loss.png, id=475, 3006.23125pt x 1452.42625pt>
+<chapters/chapter03/graphSAGE_loss.png, id=508, 3006.23125pt x 1452.42625pt>
 File: chapters/chapter03/graphSAGE_loss.png Graphic file (type png)
 <use chapters/chapter03/graphSAGE_loss.png>
 Package pdftex.def Info: chapters/chapter03/graphSAGE_loss.png  used on input l
@@ -2205,7 +2254,7 @@ Overfull \hbox (2.91524pt too wide) in paragraph at lines 89--90
  []
 
 [20 <./chapters/chapter03/graphSAGE_loss.png>]
-<chapters/chapter03/node_features.png, id=488, 575.14874pt x 385.44pt>
+<chapters/chapter03/node_features.png, id=521, 575.14874pt x 385.44pt>
 File: chapters/chapter03/node_features.png Graphic file (type png)
 <use chapters/chapter03/node_features.png>
 Package pdftex.def Info: chapters/chapter03/node_features.png  used on input li
@@ -2255,137 +2304,119 @@ ts/m/n/12 (+20) (\FML/futmi/m/it/12 DN\T1/futs/m/n/12 (+20) (\FML/futmi/m/it/12
  []
 
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 149--150
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
 []\T1/futs/m/n/12 (+20) Ratio cut it is still used and rel-e-vant to mod-ern re
 -search cite here
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 149--150
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
 \T1/futs/m/n/12 (+20) https://proceedings.neurips.cc/paper/2020/file/aa108f56a1
 0e75c1f20f27723ecac85f-
  []
 
+) [23] [24
 
-Package nag Warning: \label in float, but not after \caption on input line 164.
+] (./chapters/chapter04/chap04.tex [25
 
-
-
-Package nag Warning: \label in float, but not after \caption on input line 164.
-
-
-<chapters/chapter03/partitioning_module.png, id=522, 698.61pt x 397.485pt>
-File: chapters/chapter03/partitioning_module.png Graphic file (type png)
-<use chapters/chapter03/partitioning_module.png>
-Package pdftex.def Info: chapters/chapter03/partitioning_module.png  used on in
-put line 166.
-(pdftex.def)             Requested size: 349.30414pt x 198.742pt.
-
-Package nag Warning: `center' environment in figure.
-(nag)                Maybe you want \centering instead on input line 167.
-
-) [23] [24 <./chapters/chapter03/partitioning_module.png>]
-(./chapters/chapter04/chap04.tex
-Overfull \hbox (30.03181pt too wide) in paragraph at lines 53--79
- [][] 
- []
-
-<chapters/chapter04/small_graphs/bcsstk33.png, id=538, 462.528pt x 346.896pt>
+]
+<chapters/chapter04/small_graphs/bcsstk33.png, id=576, 462.528pt x 346.896pt>
 File: chapters/chapter04/small_graphs/bcsstk33.png Graphic file (type png)
 <use chapters/chapter04/small_graphs/bcsstk33.png>
 Package pdftex.def Info: chapters/chapter04/small_graphs/bcsstk33.png  used on 
-input line 89.
+input line 104.
 (pdftex.def)             Requested size: 156.80273pt x 117.60431pt.
-<chapters/chapter04/small_graphs/crack.png, id=539, 462.528pt x 346.896pt>
+<chapters/chapter04/small_graphs/crack.png, id=577, 462.528pt x 346.896pt>
 File: chapters/chapter04/small_graphs/crack.png Graphic file (type png)
 <use chapters/chapter04/small_graphs/crack.png>
 Package pdftex.def Info: chapters/chapter04/small_graphs/crack.png  used on inp
-ut line 96.
+ut line 111.
 (pdftex.def)             Requested size: 156.80273pt x 117.60431pt.
-<chapters/chapter04/small_graphs/add32.png, id=540, 462.528pt x 346.896pt>
+<chapters/chapter04/small_graphs/add32.png, id=578, 462.528pt x 346.896pt>
 File: chapters/chapter04/small_graphs/add32.png Graphic file (type png)
 <use chapters/chapter04/small_graphs/add32.png>
 Package pdftex.def Info: chapters/chapter04/small_graphs/add32.png  used on inp
-ut line 104.
+ut line 119.
 (pdftex.def)             Requested size: 156.80273pt x 117.60431pt.
-<chapters/chapter04/small_graphs/data.png, id=541, 462.528pt x 346.896pt>
+<chapters/chapter04/small_graphs/data.png, id=579, 462.528pt x 346.896pt>
 File: chapters/chapter04/small_graphs/data.png Graphic file (type png)
 <use chapters/chapter04/small_graphs/data.png>
 Package pdftex.def Info: chapters/chapter04/small_graphs/data.png  used on inpu
-t line 111.
+t line 126.
 (pdftex.def)             Requested size: 156.80273pt x 117.60431pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<chapters/chapter04/medium_graphs/fe_body.png, id=542, 462.528pt x 346.896pt>
+<chapters/chapter04/medium_graphs/fe_body.png, id=580, 462.528pt x 346.896pt>
 File: chapters/chapter04/medium_graphs/fe_body.png Graphic file (type png)
 <use chapters/chapter04/medium_graphs/fe_body.png>
 Package pdftex.def Info: chapters/chapter04/medium_graphs/fe_body.png  used on 
-input line 126.
+input line 141.
 (pdftex.def)             Requested size: 156.80273pt x 117.60431pt.
-<chapters/chapter04/medium_graphs/finan512.png, id=543, 462.528pt x 346.896pt>
+<chapters/chapter04/medium_graphs/finan512.png, id=581, 462.528pt x 346.896pt>
 File: chapters/chapter04/medium_graphs/finan512.png Graphic file (type png)
 <use chapters/chapter04/medium_graphs/finan512.png>
 Package pdftex.def Info: chapters/chapter04/medium_graphs/finan512.png  used on
- input line 133.
+ input line 148.
 (pdftex.def)             Requested size: 156.80273pt x 117.60431pt.
-<chapters/chapter04/medium_graphs/t60k.png, id=544, 462.528pt x 346.896pt>
+<chapters/chapter04/medium_graphs/t60k.png, id=582, 462.528pt x 346.896pt>
 File: chapters/chapter04/medium_graphs/t60k.png Graphic file (type png)
 <use chapters/chapter04/medium_graphs/t60k.png>
 Package pdftex.def Info: chapters/chapter04/medium_graphs/t60k.png  used on inp
-ut line 141.
+ut line 156.
 (pdftex.def)             Requested size: 156.80273pt x 117.60431pt.
-<chapters/chapter04/medium_graphs/wing.png, id=545, 462.528pt x 346.896pt>
+<chapters/chapter04/medium_graphs/wing.png, id=583, 462.528pt x 346.896pt>
 File: chapters/chapter04/medium_graphs/wing.png Graphic file (type png)
 <use chapters/chapter04/medium_graphs/wing.png>
 Package pdftex.def Info: chapters/chapter04/medium_graphs/wing.png  used on inp
-ut line 148.
+ut line 163.
 (pdftex.def)             Requested size: 156.80273pt x 117.60431pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<chapters/chapter04/large_graphs/598a.png, id=546, 462.528pt x 346.896pt>
+<chapters/chapter04/large_graphs/598a.png, id=584, 462.528pt x 346.896pt>
 File: chapters/chapter04/large_graphs/598a.png Graphic file (type png)
 <use chapters/chapter04/large_graphs/598a.png>
 Package pdftex.def Info: chapters/chapter04/large_graphs/598a.png  used on inpu
-t line 163.
+t line 178.
 (pdftex.def)             Requested size: 156.80273pt x 117.60431pt.
-<chapters/chapter04/large_graphs/auto.png, id=547, 462.528pt x 346.896pt>
+<chapters/chapter04/large_graphs/auto.png, id=585, 462.528pt x 346.896pt>
 File: chapters/chapter04/large_graphs/auto.png Graphic file (type png)
 <use chapters/chapter04/large_graphs/auto.png>
 Package pdftex.def Info: chapters/chapter04/large_graphs/auto.png  used on inpu
-t line 170.
+t line 185.
 (pdftex.def)             Requested size: 156.80273pt x 117.60431pt.
-<chapters/chapter04/large_graphs/fe_rotor.png, id=548, 462.528pt x 346.896pt>
+<chapters/chapter04/large_graphs/fe_rotor.png, id=586, 462.528pt x 346.896pt>
 File: chapters/chapter04/large_graphs/fe_rotor.png Graphic file (type png)
 <use chapters/chapter04/large_graphs/fe_rotor.png>
 Package pdftex.def Info: chapters/chapter04/large_graphs/fe_rotor.png  used on 
-input line 178.
+input line 193.
 (pdftex.def)             Requested size: 156.80273pt x 117.60431pt.
-<chapters/chapter04/large_graphs/m14b.png, id=549, 462.528pt x 346.896pt>
+<chapters/chapter04/large_graphs/m14b.png, id=587, 462.528pt x 346.896pt>
 File: chapters/chapter04/large_graphs/m14b.png Graphic file (type png)
 <use chapters/chapter04/large_graphs/m14b.png>
 Package pdftex.def Info: chapters/chapter04/large_graphs/m14b.png  used on inpu
-t line 185.
+t line 200.
 (pdftex.def)             Requested size: 156.80273pt x 117.60431pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [25
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-] [26] [27 <./chapters/chapter04/small_graphs/bcsstk33.png> <./chapters/chapter
+) [26] [27 <./chapters/chapter04/small_graphs/bcsstk33.png> <./chapters/chapter
 04/small_graphs/crack.png> <./chapters/chapter04/small_graphs/add32.png> <./cha
-pters/chapter04/small_graphs/data.png> <./chapters/chapter04/medium_graphs/fe_b
-ody.png> <./chapters/chapter04/medium_graphs/finan512.png> <./chapters/chapter0
-4/medium_graphs/t60k.png> <./chapters/chapter04/medium_graphs/wing.png>]
-[28 <./chapters/chapter04/large_graphs/598a.png> <./chapters/chapter04/large_gr
-aphs/auto.png> <./chapters/chapter04/large_graphs/fe_rotor.png> <./chapters/cha
-pter04/large_graphs/m14b.png>] (./chapters/conclusiones/conclusions.tex
-[29
+pters/chapter04/small_graphs/data.png>] [28 <./chapters/chapter04/medium_graphs
+/fe_body.png> <./chapters/chapter04/medium_graphs/finan512.png> <./chapters/cha
+pter04/medium_graphs/t60k.png> <./chapters/chapter04/medium_graphs/wing.png> <.
+/chapters/chapter04/large_graphs/598a.png> <./chapters/chapter04/large_graphs/a
+uto.png> <./chapters/chapter04/large_graphs/fe_rotor.png> <./chapters/chapter04
+/large_graphs/m14b.png>] (./chapters/conclusiones/conclusions.tex [29
 
 
-]) [30
+])
+[30
 
 
 ] (./memoirthesis.bbl
@@ -2403,9 +2434,14 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 
 ] [32] [33]
+Underfull \hbox (badness 1178) in paragraph at lines 180--182
+[]\T1/futs/m/n/12 (+20) Network em-bed-ding as ma-trix fac-tor-iza-tion: Uni-fy
+-ing deep-walk, line, pte, and
+ []
+
 [34] [35]) [36]
 
-Package nag Warning: 11 complaints in total.
+Package nag Warning: 13 complaints in total.
 
 \tf@toc=\write7
 \openout7 = `memoirthesis.toc'.
@@ -2422,7 +2458,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 225.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 225.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 225.
 Package rerunfilecheck Info: File `memoirthesis.out' has not changed.
-(rerunfilecheck)             Checksum: 689D407201DDCF79F0D742E9AB449DB1;2373.
+(rerunfilecheck)             Checksum: 5FD287A406DD51D082FF7A012CA02D4C;2564.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2432,13 +2468,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 32873 strings out of 483007
- 612743 string characters out of 5961758
- 1067728 words of memory out of 5000000
- 46593 multiletter control sequences out of 15000+600000
- 726520 words of font info for 374 fonts, out of 8000000 for 9000
+ 32903 strings out of 483007
+ 613322 string characters out of 5961758
+ 1065469 words of memory out of 5000000
+ 46611 multiletter control sequences out of 15000+600000
+ 726916 words of font info for 377 fonts, out of 8000000 for 9000
  112 hyphenation exceptions out of 8191
- 55i,17n,96p,1012b,714s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,17n,96p,1012b,702s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/crispu/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.60
 0pk>{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb></usr/share/texlive
@@ -2451,10 +2487,10 @@ blic/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/ut
 opia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putbi8a
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on memoirthesis.pdf (48 pages, 1216166 bytes).
+Output written on memoirthesis.pdf (48 pages, 1363094 bytes).
 PDF statistics:
- 729 PDF objects out of 1000 (max. 8388607)
- 590 compressed objects within 6 object streams
- 164 named destinations out of 1000 (max. 500000)
- 54668 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 764 PDF objects out of 1000 (max. 8388607)
+ 619 compressed objects within 7 object streams
+ 170 named destinations out of 1000 (max. 500000)
+ 54702 words of extra memory for PDF output out of 61914 (max. 10000000)
 

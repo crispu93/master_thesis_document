@@ -125,7 +125,7 @@ Cai and Wang~\cite{nonattributed} proposed a degree-based approach. They used so
 
 Other methods propose using applying methods such as PCA to the adjacency matrix to extract the top k-eigenvalues~\cite{eigen, eigen2} but those approaches are computationaly very expensive, which is infeasible for large graphs.
 
-In this work, to help capturing local information related to the graph's structure a random walk approach was chosen. In experiments carried out independently by Duong et. al.~\cite{onnodefeatures} and Cui et. al.~\cite{onpositional}, who compared some of the already mentioned approaches, they concluded that matrix-decomposition-based methods are good to extract positional node information. For that reason, DeepWalk is going to be used~\cite{deepwalk} for this task.
+In this work, to help capturing local information related to the graph's structure, a random walk approach was preferred. Given the the existent research, this type of approach looks very promising in terms of scalability to large graphs and structural representation capabilities. In experiments carried out independently by Duong et. al.~\cite{onnodefeatures} and Cui et. al.~\cite{onpositional}, who compared some of the already mentioned approaches, they concluded that matrix-decomposition-based methods are very powerful to extract positional node information. DeepWalk~\cite{deepwalk} produces a low-rank tranformation of the graph's normalized Laplacian matrix~\cite{factorizing}, i.e., DeepWalk is implicitly factorizing and reducing dimensionality. For that reason, DeepWalk is going to be used for this task.
 
 %have been shown efficient representation learning techniques for graphs https://arxiv.org/pdf/1901.01346.pdf, random walk kernels to produce high quality graph representations https://proceedings.neurips.cc/paper/2020/file/ba95d78a7c942571185308775a97a3a0-Paper.pdf
 
@@ -138,11 +138,6 @@ in particular Deep Walk to extract features about the topology of the network
 According to the original paper~\cite{deepwalk}, the DeepWalk algorithm consists of two main components: a random walk generator and an update procedure. 
 
 In the first component, a random node $v_i$ is taken uniformly at random to be the root of a random walk $\mathcal W_{v_i}$ which in its turn samples recursively from the neighbors of the last visited vertex until the maximum length $\gamma$ is reached.
-
-As specified by Perozzi et. al.~\cite{deepwalk}, their experiments suggest that the number of walks started per vertex should be greater or equal than $\gamma=30$, the latent dimension greater or equal than $d=64$, and they fixed the sensible values of $w=10$ for the window size, and $t=40$ for the walk length . Based on those recommendations, in the experiments carried out in~\cite{deepwalk_hyper}, and the computational needs of the problem to be solved, it was found convenient to set $\gamma=60$, $d=64$, $w=15$, and $t=80$.
-
-
-For the algorithm that is proposed here, the implementation by the Karate Club API~\cite{karateclub} was used.
 
 Traditional approaches like METIS or SCOTCH implements different versions of the algorithm according to the balancedness measure, either the cardinality or the volume of the partitions. One of the great innovations presented  in~\cite{gap} is the introduction of a loss function derived from the expectation of the normalized cut. Even though they 
 
@@ -160,12 +155,6 @@ METIS was used from the networkx interface
 
 a table for commonly used notation
 
-\begin{figure}
-    \label{fig:partitioning_module}
-    \begin{center}
-        \includegraphics[scale=0.5]{partitioning_module}
-    \end{center}
-    \caption{The partitioning module. A dense neural network that outputs the probability for each node to belong to each partition.}
-\end{figure}
+
 
 \section{Markov Chain Negative Sampling (MCNS)}

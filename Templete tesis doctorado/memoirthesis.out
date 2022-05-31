@@ -30,7 +30,10 @@
 \BOOKMARK [2][-]{subsection.3.2.1}{DeepWalk as feature extraction}{section.3.2}% 30
 \BOOKMARK [1][-]{section.3.3}{Markov Chain Negative Sampling \(MCNS\)}{chapter.3}% 31
 \BOOKMARK [0][-]{chapter.4}{Experimental Results}{}% 32
-\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 33
-\BOOKMARK [1][-]{section.5.1}{Contributions}{chapter.5}% 34
-\BOOKMARK [1][-]{section.5.2}{Recommendations and future work}{chapter.5}% 35
-\BOOKMARK [0][-]{chapter*.16}{Bibliography}{}% 36
+\BOOKMARK [1][-]{section.4.1}{Technical details and implementation}{chapter.4}% 33
+\BOOKMARK [1][-]{section.4.2}{Dataset}{chapter.4}% 34
+\BOOKMARK [1][-]{section.4.3}{Results}{chapter.4}% 35
+\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 36
+\BOOKMARK [1][-]{section.5.1}{Contributions}{chapter.5}% 37
+\BOOKMARK [1][-]{section.5.2}{Recommendations and future work}{chapter.5}% 38
+\BOOKMARK [0][-]{chapter*.18}{Bibliography}{}% 39

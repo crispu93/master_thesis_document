@@ -175,6 +175,14 @@ Bryan Perozzi, Rami Al-Rfou, and Steven Skiena.
   on Knowledge Discovery and Data Mining}, KDD '14, page 701–710, New York,
   NY, USA, 2014. Association for Computing Machinery.
 
+\bibitem{factorizing}
+Jiezhong Qiu, Yuxiao Dong, Hao Ma, Jian Li, Kuansan Wang, and Jie Tang.
+\newblock Network embedding as matrix factorization: Unifying deepwalk, line,
+  pte, and node2vec.
+\newblock In {\em Proceedings of the Eleventh ACM International Conference on
+  Web Search and Data Mining}, WSDM '18, page 459–467, New York, NY, USA,
+  2018. Association for Computing Machinery.
+
 \bibitem{karateclub}
 Benedek Rozemberczki, Oliver Kiss, and Rik Sarkar.
 \newblock {Karate Club: An API Oriented Open-source Python Framework for

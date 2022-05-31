@@ -268,8 +268,6 @@ year={2010}
 @Inbook{integeroptimization,
 author="Hoffman, Karla L.
 and Ralphs, Ted K.",
-editor="Gass, Saul I.
-and Fu, Michael C.",
 title="Integer and Combinatorial Optimization",
 bookTitle="Encyclopedia of Operations Research and Management Science",
 year="2013",
@@ -592,4 +590,22 @@ author={Qian Huang and Horace He and Abhay Singh and Ser-Nam Lim and Austin Bens
 booktitle={International Conference on Learning Representations},
 year={2021},
 url={https://openreview.net/forum?id=8E1-f3VhX1o}
+}
+
+@inproceedings{factorizing,
+author = {Qiu, Jiezhong and Dong, Yuxiao and Ma, Hao and Li, Jian and Wang, Kuansan and Tang, Jie},
+title = {Network Embedding as Matrix Factorization: Unifying DeepWalk, LINE, PTE, and Node2vec},
+year = {2018},
+isbn = {9781450355810},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3159652.3159706},
+doi = {10.1145/3159652.3159706},
+abstract = {Since the invention of word2vec, the skip-gram model has significantly advanced the research of network embedding, such as the recent emergence of the DeepWalk, LINE, PTE, and node2vec approaches. In this work, we show that all of the aforementioned models with negative sampling can be unified into the matrix factorization framework with closed forms. Our analysis and proofs reveal that: (1) DeepWalk empirically produces a low-rank transformation of a network's normalized Laplacian matrix; (2) LINE, in theory, is a special case of DeepWalk when the size of vertices' context is set to one; (3) As an extension of LINE, PTE can be viewed as the joint factorization of multiple networks» Laplacians; (4) node2vec is factorizing a matrix related to the stationary distribution and transition probability tensor of a 2nd-order random walk. We further provide the theoretical connections between skip-gram based network embedding algorithms and the theory of graph Laplacian. Finally, we present the NetMF method as well as its approximation algorithm for computing network embedding. Our method offers significant improvements over DeepWalk and LINE for conventional network mining tasks. This work lays the theoretical foundation for skip-gram based network embedding methods, leading to a better understanding of latent network representation learning.},
+booktitle = {Proceedings of the Eleventh ACM International Conference on Web Search and Data Mining},
+pages = {459–467},
+numpages = {9},
+keywords = {social network, matrix factorization, network embedding, graph spectral, representation learning},
+location = {Marina Del Rey, CA, USA},
+series = {WSDM '18}
 }

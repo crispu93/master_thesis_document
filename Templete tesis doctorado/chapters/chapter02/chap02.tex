@@ -203,7 +203,15 @@ Graph Partitioning and Sparse Matrix Ordering using Reinforcement Learning~\cite
 \subsection{Generalizable Approximate Graph Partitioning (GAP) Framework}
 From all the Deep Learning approaches that solve the Graph Partitioning problem, one of the most notorious not only for its simplicity but for its exceptional results, is the \textit{Generalizable Approximate Graph Partitioning} framework better known as GAP~\cite{gap1}.
 
-GAP is a Graph Neural Network approach that proposes a continuous relaxation of the problem using a differentiable loss function that is based on the normalized cut. According to Nazi et al.~\cite{gap}, it is an unsupervised learning algorithm that is capable of generalization, meaning that it can be trained in small graphs, which allows it to generalize into unseen much larger ones. This section describes the model described in the original paper which consists of two modules: the Graph Embedding Module and the Graph Partitioning Module.
+GAP is a Graph Neural Network approach that proposes a continuous relaxation of the problem using a differentiable loss function that is based on the normalized cut. According to Nazi et al.~\cite{gap}, it is an unsupervised learning algorithm that is capable of generalization, meaning that it can be trained in small graphs, which allows it to generalize into unseen much larger ones. This section describes the model described in the original paper which consists of two modules: the Graph Embedding Module and the Graph Partitioning Module. See Figure~\ref{fig:gap}.
+
+\begin{figure}[h!]
+    \begin{center}
+        \includegraphics[scale=0.38]{GAP.png}
+    \end{center}
+    \caption{Architecture of the Generalizable Approximate Partitioning framework~\cite{gap}.}
+    \label{fig:gap}
+\end{figure}
 
 In the following subsections, it is assumed that the framework takes a graph $G = (V, E)$ as input, where $V = \left\{ v_1, v_2, ..., v_n\right\}$, and outputs the probabilities tensor $Y\in \mathbb R^{n\times K}$, where $Y_{ik}$ represents the probability that node $v_i$ belongs to partition $P_k$. %being $P_1, P_2, ..., P_k$ 
 Before going into the model description, the deduction of the loss function is as follows.
@@ -222,11 +230,21 @@ Since $Y_{ik}$ represents the probability that node $v_i\in P_k$, $1 - Y_{ik}$ i
     \label{eq:first_expected_cut}
     \mathbb{E}[\textsc{Cut}(P_k, \overline{P_k})] = \sum_{i=1}^{|V|} \sum_{v_j\in\EuScript{N}(v_i)} Y_{ik}(1-Y_{jk})
 \end{equation}
+as can it can be deducted from Figure~\ref{fig:expectation}.
+
 Due to the fact that for a given node the adjacent nodes can be retrieved from the adjacency matrix $A$, Equation~\ref{eq:first_expected_cut} can be rewritten as follows:
 \begin{equation}
     \label{eq:expected_cut}
     \mathbb{E}[\textsc{Cut}(P_k, \overline{P_k})] = \sum_{i=1}^{|V|}\sum_{j=1}^{|V|}Y_{ik}(1-Y_{kj}^T)A_{ij} 
 \end{equation}
+
+\begin{figure}[h!]
+    \begin{center}
+        \includegraphics[scale=0.7]{expectation.png}
+    \end{center}
+    \caption{The expected value of the number of edges in the boundary of a determined partition $P_l$ is given by the sum of the probabilities that each node $v_i\in V$ belongs to $P_l$, multiplied by the probability that each of its neighbors does not belong to $P_l$.}
+    \label{fig:expectation}
+\end{figure}
 
 Keeping in mind that $\textsc{Vol}(P_k)$ is the sum of the degrees of the nodes in $P_k$, $\Delta$ is defined to be the column tensor where $\Delta_i$ is the degree of the node $v_i\in V$. Then, given $Y$, one can calculate the expected value of $\textsc{Vol}(P_k)$ as follows:
 \begin{equation}
@@ -265,7 +283,17 @@ where $\hat{A} = (D+I)^{-\frac{1}{2}}(A+I)(D+I)^{-\frac{1}{2}}$ is a normalized 
 The second module of GAP is composed of a fully connected layer that takes as input a node embedding vector $\boldsymbol z_u$ generated in the embedding module. This fully connected layer is then followed by a softmax layer 
 trained to minimize the expected normalized loss function given by Equation~\ref{eq:loss_function}.
 
+\begin{figure}[h!]
+    \label{fig:partitioning_module}
+    \begin{center}
+        \includegraphics[scale=0.5]{partitioning_module}
+    \end{center}
+    \caption{The partitioning module. A dense neural network that processes a node embedding and outputs the probability of the corresponding node to belong to each partition.}
+\end{figure}
+\newpage
 This module is the responsible for partitioning the graph by returning $Y\in \mathbb R^{|V|\times K}$, the probabilities matrix that each node belongs to each of the partitions $P_1, P_2, ..., P_K$. At the same time, it ensures that for a given node, the sum of the probabilities of belonging each of the partitions is $1$
 \begin{displaymath}
     \sum_{k=0}^K Y_{ik} = 1
 \end{displaymath}
+
+
