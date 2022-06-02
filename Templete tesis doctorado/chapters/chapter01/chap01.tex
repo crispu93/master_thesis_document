@@ -94,19 +94,20 @@ Something important to highlight is that the target is not only load-balance but
 
 %%%%%%%%%%%%% Reviewed until here %%%%%%%%%%
 
-In this context, the project "A Graph Neural Network Approach for Large-Scale Graph Partitioning" was created as a proposal to address some of those challenges. It took one of the most successful algorithms in taking all those needs that the mentioned applications demand
+In this context, the project "A Graph Neural Network Approach for Large-Scale Graph Partitioning" was created as a proposal to address some of those challenges. It took one of the most successful algorithms to create ...
+that the mentioned applications demand
 
 talk about social relevance and theoretical value.
 
 \section{Project scope and limitations}
 During the development of this project the following considerations were taken:
 \begin{itemize}
-    \item The algorithm has not been tested on real-world graphs. Most of the graphs where the experiments took place were taken from a famous dataset where some of the most successful partitioning algorithms have been tested. Even though this offers a good comparison point, the size of those graphs is pretty small compared to massive graphs like the Amazon or Pinterest networks. The largest graph in the data set contains $500,000$ nodes.
-    \item In general, the graphs used for running the experiments are not dense. Some of the graphs that are indeed dense, belong to the category of small-size graphs with less than $50,000$ nodes. Although a number of real-world graphs are sparse, it is suspected that special considerations should be contemplated during the training of the algorithm in the future.
-    \item Most of the parameter values are based on previous work where they were shown to have a good performance or they were recommended by the original authors. Nonetheless, more experiments in different scenarios should be run to determine better values for the GP specific task.
-    \item The machines where the experiments were executed have very limited power computing relative to the ambitions of this project. Though hardware specifications in those machines were enough to run experiments on the dataset, it would be impossible to process complex networks with this technology.
-    \item The proposed algorithm was not designed to run in a distributed environment. Experiments were run in single thread and the algorithm was trained only in GPU. To modify the algorithm so it can run in parallel and to distribute the training load between CPU and CPU are interesting research topics. 
-    \item The proposed framework only accepts certain input formats for the graphs, more specific JOSTLE and METIS formats.
+    \item The algorithm has not been tested on real-world graphs. Most of the graphs where the experiments took place were taken from a famous dataset where some of the most successful partitioning algorithms have been tested. Even though this offers a good comparison point, the size of those graphs is pretty small compared to massive graphs like the Amazon or Pinterest networks. The largest graph in the dataset contains $500,000$ nodes.
+    \item In general, the graphs used for running the experiments are not dense. However, some of the graphs are dense, but they belong to the category of small-size graphs with less than $50,000$ nodes. Although a number of real-world graphs are sparse, it is suspected that special considerations should be contemplated during the training of the algorithm in the future.
+    \item Most of the parameter values are based on previous work where they were shown to have good performance or they were recommended by the original authors. Nonetheless, more experiments in different scenarios should be run to determine better values for the GP specific task.
+    \item The machines where the experiments were executed have very limited computing power compared to the ambitions of this project. Though hardware specifications in those machines were enough to run experiments on the dataset, but it would be impossible to process complex networks with this technology.
+    \item The proposed algorithm was not designed to run in a distributed environment. Experiments were run in single thread, and the algorithm was trained only in GPU. Modifying the algorithm so it can run in parallel and distributing the training load between the GPU and the CPU are interesting research topics. 
+    \item The proposed framework only accepts certain input formats for the graphs, specifically JOSTLE and METIS formats.
     %\item Comparison with GAP was using graphs without features, an interesting thing would be to check performance with the same datasets they used but getting rid of the features, e.g., cora citation
 \end{itemize}
 
@@ -122,11 +123,11 @@ When analyzing GAP in depth some observations were made.
 
 The organization of the remaining parts of the thesis is as follows:
 \begin{itemize}
-    \item In Chapter~\ref{Chapter2}, it is presented the basic mathematical terminology that is going to be used during the next chapters. Next, it provides a glance to the spectral methods used to solve the GP problem. Then it finishes with a review of some of the most popular Deep Learning techniques for GP.
+    \item In Chapter~\ref{Chapter2}, basic mathematical terminology is presented which is going to be used in the next chapters. Next, this chapter provides a glance at the spectral methods used to solve the GP problem. Then, it finishes with a review of some of the most popular Deep Learning techniques for GP.
     
-    \item In Chapter~\ref{Chapter3} the proposed graph partitioning algorithm for large-scale graphs is presented. It provides a description of the main components in the modules of the framework. Then it shows how those modules can be used by the algorithm to effectively perform in abstract graphs. Finally, it is shown how to incorporate a sampling technique that improves the training process.
+    \item In Chapter~\ref{Chapter3}, the proposed graph partitioning algorithm for large-scale graphs is presented. It provides a description of the main components in the modules of the framework. Then, it shows how those modules can be used by the algorithm to effectively perform in abstract graphs. Finally, an incorporated sampling technique is used to improve the training process.
     
-    \item In Chapter~\ref{Chapter4} the experiments carried out are described along with the dataset and the comparison metrics used in them. The proposed solution is compared to state-of-the-art methods according to the proposed metrics. At the end, the obtained results are summarized.
+    \item In Chapter~\ref{Chapter4}, the experiments carried out are described along with the dataset and the comparison metrics used in them. The proposed solution is compared to state-of-the-art methods given the proposed metrics. At the end, the obtained results are summarized.
     
     \item In Chapter~\ref{Conclusion}, a summary of the contributions of this project is given. The advantages of the proposed algorithm over other existing approaches are mentioned as well as further research areas found during its development.
 \end{itemize}
