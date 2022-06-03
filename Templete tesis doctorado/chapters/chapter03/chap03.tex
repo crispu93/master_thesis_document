@@ -131,16 +131,28 @@ In this work, to help capturing local information related to the graph's structu
 
 %have been shown efficient representation learning techniques for graphs https://arxiv.org/pdf/1901.01346.pdf, random walk kernels to produce high quality graph representations https://proceedings.neurips.cc/paper/2020/file/ba95d78a7c942571185308775a97a3a0-Paper.pdf
 
+\begin{figure}[h!]
+    \begin{center}
+        \includegraphics[scale=2]{deepwalk}
+    \end{center}
+    \caption{Summarized DeepWalk process for graph representation learning~\cite{deepwalkimage}}
+    \label{fig:deepwalk}
+\end{figure}
+
+\newpage
 \subsection{DeepWalk as feature extraction}
 
-playing with the parameters
+Deep walk is graph representation method that can learn node embeddings by inferring local structures of the graph. This is an unsupervised learning algorithm that was inspired by the way traditional language models encode sequences of words. This algorithm is able to detect neighborhood similarities that can be used to distinguish densely-connected community structures~\cite{deepwalk_hyper, deepwalk}.
 
-in particular Deep Walk to extract features about the topology of the network
+According to the original paper~\cite{deepwalk}, the DeepWalk algorithm consists of two main components: a random walk generator and an update procedure. Those two components are described bellow.
 
-According to the original paper~\cite{deepwalk}, the DeepWalk algorithm consists of two main components: a random walk generator and an update procedure. 
+In the first component, known as the \textit{local structure stage}, a random node $v_i$ is taken from the set of nodes uniformly and is set to be the root of a random walk $W_{v_i}$. Next, nodes are sampled recursively from the set of neighbors of the last-visited vertex, and they are added to the random walk until the maximum length $t$ is reached. This process is repeated a number $\gamma$ of times each time a root vertex is chosen.
 
-In the first component, a random node $v_i$ is taken uniformly at random to be the root of a random walk $\mathcal W_{v_i}$ which in its turn samples recursively from the neighbors of the last visited vertex until the maximum length $\gamma$ is reached.
+The second component is known as the \textit{skip-gram model}, and it is the analogous of the language model that maximizes the co-occurrence probability of words in a window. In the DeepWalk algorithm, a window size $w$ is set to determine the context of a node given the random walks of the last stage. Then, a vector representation of dimension $d$ is generated for each node and subsequently updated to maximize the probability of the neighbors that appear in the same random walk inside the same window. This last step can be performed using the Softmax function or Hierarchical Softmax to accelerate the training process~\cite{deepwalk}. 
 
+DeepWalk is one of those encoders mentioned at the beginning of the chapter, it can only generate unique emmbedings for the nodes in a fixed graph. For the purposes of generating  node features, it is adequate due to its topological representation capabilities.
+
+\begin{comment}
 Traditional approaches like METIS or SCOTCH implements different versions of the algorithm according to the balancedness measure, either the cardinality or the volume of the partitions. One of the great innovations presented  in~\cite{gap} is the introduction of a loss function derived from the expectation of the normalized cut. Even though they 
 
 Ratio cut it is still used and relevant to modern research cite here https://proceedings.neurips.cc/paper/2020/file/aa108f56a10e75c1f20f27723ecac85f-Paper.pdf
@@ -148,15 +160,10 @@ Ratio cut it is still used and relevant to modern research cite here https://pro
 or here https://www.springerprofessional.de/en/metaheuristic-approaches-for-ratio-cut-and-normalized-cut-graph-/20360832    
 
 the authors of~\cite{gap2} proposed some modifications to GAP so it can be used for graphs without features. However the presented 
+\end{comment}
 
-for future - Study the weighted problem
-Study better features related to the problem
-other ways to extract useful features for non-attributed graphs
-
-METIS was used from the networkx interface
-
-a table for commonly used notation
+%a table for commonly used notation
 
 
 
-\section{Markov Chain Negative Sampling (MCNS)}
+%\section{Markov Chain Negative Sampling (MCNS)}

@@ -7,45 +7,45 @@ Warning--empty school in fernandes
 Warning--empty publisher in gap2
 Warning--empty booktitle in gap1
 Warning--empty journal in jostle
-You've used 45 entries,
+You've used 46 entries,
             2118 wiz_defined-function locations,
-            755 strings with 11918 characters,
-and the built_in function-call counts, 15838 in all, are:
-= -- 1546
-> -- 807
+            760 strings with 12160 characters,
+and the built_in function-call counts, 16266 in all, are:
+= -- 1581
+> -- 850
 < -- 10
-+ -- 322
-- -- 272
-* -- 1009
-:= -- 2583
-add.period$ -- 143
-call.type$ -- 45
-change.case$ -- 265
++ -- 339
+- -- 288
+* -- 1048
+:= -- 2664
+add.period$ -- 146
+call.type$ -- 46
+change.case$ -- 276
 chr.to.int$ -- 0
-cite$ -- 49
-duplicate$ -- 675
-empty$ -- 1172
-format.name$ -- 272
-if$ -- 3412
+cite$ -- 50
+duplicate$ -- 685
+empty$ -- 1189
+format.name$ -- 288
+if$ -- 3490
 int.to.chr$ -- 0
-int.to.str$ -- 45
-missing$ -- 47
-newline$ -- 229
-num.names$ -- 90
-pop$ -- 306
+int.to.str$ -- 46
+missing$ -- 48
+newline$ -- 234
+num.names$ -- 92
+pop$ -- 317
 preamble$ -- 1
-purify$ -- 226
+purify$ -- 236
 quote$ -- 0
-skip$ -- 541
+skip$ -- 548
 stack$ -- 0
-substring$ -- 714
-swap$ -- 210
+substring$ -- 719
+swap$ -- 211
 text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 168
+type$ -- 172
 warning$ -- 4
-while$ -- 118
-width$ -- 47
-write$ -- 500
+while$ -- 120
+width$ -- 48
+write$ -- 510
 (There were 4 warnings)

@@ -5,14 +5,13 @@
 \chapter{Theory and conceptual framework}
 \label{Chapter2}
 
+A brief definition the mathematical concepts in the next chapters is found bellow. They are include some of the definitions and principal postulates used in spectral graph theory in which is based this work.
 \section{Preliminaries}
-Description of concepts
-
 %%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{definition}
-orthogonal complement
-\end{definition}
+%\begin{definition}
+%orthogonal complement
+%\end{definition}
 
 \begin{theorem}
 	For every $n\times n$ symmetric real matrix, the eigenvalues are real and the eigenvectors can be chosen real and orthonormal.
@@ -114,21 +113,15 @@ In order to introduce the graph partitioning problem in its different settings, 
 	    \textsc{Cut}(P_1, P_2, ..., P_K) := \frac{1}{2} \sum_{k=1}^K \left|\partial(P_k)\right|
 	\end{equation}
 	
-	The notion of cut allows to measure the quality of any partition, nevertheless solving the min cut problem ...
+The notion of cut allows to measure the quality of any partition, and it can be solved in polynomial time. Nevertheless, solving the min cut problem in real-world problems often leads to very imbalanced partitions consisting of one-node groups.
 
-	For a collection of vertices $S\subset V$, consider the following quantities related to the edges of 
-	
-	\begin{displaymath}
-		\textsc{Vol}(S) :=  \sum_{v_i \in S} d_i 
-	\end{displaymath}
+For a collection of vertices $S\subset V$, consider the following quantity related to the edges of a subgraph
+\begin{displaymath}
+	\textsc{Vol}(S) :=  \sum_{v_i \in S} d_i 
+\end{displaymath}
+This quantity allows to defining a different way to measure the quality of a partition that not only depends on the number of vertices but the total communication between them.
 
- 
-we want to agroupe by similarity so its natural to 
-Cut value of that partition
-
-solve the mincut problem
-
-The next consider two different ways of measuring the size of the partitions
+Inspired in that, and in the variety of applications that benefit from their formulation, the next quantities provides two different ways of measuring the size of the partitions. In colloquial terms,  a partitioning algorihtm can aims to load-balance and/or to minimize the communication volume.
 \begin{align*}
 	\textsc{RatioCut}(P_1, P_2, ..., P_K) &:= \frac{1}{2} \sum_{k=1}^K \frac{\left|\partial\left(P_k\right)\right|}{\left| P_k \right|} \\
 	&= \sum_{k=1}^K \frac{\textsc{Cut}(P_k, \overline{P_k})}{\left| P_k \right|}
@@ -140,14 +133,8 @@ The next consider two different ways of measuring the size of the partitions
 \end{align*}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
-\begin{comment}
-\textbf{The spectral method}
-\begin{enumerate}
-	\item Let $v$ denote the second smallest eigenvector of $\mathcal{L}$. Sort the vertices $i$ of $G$ in increasing order of $v_i$. Let the resulting ordering be $v_1 \leq v_2 \leq \cdots v_n$
-	\item For each $i$, consider the cut induced by $\{1,2,..., i\}$ and its complement. Calculate its conductance.
-	\item Among these $n-1$ cuts, choose the one with minimum conductance.
-\end{enumerate}
 
+\subsection{The spectral method and Chegger's inequality}
 \textbf{Cheeger's inequality}
 
 For a graph $G=(V,E)$ the \textit{conductance} or \textit{Cheeger ratio} of a set $S\subset V$ is the ratio of the fraction of edges in the cut $(S,\overline{S})$ o the volume of $S$,
@@ -168,6 +155,13 @@ The \textit{conductance} or \textit{Cheeger constant} of a graph $G$ is denoted 
 	where $\alpha_G^2$ is the minimum Cheeger ratio of subsets $S_i$ consisting of vertices with the largest $i$ values in the eigenvector associated with $lambda_G$ , over all $i\in[n]$
 \end{theorem}
 
+\textbf{The spectral method}
+\begin{enumerate}
+	\item Let $v$ denote the second smallest eigenvector of $\mathcal{L}$. Sort the vertices $i$ of $G$ in increasing order of $v_i$. Let the resulting ordering be $v_1 \leq v_2 \leq \cdots v_n$
+	\item For each $i$, consider the cut induced by $\{1,2,..., i\}$ and its complement. Calculate its conductance.
+	\item Among these $n-1$ cuts, choose the one with minimum conductance.
+\end{enumerate}
+
 \textbf{Generalization to many partitions}
 \begin{enumerate}
 	\item Perform eigenvalue decomposition to find the eigenvectors of $L_{sym}$.
@@ -179,12 +173,13 @@ The \textit{conductance} or \textit{Cheeger constant} of a graph $G$ is denoted 
 	\item Treating each row of $Y$ as a point in $\mathbb R^k$, cluster them into $k$ clusters using $K-means$
 	\item Finally, assign the original vertex to cluster $j$ if and only if row $i$ of the matrix was assigned to cluster $j$
 \end{enumerate}
-\end{comment}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Spectral partitioning and Normalized Cut}
-Here will be presented the derivation of the normalized cut as relaxation of the problem to solve the spectral partitioning problem
+%\subsection{Spectral partitioning and Normalized Cut}
+%Here will be presented the derivation of the normalized cut as relaxation of the problem to solve the spectral partitioning problem
 
+\begin{comment}
 \section{Literature review}
 
 B-GRAP: BALANCED GRAPH PARTITIONING ALGORITHM
@@ -198,7 +193,7 @@ Application Driven Graph Partitioning
 https://dl.acm.org/doi/abs/10.1145/3318464.3389745
 
 Graph Partitioning and Sparse Matrix Ordering using Reinforcement Learning~\cite{nesteddissection}
-
+\end{comment}
 
 \subsection{Generalizable Approximate Graph Partitioning (GAP) Framework}
 From all the Deep Learning approaches that solve the Graph Partitioning problem, one of the most notorious not only for its simplicity but for its exceptional results, is the \textit{Generalizable Approximate Graph Partitioning} framework better known as GAP~\cite{gap1}.
@@ -290,7 +285,7 @@ trained to minimize the expected normalized loss function given by Equation~\ref
     \end{center}
     \caption{The partitioning module. A dense neural network that processes a node embedding and outputs the probability of the corresponding node to belong to each partition.}
 \end{figure}
-\newpage
+
 This module is the responsible for partitioning the graph by returning $Y\in \mathbb R^{|V|\times K}$, the probabilities matrix that each node belongs to each of the partitions $P_1, P_2, ..., P_K$. At the same time, it ensures that for a given node, the sum of the probabilities of belonging each of the partitions is $1$
 \begin{displaymath}
     \sum_{k=0}^K Y_{ik} = 1

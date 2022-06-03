@@ -6,7 +6,12 @@
 \label{Chapter4}
 
 \section{Technical details and implementation}
+playing with the parameters
+\subsection{Feature generation}
+\cite{deepwalk_hyper} carried out a research for community detection using DeepWalk. After some experiments, they found convienent that for its problem the following parameters were eno 
 As specified by Perozzi et. al.~\cite{deepwalk}, their experiments suggest that the number of walks started per vertex should be greater or equal than $\gamma=30$, the latent dimension greater or equal than $d=64$, and they fixed the sensible values of $w=10$ for the window size, and $t=40$ for the walk length . Based on those recommendations, in the experiments carried out in~\cite{deepwalk_hyper}, and the computational needs of the problem to be solved, it was found convenient to set $\gamma=60$, $d=64$, $w=15$, and $t=80$.
+
+Taking into account the computational needs of the problem to be solved, and some 
 
 Saving and manipulating only the adjacency lists instead of the whole adjacency matrix, is an important 
 
@@ -14,6 +19,9 @@ For the algorithm that is proposed here, the implementation by the Karate Club A
 The number of partitions was set to four differently from the original paper where three partitions were used. It was used this number of partitions to have a comparison point with the result in The Graph Partitioning archive. There, the number of partitions is always a power of $2$.
 
 Quality metrics
+
+METIS was used from the networkx interface
+
 \section{Dataset}
 
     For the dataset used to train and test the algorithm "The Graph Partitioning Archive"~\cite{archive}
@@ -240,3 +248,4 @@ auto & 0 & 0 & 0 & 0  \\
 \end{tabular}
 \caption{\label{tab:comp_graphs}Comparison of the results obtained by different algorithms in the computation graphs}
 \end{table}
+

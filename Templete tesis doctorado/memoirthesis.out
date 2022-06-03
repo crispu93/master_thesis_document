@@ -19,21 +19,20 @@
 \BOOKMARK [2][-]{subsection.2.2.1}{The Unnormalized Laplacian}{section.2.2}% 19
 \BOOKMARK [2][-]{subsection.2.2.2}{Normalized Laplacians}{section.2.2}% 20
 \BOOKMARK [2][-]{subsection.2.2.3}{The graph partitioning problem}{section.2.2}% 21
-\BOOKMARK [2][-]{subsection.2.2.4}{Spectral partitioning and Normalized Cut}{section.2.2}% 22
-\BOOKMARK [1][-]{section.2.3}{Literature review}{chapter.2}% 23
-\BOOKMARK [2][-]{subsection.2.3.1}{Generalizable Approximate Graph Partitioning \(GAP\) Framework}{section.2.3}% 24
-\BOOKMARK [0][-]{chapter.3}{Graph Partitioning for Large Graphs}{}% 25
-\BOOKMARK [1][-]{section.3.1}{Node Embeddings}{chapter.3}% 26
-\BOOKMARK [2][-]{subsection.3.1.1}{Graph Convolutional Networks}{section.3.1}% 27
-\BOOKMARK [2][-]{subsection.3.1.2}{GraphSAGE}{section.3.1}% 28
-\BOOKMARK [1][-]{section.3.2}{Node Features}{chapter.3}% 29
-\BOOKMARK [2][-]{subsection.3.2.1}{DeepWalk as feature extraction}{section.3.2}% 30
-\BOOKMARK [1][-]{section.3.3}{Markov Chain Negative Sampling \(MCNS\)}{chapter.3}% 31
-\BOOKMARK [0][-]{chapter.4}{Experimental Results}{}% 32
-\BOOKMARK [1][-]{section.4.1}{Technical details and implementation}{chapter.4}% 33
-\BOOKMARK [1][-]{section.4.2}{Dataset}{chapter.4}% 34
-\BOOKMARK [1][-]{section.4.3}{Results}{chapter.4}% 35
-\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 36
-\BOOKMARK [1][-]{section.5.1}{Contributions}{chapter.5}% 37
-\BOOKMARK [1][-]{section.5.2}{Recommendations and future work}{chapter.5}% 38
-\BOOKMARK [0][-]{chapter*.18}{Bibliography}{}% 39
+\BOOKMARK [2][-]{subsection.2.2.4}{The spectral method and Chegger's inequality}{section.2.2}% 22
+\BOOKMARK [2][-]{subsection.2.2.5}{Generalizable Approximate Graph Partitioning \(GAP\) Framework}{section.2.2}% 23
+\BOOKMARK [0][-]{chapter.3}{Graph Partitioning for Large Graphs}{}% 24
+\BOOKMARK [1][-]{section.3.1}{Node Embeddings}{chapter.3}% 25
+\BOOKMARK [2][-]{subsection.3.1.1}{Graph Convolutional Networks}{section.3.1}% 26
+\BOOKMARK [2][-]{subsection.3.1.2}{GraphSAGE}{section.3.1}% 27
+\BOOKMARK [1][-]{section.3.2}{Node Features}{chapter.3}% 28
+\BOOKMARK [2][-]{subsection.3.2.1}{DeepWalk as feature extraction}{section.3.2}% 29
+\BOOKMARK [0][-]{chapter.4}{Experimental Results}{}% 30
+\BOOKMARK [1][-]{section.4.1}{Technical details and implementation}{chapter.4}% 31
+\BOOKMARK [2][-]{subsection.4.1.1}{Feature generation}{section.4.1}% 32
+\BOOKMARK [1][-]{section.4.2}{Dataset}{chapter.4}% 33
+\BOOKMARK [1][-]{section.4.3}{Results}{chapter.4}% 34
+\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 35
+\BOOKMARK [1][-]{section.5.1}{Contributions}{chapter.5}% 36
+\BOOKMARK [1][-]{section.5.2}{Recommendations and future work}{chapter.5}% 37
+\BOOKMARK [0][-]{chapter*.19}{Bibliography}{}% 38

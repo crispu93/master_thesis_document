@@ -94,10 +94,8 @@ Something important to highlight is that the target is not only load-balance but
 
 %%%%%%%%%%%%% Reviewed until here %%%%%%%%%%
 
-In this context, the project "A Graph Neural Network Approach for Large-Scale Graph Partitioning" was created as a proposal to address some of those challenges. It took one of the most successful algorithms to create ...
-that the mentioned applications demand
+In this context, the project "A Graph Neural Network Approach for Large-Scale Graph Partitioning" was created as a proposal to address some of those challenges. It took one of the most successful frameworks to create a flexible algorithm that can be used in a variety of graphs.
 
-talk about social relevance and theoretical value.
 
 \section{Project scope and limitations}
 During the development of this project the following considerations were taken:
@@ -107,13 +105,19 @@ During the development of this project the following considerations were taken:
     \item Most of the parameter values are based on previous work where they were shown to have good performance or they were recommended by the original authors. Nonetheless, more experiments in different scenarios should be run to determine better values for the GP specific task.
     \item The machines where the experiments were executed have very limited computing power compared to the ambitions of this project. Though hardware specifications in those machines were enough to run experiments on the dataset, but it would be impossible to process complex networks with this technology.
     \item The proposed algorithm was not designed to run in a distributed environment. Experiments were run in single thread, and the algorithm was trained only in GPU. Modifying the algorithm so it can run in parallel and distributing the training load between the GPU and the CPU are interesting research topics. 
+    \item The proposed algorithm has been tested only to bisect graphs. While it can work to partition a graph in more than two groups, the hyperparameters choice needs to be studied in more detail.
     \item The proposed framework only accepts certain input formats for the graphs, specifically JOSTLE and METIS formats.
     %\item Comparison with GAP was using graphs without features, an interesting thing would be to check performance with the same datasets they used but getting rid of the features, e.g., cora citation
 \end{itemize}
 
 \section{Research Problem}
+Several new approaches and algorithms for the graph partitioning problem have arisen during the two decades. This effort has incremented during the last five years due to the creation of modern artificial techniques, in particular, Deep Learning Techniques.
+
+The most successful techniques make use of Graph Neural Networks which have been shown 
 The state-of-the-art algorithms for graph partitioning 
 Graph partitioning algorithms based on DL
+
+the algorithm cannot be easily adapted to more partitions due to the limited features they are using.
 
 https://arxiv.org/pdf/2104.03546.pdf
 \section{Hypothesis}

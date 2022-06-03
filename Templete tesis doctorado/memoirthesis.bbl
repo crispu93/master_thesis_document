@@ -257,6 +257,12 @@ Chen Yunfang, Li~Wang, Dehao Qi, and Wei Zhang.
   pages 568--583.
 \newblock Springer Publishing Company, Incorporated, 08 2020.
 
+\bibitem{deepwalkimage}
+Boyao Zhang, Chao Yang, Haikuo Zhang, Zongguo Wang, Jingqi Sun, Lihua Wang,
+  Yonghua Zhao, and Yangang Wang.
+\newblock Graph representation learning for similarity stocks analysis.
+\newblock {\em Journal of Signal Processing Systems}, 04 2022.
+
 \bibitem{gcnreview}
 Si~Zhang, Hanghang Tong, Jiejun Xu, and Ross Maciejewski.
 \newblock Graph convolutional networks: a comprehensive review.
